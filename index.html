@@ -1600,7 +1600,17 @@
       <!-- End Info Box 2 -->
       <div class="popup">
         <div class="popup-wrapper">
-          <button id="btn-close">click</button>
+          <h2>Форма обратной связи</h2>
+	<form name = "feedback" action="" method="post">
+		<lable>Укажите ваше имя:</lable>
+		<input type="text" name="from" value=""><span style="color: red"></span><br> 
+		<lable>Укажите ваш номер телефона:</lable>
+		<input type="tel" name="to" value=""><span style="color: red"></span><br>
+		<lable>Напишите вашу професию:</lable>
+		<input type="text" name="subject" value=""><span style="color: red"></span><br>	
+		<input type="submit" name="send" value="Отправить">
+	</form>
+          <img src="./images/my/close.svg" width="24px" height="24px" id="btn-close"></img>
         </div>
       </div>
     </div>
