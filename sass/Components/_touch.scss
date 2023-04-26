@@ -1,0 +1,143 @@
+/*******************touch***********************/
+.touch {
+	&__form {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 4rem;
+	}
+	&__group {
+		width: 100%;
+		position: relative;
+	}
+	&__input {
+		padding: 1.2rem 1.6rem;
+		border: 1px solid $color-black-md;
+		border-radius: 4px; 
+		background-color: $color-white;
+		width: 100%;
+
+		&:focus {
+			outline: none;
+			@include elevation2;
+			&:invalid {
+				border: 1px solid $color-danger-border;
+			}
+		}
+
+		@include input-placeholder{
+			color: $color-black-md;
+		}
+
+		&:placeholder-shown + .touch__label{
+			opacity:0;
+			visibility: hidden;
+			@include prefix("transform", translateY(-4rem), moz webkit ms o);
+		}
+	}
+
+	&__label {
+		opacity:1;
+		visibility: visible;
+		margin-left: 1.6rem;
+		margin-top: .4rem;
+		margin-bottom: .4rem;
+        @include prefix("transition", all .3s, moz webkit o);
+	}
+
+
+
+	&__side {
+		margin-bottom: 4rem;
+	}
+	&__paragraph {
+		margin-bottom: 1.6rem;
+	}
+	&__row {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-bottom: .8rem;
+	}
+	&__t {
+		position: relative;
+		width: 100%;
+		flex: 0 0 12.3%;
+		max-width: 12.3%;
+		@include responsive(SS){
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		@include responsive(XS){
+			flex: 0 0 18.3%;
+			max-width: 18.3%;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+			flex: 0 0 18.3%;
+			max-width: 18.3%;
+		}
+		@include responsive(LG){
+			flex: 0 0 15.3%;
+			max-width: 15.3%;
+		}
+		@include responsive(XL){
+		}		
+	}
+	&__c {
+		position: relative;
+		width: 100%;
+		flex: 0 0 87.7%;
+		max-width: 87.7%;
+		@include responsive(SS){
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		@include responsive(XS){
+			flex: 0 0 81.7%;
+			max-width: 81.7%;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+			flex: 0 0 81.7%;
+			max-width: 81.7%;
+		}
+		@include responsive(LG){
+			flex: 0 0 84.7%;
+			max-width: 84.7%;
+		}
+		@include responsive(XL){
+		}		
+	}
+	&__social {
+		margin-top: 1.6rem;
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: flex-start;
+			li {
+				margin-right: 1.6rem;
+				a {
+					i {
+						font-size: 1.8rem;
+						color: $color-black-hi;
+						@include transition(.2s);
+					}
+					&:hover i {
+						color: $color-black;
+						@include prefix("transform", scale(1.2), moz webkit ms o);
+					}
+				}
+			}
+		}
+	}	
+
+
+
+}

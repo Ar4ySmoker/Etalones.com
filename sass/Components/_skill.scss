@@ -1,0 +1,101 @@
+/*******************skill***********************/
+.skill {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 4rem;
+
+
+	&__circle-wrap {
+		width: 12rem;
+		height: 12rem;
+		background-color: $color-primary-white;
+		border-radius: 50%;
+		margin-bottom: 1.6rem;
+
+		position: relative;
+	}
+	&__circle {
+		
+	}
+	&__mask {
+		width: 12rem;
+		height: 12rem;
+		position: absolute;
+		border-radius: 50%;
+		clip: rect(0, 12rem, 12rem, 6rem);		
+	}
+	&__fill {
+		width: 12rem;
+		height: 12rem;
+		position: absolute;
+		border-radius: 50%;
+		clip: rect(0, 6rem, 12rem, 0);
+		background-color: $color-primary-hi;		
+	}
+	
+	 
+	@for $i from 0 through 100 {
+		.processCircle .percent#{$i} &__mask.full,.processCircle .percent#{$i} &__fill {
+			@include prefix("animation", fillNumber#{$i} 2s ease-in-out .3s both, webkit);
+			@include prefix("transform", rotate(percentToAngle($i)), moz webkit ms o);
+		}
+	}	
+
+
+
+
+	&__icon {
+		border-radius: 50%;
+	  	width: 10.8rem;
+  		height: 10.8rem;
+  		background: $color-white;
+  		position: absolute;
+  		z-index: 100;
+
+  		top: 50%;
+  		left: 50%;
+  		@include prefix("transform", translate(-50%, -50%), moz webkit ms o);
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+	&__number {
+		position: relative;
+		&:before {
+			content: "\0025";
+		  	position: absolute;
+		  	top: 0;
+		  	left: 100%;
+		  	@include typo-h5;
+		  	color: $color-black-hi;
+		}
+	}
+	&__name {
+		text-align: center;
+		margin-bottom: 1.2rem;
+	}
+	&__paragraph {
+		text-align: center;
+	}
+}
+
+
+
+
+
+@for $i from 0 through 100 {
+	@keyframes fillNumber#{$i} {
+	  0% {
+	    transform: rotate(0deg);
+	  }
+	  100% {
+	    transform: rotate(percentToAngle($i));
+	  }
+	}	
+}

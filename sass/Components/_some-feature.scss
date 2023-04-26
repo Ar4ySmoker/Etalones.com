@@ -1,0 +1,47 @@
+/*******************some-feature***********************/
+.some-feature {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 4px;
+	margin-bottom: 4rem;
+
+	@include effectGetUp_placeOutHover();
+
+	padding: 1.6rem;
+
+	&:hover {
+		@include effectGetUp_placeInHover;
+	}
+
+	&:hover &__icon i {
+		@include effectShadowCircleIconZoomText_placeInHover;
+	}
+	
+	&__icon {
+		margin-bottom: .8rem;
+		i {
+			font-size: 5.2rem;
+			// color: $color-black-hi;
+			color: $color-primary-hi;
+			@include effectShadowCircleIconZoomText_placeOutHover;
+		}
+	}
+	&__name {
+		text-align: center;
+	}
+	&__line {
+		width: 6rem;
+		height: 1px;
+		background-color: rgba($color-black, .12);
+		margin: .8rem auto 2rem;
+	}
+	&__paragraph {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	&__btn {
+
+	}
+}

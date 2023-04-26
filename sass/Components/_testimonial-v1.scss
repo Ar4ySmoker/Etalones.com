@@ -1,0 +1,94 @@
+/*******************testimonial-v1***********************/
+.testimonial-v1 {
+	border-radius: 4px;
+	padding: 1.6rem;
+		
+	@include effectGetUp_placeOutHover;
+
+	&:hover {
+		@include effectGetUp_placeInHover;
+	}
+
+	&__side {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start; 
+		padding: 2.4rem 1.6rem 2rem;
+
+	}
+	&__content {
+		margin-bottom: 3.2rem;
+		position: relative;
+		&:before {
+			content: open-quote;
+		}
+		&:after {
+			content: close-quote;
+		}		
+	}
+	&__wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	&__avatar {
+		position: relative;
+  		border-radius: 50%;
+	}
+
+	&__picture {
+		border-radius: 50%;
+		display: block;
+		overflow: hidden;
+		position: relative;		
+
+
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color-grey-dark-v5, .1);
+			z-index: 9;
+			border-radius: 50%;
+		}		
+		img {
+			height: auto;
+			width: 100%;
+			max-width: 6.4rem;
+
+			
+		}
+	}
+
+	&__author {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		margin-left: 2.4rem;
+	
+	}
+	&__name {
+		position: relative;
+		&:before {
+			position: absolute;
+			left: -1.2rem;
+			content: "\2013";
+		}
+	}
+	&__quote {
+		width: 100%;
+		text-align: right;
+		i {
+			font-size: 3.4rem;
+			color: $color-primary-hi;
+		}
+	}
+}

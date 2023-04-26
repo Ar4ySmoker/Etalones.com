@@ -1,0 +1,525 @@
+/*******************item-2-blog***********************/
+.item-2-blog {
+	position: relative;
+	overflow: hidden;
+
+	// margin-bottom: 4rem;
+	height: 100%;
+
+
+
+
+	&:hover &__picture img {
+		@include effectZoomRotate_placeInHover;
+	}
+	&:hover &__picture:after {
+		@include effectCurtainDownNew_placeInHover;
+	}
+	&:hover &__picture:before {
+		@include effectCurtainUpNew_placeInHover;
+	}
+
+	&:hover .item-2-blog__gallery--next,
+	&:hover .item-2-blog__gallery--prev,
+	&:hover .item-2-blog__gallery--control-nav {
+		opacity: 1;
+	}	
+	
+	&__side {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		position: relative;
+
+	}
+	.quote &__side {
+		// height: 100%;
+	}
+	
+	&__name {
+		margin-bottom: .8rem;
+	}
+	&__date-cate {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+
+		// margin-bottom: 1.2rem;
+	}
+
+	&__box {
+		position: relative;
+		width: 100%;
+	}
+	&__audio {
+		margin-bottom: 1.2rem;
+		width: 100%;
+	
+	}
+
+	
+	
+	&__picture {
+		overflow: hidden;
+
+		display: block;
+		// width: calc(100% + 3.2rem);
+		width: 100%;
+		position: relative;
+		// @include prefix("transform", translate(-50%, 0), moz webkit ms o);
+		// left:50%;
+
+
+		margin-bottom: 2rem;
+		img {
+			height: auto;
+			// max-width: 100%;
+			width: 100%;
+
+			@include effectZoomRotate_placeOutHover();
+		}
+
+		&:before {
+
+		}
+		&:after {
+
+		}
+		
+	}
+
+	.normal &__picture {
+		&:before {
+			@include effectCurtainUpNew_placeOutHover( .5s, 50%);
+
+		}
+		&:after {
+			@include effectCurtainDownNew_placeOutHover( .5s, 50%);
+
+		}
+		
+	}
+
+	.image &__picture {
+		&:before {
+			@include effectCurtainUpNew_placeOutHover( .5s, 50%);
+
+		}
+		&:after {
+			@include effectCurtainDownNew_placeOutHover( .5s, 50%);
+
+		}
+		
+	}
+
+
+	.video &__picture {
+		&:before {
+			@include effectCurtainUpNew_placeOutHover( .5s, 100%);
+
+		}
+		&:after {
+			@include effectCurtainDownNew_placeOutHover( .5s, 100%);
+
+		}
+		
+	}
+
+	&__wrap-icon {
+		
+	}
+
+	&__icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include prefix("transform", translate(-50%, -50%), moz webkit ms o);
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;	
+
+		z-index: 6;
+
+		i {
+			font-size: 9.6rem;
+			color: $color-white;
+			z-index: 44;
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			@include prefix("transform",translate(-50%, -50%) scale3d(1, 1, 1), moz webkit ms o);
+			@include prefix("transition", all 1s cubic-bezier(0, 0, 0.2, 1), moz webkit o);
+
+			&:hover {
+				@include prefix("transform",translate(-50%, -50%) scale3d(1.15, 1.15, 1.15), moz webkit ms o);
+			}
+		}
+		img {
+			visibility: hidden;
+			opacity: 0;
+			width: 100%;
+		}
+	}
+
+
+	&__quote {
+		&--side {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 3.6rem;
+			@include responsive(SS){
+				padding: 0rem;
+			}
+			@include responsive(XS){
+				padding: 0rem;
+			}
+			@include responsive(SM){
+				padding: 0rem;
+			}
+			@include responsive(MD){
+				padding: 0rem;
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}	
+
+		}
+		.column-3 &--side {
+			
+			@include responsive(SS){
+			}
+			@include responsive(XS){
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+				padding: 1.6rem 0;
+			}
+			@include responsive(XL){
+				padding: 1.6rem 0;
+			}	
+
+		}
+		&--ico {
+			margin-bottom: 2.8rem;
+			i {
+				font-size: 6rem;
+				color: $color-primary-hi;
+			}
+		}
+		.column-3 &--ico {
+			margin-bottom: 1.6rem;
+		}
+		&--content {
+			text-align: center;
+			width: 100%;
+			margin-bottom: 3.6rem;
+			@include responsive(SS){
+				@include typo-subtitle1;
+				width: 100%;
+			}
+			@include responsive(XS){
+				@include typo-subtitle1;
+				width: 100%;
+			}
+			@include responsive(SM){
+				@include typo-subtitle1;
+				width: 90%;
+			}
+			@include responsive(MD){
+				@include typo-subtitle1;
+				width: 90%;
+			}
+			@include responsive(LG){
+				@include typo-subtitle1;
+				width: 90%;
+			}
+			@include responsive(XL){
+			}		
+		}
+		.column-3 &--content {
+			@include responsive(SS){
+			}
+			@include responsive(XS){
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+				@include typo-subtitle1;
+				width: 100%;
+				margin-bottom: 2rem;
+			}
+			@include responsive(XL){
+				@include typo-subtitle1;
+				width: 100%;
+				margin-bottom: 2rem;
+			}		
+		}
+		&--author {
+			text-align: center;
+		}		
+	}
+		
+	
+	
+	&__paragraph {
+			
+		margin-bottom: 1.2rem;  
+	}
+
+
+	&__gallery {
+		// width: 100%;
+		position: relative;
+		margin-bottom: 2rem;
+
+
+
+		overflow: hidden;
+		display: block;
+		width: 100%;
+		// width: calc(100% + 3.2rem);
+		// @include prefix("transform", translate(-50%, 0), moz webkit ms o);
+		// left:50%;
+
+
+
+
+
+
+
+
+		&--viewport {
+			@include prefix("transition", all 1s ease, moz webkit o);
+
+			li {
+				display: none;
+				-webkit-backface-visibility: hidden;
+					
+				img {
+				  	// max-width: 100%;
+				  	width: 100%;
+					display: block;
+				  	height: auto;
+					@include prefix("user-select", none, moz webkit ms);
+
+					@include responsive(SS){
+					}
+					@include responsive(XS){
+					}
+					@include responsive(SM){
+					}
+					@include responsive(MD){
+					}
+					@include responsive(LG){
+					}
+					@include responsive(XL){
+					}	  				
+				}				
+
+			}
+
+		}
+		&--direction-nav {
+
+		}
+		&--nav-prev {
+
+		}
+		&--prev {
+			position: absolute;
+			top: 50%;
+			left: 2rem;
+			opacity: 0;
+			@include prefix("transform", translateY(-50%), moz webkit ms o);
+			@include prefix("user-select", none, moz webkit ms);
+			cursor: pointer;
+			display: block;
+
+			width: 4.8rem;
+			height: 4.8rem;
+			@include prefix("user-select", none, moz webkit ms);
+			@include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+
+			@include prefix("transition", all .6s ease, moz webkit o);
+
+
+			@include responsive(SS){
+			}
+			@include responsive(XS){
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}	
+
+
+			
+
+			i {
+				position: absolute;
+				top: 2.1rem;
+				left: 1rem;
+				width: 2.2rem;
+				height: .5rem;
+				border-radius: .25rem;
+				background: $color-white-hi;
+				@include prefix("transition", all 0.15s ease, moz webkit o);
+
+				transform-origin: 0% 50%
+			}
+
+			@include arrowTransform( 40deg, 0, -.1rem );
+
+			&:hover {
+				@include arrowTransform( 30deg, 0, -.1rem );
+			}
+
+			&:active {
+				@include arrowTransform( 25deg, 0rem, -.1rem );
+			}
+
+		      
+
+		    
+	  	}
+	  	&--nav-next {
+
+		}
+		&--next {
+			position: absolute;
+			top: 50%;
+			right: 2rem;
+			opacity: 0;
+			@include prefix("transform", translateY(-50%), moz webkit ms o);
+			@include prefix("user-select", none, moz webkit ms);
+			cursor: pointer;
+			display: block;
+
+			width: 4.8rem;
+			height: 4.8rem;
+			@include prefix("user-select", none, moz webkit ms);
+			@include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+
+			@include prefix("transition", all .6s ease, moz webkit o);
+
+			@include responsive(SS){
+			}
+			@include responsive(XS){
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}			
+
+			
+
+			i {
+			  position: absolute;
+			  top: 2.1rem;
+			  right: 1rem;
+			  width: 2.2rem;
+			  height: .5rem;
+			  border-radius: .25rem;
+			  background: $color-white-hi;
+			  @include prefix("transition", all 0.15s ease, moz webkit o);
+
+			  transform-origin: 100% 50%
+			}
+
+			@include arrowTransform( 40deg, 0, .1rem );
+
+			&:hover {
+			  @include arrowTransform( 30deg, 0, .1rem );
+			}
+
+			&:active {
+			  @include arrowTransform( 25deg, 0rem, .1rem );
+			}
+
+			  
+
+
+		}
+
+		&--control-nav {
+
+		    position: absolute;
+		    bottom: 12%;
+		    left: 50%;
+		    opacity: 0;
+		    @include prefix("transform", translateX(-50%), moz webkit ms o);
+		    @include prefix("transition", all .6s ease, moz webkit o);
+
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: center;
+		    align-items: center;
+
+			li {
+				a {
+					text-indent: -9999px;
+					display: block;
+					cursor: pointer;
+				    height: 1.2rem;
+				    width: 1.2rem;
+				    margin: 0 .4rem;
+				    background-color: $color-white-md;
+				    border-radius: .6rem;
+				    @include prefix("user-select", none, moz webkit ms);
+				    @include prefix("transition", all .6s ease 0s, moz webkit o);
+				    &:hover {
+				      background-color: $color-white-hi;
+				    }
+				    &.item-2-blog__gallery--active {
+				      width: 3.2rem;
+				      background-color: $color-white-hi;
+				      cursor: default;
+				    }
+
+				}
+			}
+		}			  	
+
+
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+}
+
+
+
+

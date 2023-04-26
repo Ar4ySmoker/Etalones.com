@@ -1,0 +1,1366 @@
+/*******************text-box***********************/
+.text-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	
+	@include prefix("user-select", none, moz webkit ms);
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		margin-bottom: 2rem;
+		@include responsive(SS){
+			margin-bottom: 1.2rem;
+		}
+		@include responsive(XS){
+			margin-bottom: 1.2rem;
+		}
+		@include responsive(SM){
+			margin-bottom: 1.2rem;
+		}
+		@include responsive(MD){
+			margin-bottom: 1.2rem;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+
+		span {
+
+			&:not(:last-child){
+				margin-bottom: 0.8rem;
+
+				@include responsive(SS){
+					margin-bottom: 0.8rem;
+					@include typo-subtitle1;
+				}
+				@include responsive(XS){
+					margin-bottom: 0.8rem;
+					@include typo-subtitle1;
+				}
+				@include responsive(SM){
+					margin-bottom: 0.8rem;
+					@include typo-subtitle1;
+				}
+				@include responsive(MD){
+					margin-bottom: 0.8rem;
+					@include typo-subtitle1;
+				}
+				@include responsive(LG){
+					@include typo-subtitle1;
+				}
+				@include responsive(XL){
+				}	
+				
+			}
+			&:last-child {
+
+		        @include responsive(SS){
+		        	@include typo-h4;
+		        }
+		        @include responsive(XS){
+		        	@include typo-h4;
+		        }
+		        @include responsive(SM){
+		            @include typo-h4;
+		        }
+		        @include responsive(MD){
+		            @include typo-h4;
+		        }
+		        @include responsive(LG){
+		            @include typo-h4;
+		        }
+		        @include responsive(XL){
+		        }
+
+			}
+			
+		}
+	}
+	
+	p {
+		text-align: left;
+		margin-bottom: 2.4rem;
+
+		@include responsive(SS){
+			margin-bottom: 1.6rem;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(XS){
+			margin-bottom: 1.6rem;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(SM){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(MD){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}
+	a {
+	}
+	
+}
+
+
+.text-box-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+
+	@include prefix("user-select", none, moz webkit ms);
+
+
+	
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+
+		margin-bottom: 2rem;
+		text-align: right;
+		@include responsive(SS){
+			margin-bottom: 1.2rem;
+		}
+		@include responsive(XS){
+			margin-bottom: 1.2rem;
+		}
+		@include responsive(SM){
+			margin-bottom: 1.2rem;
+		}
+		@include responsive(MD){
+			margin-bottom: 1.2rem;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+
+
+		span {
+			&:not(:last-child){
+				margin-bottom: 0.8rem;
+
+				@include responsive(SS){
+					margin-bottom: 0.8rem;
+					@include typo-subtitle1;
+				}
+				@include responsive(XS){
+					margin-bottom: 0.8rem;
+					@include typo-subtitle1;
+				}
+				@include responsive(SM){
+					margin-bottom: 0.8rem;
+					@include typo-subtitle1;
+				}
+				@include responsive(MD){
+					margin-bottom: 0.8rem;
+					@include typo-subtitle1;
+				}
+				@include responsive(LG){
+					@include typo-subtitle1;
+				}
+				@include responsive(XL){
+				}	
+				
+			}
+			&:last-child {
+				
+		        @include responsive(SS){
+		        	@include typo-h4;
+		        }
+		        @include responsive(XS){
+		        	@include typo-h4;
+		        }
+		        @include responsive(SM){
+		            @include typo-h4;
+		        }
+		        @include responsive(MD){
+		            @include typo-h4;
+		        }
+		        @include responsive(LG){
+		            @include typo-h4;
+		        }
+		        @include responsive(XL){
+		        }
+
+			}			
+			
+		}
+	}
+
+	p {
+		margin-bottom: 2.4rem;
+		text-align: right;
+		@include responsive(SS){
+			margin-bottom: 1.6rem;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(XS){
+			margin-bottom: 1.6rem;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(SM){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(MD){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}
+	a {
+	}
+	
+}
+
+
+
+.text-box3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	@include prefix("user-select", none, moz webkit ms);
+	
+	&__title {
+		text-align: center;
+		margin-bottom: 1.2rem;
+		@include responsive(SS){
+			@include typo-h4;
+			margin-bottom: .4rem;
+		}
+		@include responsive(XS){
+			@include typo-h4;
+			margin-bottom: .4rem;
+		}
+		@include responsive(SM){
+			@include typo-h4;
+			margin-bottom: .8rem;
+		}
+		@include responsive(MD){
+			@include typo-h3;
+		}
+		@include responsive(LG){
+			@include typo-h3;
+		}
+		@include responsive(XL){
+		}		
+	}
+	&__sub-title  {
+		text-align: center;
+		margin-bottom: 4.8rem;
+		@include responsive(SS){
+			margin-bottom: 2.8rem;
+		}
+		@include responsive(XS){
+			margin-bottom: 2.8rem;
+		}
+		@include responsive(SM){
+			margin-bottom: 2.8rem;
+		}
+		@include responsive(MD){
+			margin-bottom: 3.6rem;
+		}
+		@include responsive(LG){
+			margin-bottom: 3.6rem;
+		}
+		@include responsive(XL){
+		}		
+	}
+	&__wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+	}
+	&__btn {
+		margin: 0 1.2rem;
+	}
+}
+
+
+
+.text-box4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	
+	@include prefix("user-select", none, moz webkit ms);
+
+	
+
+	&__date-cate  {
+		margin-bottom: 0.8rem;
+		a {
+			@include responsive(SS){
+				@include typo-subtitle1;
+			}
+			@include responsive(XS){
+				@include typo-subtitle1;
+			}
+			@include responsive(SM){
+				@include typo-subtitle1;
+			}
+			@include responsive(MD){
+				@include typo-subtitle1;
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}
+		}
+			
+	}
+	&__title {
+		margin-bottom: 2rem;
+		a {
+			@include responsive(SS){
+				@include typo-h5;
+			}
+			@include responsive(XS){
+				@include typo-h5;
+			}
+			@include responsive(SM){
+				@include typo-h4;
+			}
+			@include responsive(MD){
+				@include typo-h4;
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}			
+		}
+
+
+				
+	}
+
+	&__paragraph {
+		margin-bottom: 2.8rem;
+		width: 60%;
+		@include responsive(SS){
+			width: 100%;
+		}
+		@include responsive(XS){
+			width: 100%;
+		}
+		@include responsive(SM){
+			width: 100%;
+		}
+		@include responsive(MD){
+			width: 70%;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+				
+	}
+	
+	&__wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	&__btn {
+		margin: 0rem;
+	}
+}
+
+
+
+
+.text-box5 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	@include prefix("user-select", none, moz webkit ms);
+
+	& > * {
+		opacity: 0;
+		@include prefix("transition", all .8s, moz webkit o);
+		@include prefix("transform", translateY(32px), moz webkit ms o);
+		@for $i from 0 to 9 {
+			&:nth-child(#{$i + 1}) {
+			  transition-delay: $i * 0.2 + 0.3s;
+			}
+		}			
+	}
+
+
+	
+	
+	&__title {
+		text-align: center;
+		margin-bottom: 1.2rem;
+
+		@include responsive(SS){
+			@include typo-h4;
+			margin-bottom: .4rem;
+		}
+		@include responsive(XS){
+			@include typo-h4;
+			margin-bottom: .4rem;
+		}
+		@include responsive(SM){
+			@include typo-h4;
+			margin-bottom: .8rem;
+		}
+		@include responsive(MD){
+			@include typo-h3;
+		}
+		@include responsive(LG){
+			@include typo-h3;
+		}
+		@include responsive(XL){
+		}		
+	}
+	&__sub-title  {
+		text-align: center;
+		margin-bottom: 4.8rem;
+		@include responsive(SS){
+			margin-bottom: 2.8rem;
+		}
+		@include responsive(XS){
+			margin-bottom: 2.8rem;
+		}
+		@include responsive(SM){
+			margin-bottom: 2.8rem;
+		}
+		@include responsive(MD){
+			margin-bottom: 3.6rem;
+		}
+		@include responsive(LG){
+			margin-bottom: 3.6rem;
+		}
+		@include responsive(XL){
+		}		
+	}
+	&__paragraph {
+		text-align: center;
+		margin-bottom: 2.4rem;
+
+		@include responsive(SS){
+			margin-bottom: 1.6rem;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(XS){
+			margin-bottom: 1.6rem;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(SM){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(MD){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}	
+	&__wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+	}
+	&__btn {
+		margin: 0 1.2rem;
+	}
+}
+
+.text-box05 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	@include prefix("user-select", none, moz webkit ms);
+
+	& > * {
+		opacity: 0;
+		@include prefix("transition", all .8s, moz webkit o);
+		@include prefix("transform", translateY(32px), moz webkit ms o);
+		@for $i from 0 to 9 {
+			&:nth-child(#{$i + 1}) {
+			  transition-delay: $i * 0.2 + 0.3s; 
+			}
+		}			
+	}
+
+
+	
+	
+	&__title {
+		// text-align: center;
+		
+
+		@include responsive(SS){
+			@include typo-h4;
+		}
+		@include responsive(XS){
+			@include typo-h4;
+		}
+		@include responsive(SM){
+			@include typo-h4;
+		}
+		@include responsive(MD){
+			@include typo-h4;
+		}
+		@include responsive(LG){
+			@include typo-h4;
+		}
+		@include responsive(XL){
+		}		
+	}
+	&__sub-title  {
+		// text-align: center;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}
+	&__paragraph {
+		// text-align: center;
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}	
+	&__wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+	}
+	&__btn {
+		margin: 0 1.2rem;
+		@include responsive(SS){
+			margin: 0 .8rem;
+		}
+		@include responsive(XS){
+			margin: 0 .8rem;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}
+}
+
+
+.text-box6 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	
+	@include prefix("user-select", none, moz webkit ms);
+
+	
+	& > * {
+		opacity: 0;
+		@include prefix("transition", all .8s, moz webkit o);
+		@include prefix("transform", translateY(32px), moz webkit ms o);
+		@for $i from 0 to 9 {
+			&:nth-child(#{$i + 1}) {
+			  transition-delay: $i * 0.1 + 0.3s;
+			}
+		}			
+	}	
+
+	&__date-cate  {
+		margin-bottom: 0.8rem;
+		a {
+			@include responsive(SS){
+				@include typo-subtitle1;
+			}
+			@include responsive(XS){
+				@include typo-subtitle1;
+			}
+			@include responsive(SM){
+				@include typo-subtitle1;
+			}
+			@include responsive(MD){
+				@include typo-subtitle1;
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}
+		}
+			
+	}
+	&__title {
+		margin-bottom: 2rem;
+		a {
+			@include responsive(SS){
+				@include typo-h5;
+			}
+			@include responsive(XS){
+				@include typo-h5;
+			}
+			@include responsive(SM){
+				@include typo-h4;
+			}
+			@include responsive(MD){
+				@include typo-h4;
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}			
+		}
+
+
+				
+	}
+
+	&__paragraph {
+		margin-bottom: 2.8rem;
+		width: 60%;
+		@include responsive(SS){
+			width: 100%;
+		}
+		@include responsive(XS){
+			width: 100%;
+		}
+		@include responsive(SM){
+			width: 100%;
+		}
+		@include responsive(MD){
+			width: 70%;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+				
+	}
+	
+	&__wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	&__btn {
+		margin: 0rem;
+	}
+}
+
+
+.text-box7 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	
+	@include prefix("user-select", none, moz webkit ms);
+
+	
+	& > * {
+		opacity: 0;
+		@include prefix("transition", all .8s, moz webkit o);
+		@include prefix("transform", translateY(32px), moz webkit ms o);
+		@for $i from 0 to 9 {
+			&:nth-child(#{$i + 1}) {
+			  transition-delay: $i * 0.2 + 0.3s;
+			}
+		}			
+	}
+
+	&__title {
+		margin-bottom: 0.8rem;
+
+		@include responsive(SS){
+			margin-bottom: 0.8rem;
+			@include typo-subtitle1;
+		}
+		@include responsive(XS){
+			margin-bottom: 0.8rem;
+			@include typo-subtitle1;
+		}
+		@include responsive(SM){
+			margin-bottom: 0.8rem;
+			@include typo-subtitle1;
+		}
+		@include responsive(MD){
+			margin-bottom: 0.8rem;
+			@include typo-subtitle1;
+		}
+		@include responsive(LG){
+			@include typo-subtitle1;
+		}
+		@include responsive(XL){
+		}
+	}
+	&__sub-title {
+		margin-bottom: 2rem;
+        @include responsive(SS){
+        	@include typo-h4;
+        	margin-bottom: 1.2rem;
+        }
+        @include responsive(XS){
+        	@include typo-h4;
+        	margin-bottom: 1.2rem;
+        }
+        @include responsive(SM){
+            @include typo-h4;
+            margin-bottom: 1.2rem;
+        }
+        @include responsive(MD){
+            @include typo-h4;
+            margin-bottom: 1.2rem;
+        }
+        @include responsive(LG){
+            @include typo-h4;
+        }
+        @include responsive(XL){
+        }			
+	}
+
+	&__paragraph {
+		text-align: left;
+		margin-bottom: 2.4rem;
+
+		@include responsive(SS){
+			margin-bottom: 1.6rem;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(XS){
+			margin-bottom: 1.6rem;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(SM){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(MD){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}
+
+	
+}
+.text-box07 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	
+	@include prefix("user-select", none, moz webkit ms);
+
+	
+	& > * {
+		opacity: 0;
+		@include prefix("transition", all .8s, moz webkit o);
+		@include prefix("transform", translateY(32px), moz webkit ms o);
+		@for $i from 0 to 9 {
+			&:nth-child(#{$i + 1}) {
+			  transition-delay: $i * 0.2 + 0.3s;
+			}
+		}			
+	}
+
+	&__title {
+
+		@include responsive(SS){
+			@include typo-h3;
+		}
+		@include responsive(XS){
+			@include typo-h3;
+		}
+		@include responsive(SM){
+			@include typo-h3;
+		}
+		@include responsive(MD){
+			@include typo-h3;
+		}
+		@include responsive(LG){
+			@include typo-h3;
+		}
+		@include responsive(XL){
+		}
+	}
+
+
+	&__paragraph {
+
+		@include responsive(SS){
+			@include typo-subtitle1;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(XS){
+			@include typo-subtitle1;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(SM){
+			@include typo-subtitle1;
+		}
+		@include responsive(MD){
+			@include typo-subtitle1;
+		}
+		@include responsive(LG){
+			@include typo-subtitle1;
+		}
+		@include responsive(XL){
+		}		
+	}
+
+	
+}
+
+.text-box007 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	@include prefix("user-select", none, moz webkit ms);
+
+	
+	& > * {
+		opacity: 0;
+		@include prefix("transition", all .8s, moz webkit o);
+		@include prefix("transform", translateY(32px), moz webkit ms o);
+		@for $i from 0 to 9 {
+			&:nth-child(#{$i + 1}) {
+			  transition-delay: $i * 0.2 + 0.3s;
+			}
+		}			
+	}
+
+	&__title {
+
+		@include responsive(SS){
+			@include typo-h3;
+		}
+		@include responsive(XS){
+			@include typo-h3;
+		}
+		@include responsive(SM){
+			@include typo-h3;
+		}
+		@include responsive(MD){
+			@include typo-h3;
+		}
+		@include responsive(LG){
+			@include typo-h3;
+		}
+		@include responsive(XL){
+		}
+	}
+
+
+	&__paragraph {
+
+		@include responsive(SS){
+			@include typo-subtitle1;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(XS){
+			@include typo-subtitle1;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(SM){
+			@include typo-subtitle1;
+		}
+		@include responsive(MD){
+			@include typo-subtitle1;
+		}
+		@include responsive(LG){
+			@include typo-subtitle1;
+		}
+		@include responsive(XL){
+		}		
+	}
+
+	
+}
+
+.text-box8 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	
+	@include prefix("user-select", none, moz webkit ms);
+
+	
+	& > * {
+		opacity: 0;
+		@include prefix("transition", all .8s, moz webkit o);
+		@include prefix("transform", translateY(32px), moz webkit ms o);
+		@for $i from 0 to 9 {
+			&:nth-child(#{$i + 1}) {
+			  transition-delay: $i * 0.2 + 0.3s;
+			}
+		}			
+	}
+
+	&__title {
+		margin-bottom: 0.8rem;
+		text-align: right;
+
+		@include responsive(SS){
+			margin-bottom: 0.8rem;
+			@include typo-subtitle1;
+		}
+		@include responsive(XS){
+			margin-bottom: 0.8rem;
+			@include typo-subtitle1;
+		}
+		@include responsive(SM){
+			margin-bottom: 0.8rem;
+			@include typo-subtitle1;
+		}
+		@include responsive(MD){
+			margin-bottom: 0.8rem;
+			@include typo-subtitle1;
+		}
+		@include responsive(LG){
+			@include typo-subtitle1;
+		}
+		@include responsive(XL){
+		}
+	}
+	&__sub-title {
+		margin-bottom: 2rem;
+		text-align: right;
+
+        @include responsive(SS){
+        	@include typo-h4;
+        	margin-bottom: 1.2rem;
+        }
+        @include responsive(XS){
+        	@include typo-h4;
+        	margin-bottom: 1.2rem;
+        }
+        @include responsive(SM){
+            @include typo-h4;
+            margin-bottom: 1.2rem;
+        }
+        @include responsive(MD){
+            @include typo-h4;
+            margin-bottom: 1.2rem;
+        }
+        @include responsive(LG){
+            @include typo-h4;
+        }
+        @include responsive(XL){
+        }			
+	}
+
+	&__paragraph {
+		text-align: right;
+		margin-bottom: 2.4rem;
+
+		@include responsive(SS){
+			margin-bottom: 1.6rem;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(XS){
+			margin-bottom: 1.6rem;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(SM){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(MD){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}
+
+	
+}
+
+
+
+.text-box08 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	
+	@include prefix("user-select", none, moz webkit ms);
+
+	
+	& > * {
+		opacity: 0;
+		@include prefix("transition", all .8s, moz webkit o);
+		@include prefix("transform", translateY(32px), moz webkit ms o);
+		@for $i from 0 to 9 {
+			&:nth-child(#{$i + 1}) {
+			  transition-delay: $i * 0.2 + 0.3s;
+			}
+		}			
+	}
+
+	&__title {
+
+		@include responsive(SS){
+			@include typo-h3;
+		}
+		@include responsive(XS){
+			@include typo-h3;
+		}
+		@include responsive(SM){
+			@include typo-h3;
+		}
+		@include responsive(MD){
+			@include typo-h3;
+		}
+		@include responsive(LG){
+			@include typo-h3;
+		}
+		@include responsive(XL){
+		}
+	}
+
+
+	&__paragraph {
+
+		@include responsive(SS){
+			@include typo-subtitle1;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(XS){
+			@include typo-subtitle1;
+			br {
+				display: none;
+			}
+		}
+		@include responsive(SM){
+			@include typo-subtitle1;
+		}
+		@include responsive(MD){
+			@include typo-subtitle1;
+		}
+		@include responsive(LG){
+			@include typo-subtitle1;
+		}
+		@include responsive(XL){
+		}		
+	}
+
+	
+}
+
+.text-box9 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	
+	@include prefix("user-select", none, moz webkit ms);
+
+	
+	& > * {
+		opacity: 0;
+		@include prefix("transition", all .8s, moz webkit o);
+		@include prefix("transform", translateY(32px), moz webkit ms o);
+		@for $i from 0 to 9 {
+			&:nth-child(#{$i + 1}) {
+			  transition-delay: $i * 0.1 + 0.3s;
+			}
+		}			
+	}
+
+	&__title {
+		margin-bottom: 0.8rem;
+		text-align: right;
+
+		@include responsive(SS){
+			margin-bottom: 0.8rem;
+			@include typo-subtitle1;
+		}
+		@include responsive(XS){
+			margin-bottom: 0.8rem;
+			@include typo-subtitle1;
+		}
+		@include responsive(SM){
+			margin-bottom: 0.8rem;
+			@include typo-subtitle1;
+		}
+		@include responsive(MD){
+			margin-bottom: 0.8rem;
+			@include typo-subtitle1;
+		}
+		@include responsive(LG){
+			@include typo-subtitle1;
+		}
+		@include responsive(XL){
+		}
+	}
+	&__sub-title {
+		margin-bottom: 2rem;
+		text-align: right;
+
+        @include responsive(SS){
+        	@include typo-h4;
+        	margin-bottom: 1.2rem;
+        }
+        @include responsive(XS){
+        	@include typo-h4;
+        	margin-bottom: 1.2rem;
+        }
+        @include responsive(SM){
+            @include typo-h4;
+            margin-bottom: 1.2rem;
+        }
+        @include responsive(MD){
+            @include typo-h4;
+            margin-bottom: 1.2rem;
+        }
+        @include responsive(LG){
+            @include typo-h4;
+        }
+        @include responsive(XL){
+        }			
+	}
+
+	&__paragraph {
+		text-align: right;
+		margin-bottom: 2.4rem;
+
+		@include responsive(SS){
+			margin-bottom: 1.6rem;
+			br {
+				display: none;
+			}
+			display: none;
+		}
+		@include responsive(XS){
+			margin-bottom: 1.6rem;
+			br {
+				display: none;
+			}
+			display: none;
+		}
+		@include responsive(SM){
+			margin-bottom: 1.6rem;
+			display: none;
+		}
+		@include responsive(MD){
+			margin-bottom: 1.6rem;
+			display: none;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}
+
+	
+}
+
+.text-box010 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	@include prefix("user-select", none, moz webkit ms);
+
+	
+	& > * {
+		opacity: 0;
+		@include prefix("transition", all .8s, moz webkit o);
+		@include prefix("transform", translateY(32px), moz webkit ms o);
+		@for $i from 0 to 9 {
+			&:nth-child(#{$i + 1}) {
+			  transition-delay: $i * 0.2 + 0.3s;
+			}
+		}			
+	}
+
+	&__title {
+		@include responsive(SS){
+			@include typo-h5;
+		}
+		@include responsive(XS){
+			@include typo-h5;
+		}
+		@include responsive(SM){
+			@include typo-h4;
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}
+
+
+	&__paragraph {
+	}
+
+	
+}
+
+.swiper-slide-active  {
+	.text-box5 {
+		& > * {
+			opacity: 1;
+			@include prefix("transform", translateY(0px), moz webkit ms o);	
+		}
+
+	}
+
+	.text-box05 {
+		& > * {
+			opacity: 1;
+			@include prefix("transform", translateY(0px), moz webkit ms o);	
+		}
+
+	}
+
+	.text-box6 {
+		& > * {
+			opacity: 1;
+			@include prefix("transform", translateY(0px), moz webkit ms o);	
+		}
+
+	}
+	.text-box7 {
+		& > * {
+			opacity: 1;
+			@include prefix("transform", translateY(0px), moz webkit ms o);	
+		}
+
+	}
+	.text-box07 {
+		& > * {
+			opacity: 1;
+			@include prefix("transform", translateY(0px), moz webkit ms o);	
+		}
+
+	}
+
+	.text-box007 {
+		& > * {
+			opacity: 1;
+			@include prefix("transform", translateY(0px), moz webkit ms o);	
+		}
+
+	}
+	.text-box8 {
+		& > * {
+			opacity: 1;
+			@include prefix("transform", translateY(0px), moz webkit ms o);	
+		}
+
+	}
+	.text-box08 {
+		& > * {
+			opacity: 1;
+			@include prefix("transform", translateY(0px), moz webkit ms o);	
+		}
+
+	}
+	.text-box9 {
+		& > * {
+			opacity: 1;
+			@include prefix("transform", translateY(0px), moz webkit ms o);	
+		}
+
+	}	
+
+	.text-box010 {
+		& > * {
+			opacity: 1;
+			@include prefix("transform", translateY(0px), moz webkit ms o);	
+		}
+
+	}
+
+}

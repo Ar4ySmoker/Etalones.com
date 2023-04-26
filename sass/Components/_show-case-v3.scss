@@ -1,0 +1,105 @@
+/*******************show-case-v3***********************/
+.show-case-v3 {
+
+
+	&__side {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+		&:hover .show-case-v3__line {
+			@include effectLineWd_placeInHover;
+		}		
+
+	}
+	&__title {
+
+		@include responsive(SS){
+			@include typo-h4;
+		}
+		@include responsive(XS){
+			@include typo-h4;
+		}
+		@include responsive(SM){
+			@include typo-h4;
+		}
+		@include responsive(MD){
+			@include typo-h4;
+		}
+		@include responsive(LG){
+			@include typo-h4;
+		}
+		@include responsive(XL){
+		}			
+
+	}
+	&__line {
+		width: 6rem;
+		height: 1px;
+		background-color: rgba($color-black, .12);
+		margin: 1.6rem 0 2.4rem;
+		@include effectLineWd_placeOutHover;
+	}
+	&__paragraph {
+		margin-bottom: 4.8rem;
+	}
+	&__btn {
+
+	}
+	&__picture {
+		img {
+			@include filterDropShadow4;
+			max-width: 130%;
+			@include prefix("transform", translateX(-24%), moz webkit ms o);
+			height: auto;
+			margin: auto;
+			@include responsive(SS){
+				max-width: 100%;
+				@include prefix("transform", translateX(0), moz webkit ms o);
+				margin-bottom: 4rem;
+			}
+			@include responsive(XS){
+				max-width: 100%;
+				@include prefix("transform", translateX(0), moz webkit ms o);
+				margin-bottom: 4rem;
+			}
+			@include responsive(SM){
+				max-width: 100%;
+				@include prefix("transform", translateX(0), moz webkit ms o);
+				margin-bottom: 4rem;
+			}
+			@include responsive(MD){
+				max-width: 100%;
+				@include prefix("transform", translateX(0), moz webkit ms o);
+			}
+			@include responsive(LG){
+				max-width: 100%;
+				@include prefix("transform", translateX(0), moz webkit ms o);
+			}
+			@include responsive(XL){
+			}	
+			@include responsiveMxm(XXL){
+				max-width: 100%;
+				@include prefix("transform", translateX(0), moz webkit ms o);
+			}
+		}
+	}
+
+
+
+	
+
+}

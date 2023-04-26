@@ -1,0 +1,20 @@
+/*******************functions***********************/
+@function pixelToPercent($value, $fontSizeParent: 16px)
+{
+    @return ($value/$fontSizeParent) * 100%;
+}
+
+@function percentToAngle($percent) {
+	$angle: $percent * 180 / 100 * 1deg;
+	@return $angle;
+}
+
+@function calValue01($perimeter, $percent) {
+	$value01: ($perimeter * $percent / 100);
+	@return $value01;
+}
+
+@function calValue02($perimeter, $value01) {
+	$value02: ($perimeter - $value01);
+	@return $value02;
+}

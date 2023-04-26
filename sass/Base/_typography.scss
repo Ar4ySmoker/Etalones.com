@@ -1,0 +1,785 @@
+/*******************typography***********************/
+body {
+	font-family: "Ubuntu", sans-serif; 
+  	font-weight: 400;
+  	font-style: normal;
+
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $color-black-md;
+}
+
+.heading-1th {
+    &--light {
+        color: $color-white;
+        @include typo-h1;
+    }
+    &--light-hi {
+        color: $color-white-hi;
+        @include typo-h1;
+    }
+    &--light-md {
+        color: $color-white-md;
+        @include typo-h1;    
+    }
+
+    &--dark {
+        color: $color-black;
+        @include typo-h1;
+    }
+    &--dark-hi {
+        color: $color-black-hi;
+        @include typo-h1;
+    }
+    &--dark-md {
+        color: $color-black-md;
+        @include typo-h1;    
+    }
+
+
+}
+.heading-2th {
+    &--light {
+        color: $color-white;
+        @include typo-h2;
+    }
+    &--light-hover-pr-hi {
+        color: $color-white;
+        @include typo-h2;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary-hi;
+        }
+    }
+    &--light-hi {
+        color: $color-white-hi;
+        @include typo-h2;
+    }
+    &--light-md {
+        color: $color-white-md;
+        @include typo-h2;
+    }
+    &--dark {
+        color: $color-black;
+        @include typo-h2;
+    }
+    &--dark-hi {
+        color: $color-black-hi;
+        @include typo-h2;
+    }
+    &--dark-md {
+        color: $color-black-md;
+        @include typo-h2;
+    }
+    &--primary-hi {
+        color: $color-primary-hi;
+        @include typo-h2;
+    }
+
+}
+
+
+.heading-3th {
+    &--light {
+        color: $color-white;
+        @include typo-h3;
+
+    }
+    &--light-hover {
+        color: $color-white;
+        @include typo-h3;
+        @include transition(.2s);
+        &:hover {
+            color: $color-white-hi;
+        }
+
+    }
+    &--light-hover-pr-hi {
+        color: $color-white;
+        @include typo-h3;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary-hi;
+        }
+
+    }
+
+    &--light-hi {
+        color: $color-white-hi;
+        @include typo-h3;
+
+    }
+    &--light-md {
+        color: $color-white-md;
+        @include typo-h3;
+
+    }
+    &--dark {
+        color: $color-black;
+        @include typo-h3;
+    }
+    &--dark-hi {
+        color: $color-black-hi;
+        @include typo-h3;
+    }
+    &--dark-md {
+        color: $color-black-md;
+        @include typo-h3;
+    }
+}
+
+.heading-4th {
+	&--light {
+        color: $color-white;
+        @include typo-h4;
+    }
+    &--light-hover {
+        color: $color-white;
+        @include typo-h4;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+        }        
+    }
+    &--light-hi {
+        color: $color-white-hi;
+        @include typo-h4;
+    }
+    &--light-md {
+        color: $color-white-md;
+        @include typo-h4;
+    }
+    &--dark {
+        color: $color-black;
+        @include typo-h4;
+    }
+    &--dark-hi {
+        color: $color-black-hi;
+        @include typo-h4;
+    }
+    &--dark-hi-hover {
+        color: $color-black-hi;
+        @include typo-h4;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+        }
+    }
+    &--dark-md {
+       color: $color-black-md;
+        @include typo-h4;
+    }
+
+    &--primary {
+        color: $color-primary;
+        @include typo-h4;
+    }
+    &--primary-hi {
+        color: $color-primary-hi;
+        @include typo-h4;
+    }
+    
+}
+
+.heading-5th {
+    &--light {
+        color: $color-white;
+        @include typo-h5;
+    }
+    &--light-hover-wh-hi {
+        color: $color-white;
+        @include typo-h5;
+        @include transition(.2s);
+        &:hover {
+            color: $color-white-hi;
+        }
+    }
+    &--light-hover-pr-hi {
+        color: $color-white;
+        @include typo-h5;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary-hi;
+        }
+    }
+    &--light-hi {
+        color: $color-white-hi;
+        @include typo-h5;
+    }
+    &--light-md {
+        color: $color-white-md;
+        @include typo-h5;
+    }
+    &--light-di {
+    }
+    &--dark {
+        color: $color-black;
+        @include typo-h5;
+    }
+    &--dark-hi-hover {
+        color: $color-black-hi;
+        @include typo-h5;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+        }
+    }
+    &--dark-hi {
+        color: $color-black-hi;
+        @include typo-h5;
+    }
+    &--dark-md {
+        color: $color-black-md;
+        @include typo-h5;        
+    }
+    &--dark-di {
+
+    }
+    &--primary {
+        color: $color-primary;
+        @include typo-h5;
+    }
+    &--primary-hi {
+        color: $color-primary-hi;
+        @include typo-h5;
+    } 
+    &--primary-hi-hover {
+        color: $color-primary-hi;
+        @include typo-h5;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+        }
+    }    
+    &--primary-md {
+        color: $color-primary-md;
+        @include typo-h5;
+    }   
+    
+}
+
+
+.heading-6th {
+    &--light {
+        color: $color-white;
+        @include typo-h6;
+                 
+    }
+
+    &--light-hover {
+        color: $color-white;
+        @include typo-h6;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+        }
+                 
+    }
+    &--light-hover-hi {
+        color: $color-white;
+        @include typo-h6;
+        @include transition(.2s);
+        &:hover {
+            color: $color-white-hi;
+        }
+                 
+    }
+    &--light-hi {
+        color: $color-white-hi;
+        @include typo-h6;
+    }
+    &--light-md {
+        color: $color-white-md;
+        @include typo-h6;
+    }
+    &--light-di {
+
+    }
+    &--dark {
+        color: $color-black;
+        @include typo-h6;
+    }
+    &--dark-hi {
+        color: $color-black-hi;
+        @include typo-h6;
+    }
+    &--dark-hi-hover {
+        color: $color-black-hi;
+        @include typo-h6;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+        }
+    }
+    &--dark-hi-hover-bl {
+        color: $color-black-hi;
+        @include typo-h6;
+        @include transition(.2s);
+        &:hover {
+            color: $color-black-md;
+        }
+    }
+    &--dark-md {
+        color: $color-black-md;
+        @include typo-h6;
+    }
+    &--dark-di {
+        
+    }
+    &--primary-hi {
+        color: $color-primary-hi;
+        @include typo-h6;
+    }
+    &--primary-hi-hover {
+        color: $color-primary-hi;
+        @include typo-h6;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+
+}
+
+//subtitle 1
+.heading-7th {
+    &--light {
+        color: $color-white;
+        @include typo-subtitle1;
+    }
+    &--light-hi {
+        color: $color-white-hi;
+        @include typo-subtitle1;
+    }
+    &--light-md {
+        color: $color-white-md;
+        @include typo-subtitle1;
+    }
+    &--dark {
+        color: $color-black;
+        @include typo-subtitle1;
+    }
+    &--dark-hi {
+        color: $color-black-hi;
+        @include typo-subtitle1;
+    }
+    &--dark-hi-hover {
+        color: $color-black-hi;
+        @include typo-subtitle1;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &--dark-hi-hover-underline {
+        color: $color-black-hi;
+        @include typo-subtitle1;
+        text-decoration: underline;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+            text-decoration: underline;
+        }
+    }
+
+    &--dark-md {
+        color: $color-black-md;
+        @include typo-subtitle1;
+    }
+    &--dark-md-hover {
+        color: $color-black-md;
+        @include typo-subtitle1;
+        @include transition(.2s);
+        &:hover {
+            color: $color-black-hi;
+        }
+    }
+    &--dark-di {
+    }
+    &--dark-di-line-through {
+        color: $color-black-di;
+        @include typo-subtitle1;
+        text-decoration: line-through;        
+    }
+    &--primary {
+        color: $color-primary;
+        @include typo-subtitle1;
+    }
+    
+    &--primary-hi {
+        color: $color-primary-hi;
+        @include typo-subtitle1;
+    }
+    &--primary-hi-hover {
+        color: $color-primary-hi;
+        @include typo-subtitle1;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+        }
+    }    
+    &--primary-md {
+        color: $color-primary-md;
+        @include typo-subtitle1;
+    }
+}
+
+
+//subtitle 2
+.heading-8th {
+    &--light {
+        color: $color-white;
+        @include typo-subtitle2;
+    }
+    &--light-hover {
+        color: $color-white;
+        @include typo-subtitle2;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+        }
+    } 
+
+    &--light-hover-wh-hi {
+        color: $color-white;
+        @include typo-subtitle2;
+        @include transition(.2s);
+        &:hover {
+            color: $color-white-hi;
+        }
+    }     
+    &--light-hi {
+        color: $color-white-hi;
+        @include typo-subtitle2;
+    }
+    &--light-md {
+        color: $color-white-md;
+        @include typo-subtitle2;
+    }
+    &--dark{
+        color: $color-black;
+        @include typo-subtitle2;
+    }
+    &--dark-hi{
+        color: $color-black-hi;
+        @include typo-subtitle2;
+    }
+    &--dark-hi-hover {
+        color: $color-black-hi;
+        @include typo-subtitle2;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+        }
+    }
+    &--dark-md {
+        color: $color-black-md;
+        @include typo-subtitle2;
+    }
+    &--dark-md-hover {
+        color: $color-black-md;
+        @include typo-subtitle2;
+        @include transition(.2s);
+        &:hover {
+            color: $color-black-hi;
+        }
+    } 
+    &--dark-di {
+
+    }
+    &--dark-di-line-through{
+        color: $color-black-di;
+        @include typo-subtitle2;
+        text-decoration: line-through;        
+    }
+    &--primary {
+        color: $color-primary;
+        @include typo-subtitle2;
+    }
+    &--primary-hi {
+        color: $color-primary-hi;
+        @include typo-subtitle2;
+    }
+    &--primary-hi-hover {
+        color: $color-primary-hi;
+        @include typo-subtitle2;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+        }
+    }    
+    &--primary-md {
+        color: $color-primary-hi;
+        @include typo-subtitle2;
+    }
+         
+
+
+}
+
+//caption
+.heading-9th {
+    &--light {
+        color: $color-white;
+        @include typo-caption;
+    }
+    &--light-hover-uppercase{
+        color: $color-white;
+        @include typo-caption;
+        text-transform: uppercase;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+        }
+    }
+    &--light-hi-hover {
+        color: $color-white-hi;
+        @include typo-caption;
+        @include transition(.2s);
+        &:hover {
+            color: $color-white-md;
+        }
+    }
+    &--light-hi-hover-uppercase{
+        color: $color-white-hi;
+        @include typo-caption;
+        text-transform: uppercase;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary;
+        }
+    }
+    &--light-hi {
+        color: $color-white-hi;
+        @include typo-caption;
+    }
+    &--light-md {
+        color: $color-white-md;
+        @include typo-caption;
+    }
+    &--dark {
+        color: $color-black;
+        @include typo-caption;
+    }
+
+    &--dark-hi-hover{
+        color: $color-black-hi;
+        @include typo-caption;
+        @include transition(.2s);
+        &:hover {
+            color: $color-black;
+        }
+    }
+    &--dark-hi-hover-uppercase{
+        color: $color-black-hi;
+        @include typo-caption;
+        text-transform: uppercase;
+        @include transition(.2s);
+        &:hover {
+            color: $color-black;
+        }
+    }
+    &--dark-hi {
+        color: $color-black-hi;
+        @include typo-caption;
+    }
+    &--dark-md {
+        color: $color-black-md;
+        @include typo-caption;
+    }
+}
+
+//overline
+.heading-10th {
+    &--light {
+        color: $color-white;
+        @include typo-overline;
+
+    }
+    &--light-hi {
+        color: $color-white-hi;
+        @include typo-overline;
+    }
+    &--light-hi-hover-pr {
+        color: $color-white-hi;
+        @include typo-overline;
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary-hi;
+        }
+    }
+    &--light-md {
+        color: $color-white-md;
+        @include typo-overline;
+    }
+    &--light-di {
+
+    }
+    &--dark {
+        color: $color-black;
+        @include typo-overline;
+    }
+    &--dark-hi {
+        color: $color-black-hi;
+        @include typo-overline;
+    }
+    &--dark-hi-hover {
+        color: $color-black-hi;
+        @include typo-overline;
+        @include transition(.2s);
+        &:hover {
+            color: $color-black;
+        }
+    }
+    &--dark-md {
+        color: $color-black-md;
+        @include typo-overline;
+    }
+    &--dark-di {
+
+    }
+    &--primary {
+        color: $color-primary;
+        @include typo-overline;
+    }
+    &--primary-hi {
+        color: $color-primary-hi;
+        @include typo-overline;
+    }
+}
+//button
+.heading-11th {
+    &--light {
+        color: $color-white;
+        @include typo-button;
+    }
+    &--light-hi {
+        color: $color-white-hi;
+        @include typo-button;
+    }
+    &--light-md {
+        color: $color-white-md;
+        @include typo-button;
+    }
+    &--dark {
+        color: $color-black;
+        @include typo-button; 
+    }
+    &--dark-hi {
+        color: $color-black-hi;
+        @include typo-button;
+    }
+    &--dark-md {
+        color: $color-black-md;
+        @include typo-button;
+    }
+}
+
+
+//body1
+.paragraph-1th {
+    &--light {
+        color: $color-white;
+        @include typo-body1; 
+    }
+    &--light-hi {
+        color: $color-white-hi;
+        @include typo-body1;        
+    }
+    &--light-md {
+        color: $color-white-md;
+        @include typo-body1;        
+    }
+    &--dark {
+        color: $color-black;
+        @include typo-body1; 
+    }
+    &--dark-hi {
+        color: $color-black-hi;
+        @include typo-body1;         
+    }
+    &--dark-md {
+        color: $color-black-md;
+        @include typo-body1;         
+    }
+    &--dark-di {
+
+    }
+    &--primary {
+    }
+}
+
+//body2
+.paragraph-2th {
+    &--light {
+        color: $color-white;
+        @include typo-body2;
+    }
+    &--light-hi {
+        color: $color-white-hi;
+        @include typo-body2;
+    }
+    &--light-hi-line-through {
+        color: $color-white-hi;
+        @include typo-body2;
+        text-decoration: line-through;
+    }
+    &--light-md {
+        color: $color-white-md;
+        @include typo-body2;
+    }
+    &--light-md-hyphens {
+        color: $color-white-md;
+        @include typo-body2; 
+        @include prefix("hyphens", auto, webkit ms);
+        word-wrap: break-word;
+    }    
+    &--light-di {
+        
+    }
+    &--dark {
+        color: $color-black;
+        @include typo-body2; 
+    }
+    &--dark-hi-bold{
+        color: $color-black-hi;
+        @include typo-body2;
+        font-weight: 500;
+    }
+    &--dark-hi {
+        color: $color-black-hi;
+        @include typo-body2;         
+    }
+    &--dark-hi-hover-hi {
+        color: $color-black-hi;
+        @include typo-body2;         
+        @include transition(.2s);
+        &:hover {
+            color: $color-primary-hi;
+        }
+    }
+    &--dark-md {
+        color: $color-black-md;
+        @include typo-body2;         
+    }
+    &--dark-md-hyphens{
+        color: $color-black-md;
+        @include typo-body2; 
+        @include prefix("hyphens", auto, webkit ms);
+    }   
+    &--dark-di-line-through {
+        color: $color-black-di;
+        @include typo-body2;
+        text-decoration: line-through;
+    } 
+    &--primary {
+    }
+    &--primary-hi-bold{
+        color: $color-primary-hi;
+        @include typo-body2;
+        font-weight: 500;
+    }
+}
+

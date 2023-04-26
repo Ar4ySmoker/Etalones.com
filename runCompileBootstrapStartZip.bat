@@ -1,0 +1,1 @@
+sass --watch sass/bootstrap_start.scss css/bootstrap_mxm.css --style compressed

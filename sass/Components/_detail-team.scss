@@ -1,0 +1,130 @@
+/*******************detail-team***********************/
+.detail-team {
+
+	&__avatar {
+		position: relative;
+		display: block;
+		overflow: hidden;
+		z-index: 9;
+
+		margin-bottom: 4rem;
+
+		&:hover img{
+			@include effectZoomImg_placeInHover;
+		}
+		
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color-grey-dark-v5, .1);
+			z-index: 9;
+			@include effectZoomImg_placeOutHover;
+		}
+		img {
+			height: auto;
+			max-width: 100%;
+			@include effectZoomImg_placeOutHover;
+
+		}
+	}
+	&__side {
+		// margin-bottom: 4rem;
+	}
+	&__name {
+		margin-bottom: .4rem;
+	}
+	&__role {
+		margin-bottom: 1.2rem;
+	}
+	&__paragraph {
+		margin-bottom: 1.6rem;
+	}
+	
+	&__row {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-bottom: 1.2rem;
+	}
+	&__t {
+		position: relative;
+		width: 100%;
+		flex: 0 0 20%;
+		max-width: 20%;
+		@include responsive(SS){
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		@include responsive(XS){
+			flex: 0 0 21%;
+			max-width: 21%;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+			flex: 0 0 21%;
+			max-width: 21%;
+		}
+		@include responsive(LG){
+			flex: 0 0 21%;
+			max-width: 21%;
+		}
+		@include responsive(XL){
+		}		
+	}
+	&__c {
+		position: relative;
+		width: 100%;
+		flex: 0 0 80%;
+		max-width: 80%;
+		@include responsive(SS){
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		@include responsive(XS){
+			flex: 0 0 79%;
+			max-width: 79%;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+			flex: 0 0 79%;
+			max-width: 79%;
+		}
+		@include responsive(LG){
+			flex: 0 0 79%;
+			max-width: 79%;
+		}
+		@include responsive(XL){
+		}		
+	}
+	&__social {
+		margin-top: 1.6rem;
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: flex-start;
+			li {
+				margin-right: 1.6rem;
+				a {
+					i {
+						font-size: 1.8rem;
+						color: $color-black-hi;
+						@include transition(.2s);
+					}
+					&:hover i {
+						color: $color-black;
+						@include prefix("transform", scale(1.2), moz webkit ms o);
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+/*******************title-box***********************/
+.title-box {
+	&__lv1 {
+		@include responsive(SS){
+			@include typo-h4;
+		}
+		@include responsive(XS){
+			@include typo-h4;
+		}
+		@include responsive(SM){
+			@include typo-h4;
+		}
+		@include responsive(MD){
+			@include typo-h3;
+		}
+		@include responsive(LG){
+			@include typo-h3;
+		}
+		@include responsive(XL){
+		}
+	}
+	&__lv2 {
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}
+}

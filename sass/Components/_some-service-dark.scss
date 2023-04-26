@@ -1,0 +1,69 @@
+/*******************some-service-dark***********************/
+.some-service-dark {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	margin-bottom: 4rem;
+
+	&:hover &__icon {
+		@include effectShadowCircleIconBorderOut_placeInHover;
+	}
+	&:hover &__icon i{
+		@include effectShadowCircleIconZoomText_placeInHover;
+	}
+	&:hover &__icon:after {
+	   @include effectShadowCircleIconBorderInside_placeInHover;
+	}
+	
+	&__icon {
+		border-radius: 50%;
+		width: 12rem;
+		height: 12rem;
+		position: relative;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 2rem;
+		
+		@include effectShadowCircleIconBorderOut_placeOutHover;
+	    
+
+
+		&:after {
+			content: "";
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    position: absolute;
+		    border-radius: 50%;
+		    
+		    @include effectShadowCircleIconBorderInside_placeOutHover;
+		}
+
+
+		i {
+			font-size: 4.4rem;
+			color: $color-primary;
+			// color: $color-primary-hi;
+			@include effectShadowCircleIconZoomText_placeOutHover;
+		}
+	}
+	&__name {
+		text-align: center;
+		margin-bottom: .8rem;
+	}
+	&__line {
+		width: 6rem;
+		height: 1px;
+		background-color: rgba($color-black, .12);
+		margin: 1.2rem auto 2rem;
+	}
+	&__paragraph {
+		text-align: center;
+	}
+}

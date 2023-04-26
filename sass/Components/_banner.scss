@@ -1,0 +1,19 @@
+/*******************banner***********************/
+.banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	&__title {
+		margin-bottom: 1.2rem;
+	}
+	&__nav {
+		a {
+
+		}
+		span {
+			color: $color-white-hi;
+		}
+	}
+}

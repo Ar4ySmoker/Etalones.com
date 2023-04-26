@@ -1,0 +1,2221 @@
+/*******************section-main***********************/
+.section-carousel {
+
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	
+	&--v2 {
+
+	}
+
+}
+
+.section-carousel-v2 {
+	overflow: hidden;
+	position: relative;
+	// background-color: $color-grey-dark;
+
+}
+.section-carousel-v3 {
+	overflow: hidden;
+	position: relative;
+	background-color: $color-white;  
+
+}
+
+.section-carousel-v4 {
+
+	overflow: hidden;
+	background-size: cover; 
+	background-position: center;
+	position: relative;
+	background-color: rgba($color-black, 0.87);
+
+}
+
+.section-carousel-v5 {
+
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background-color: rgba($color-black, 0.87);
+
+}
+
+.section-carousel-v6 {
+
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background-color: $color-white;
+
+}
+
+
+.section-carousel-v7 {
+
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background-color: rgba($color-white, 1);
+
+}
+
+.section-carousel-v8 {
+
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background-color: rgba($color-white, 0.87);
+
+}
+
+.section-sale-off {
+	padding: 10.4rem 0 6rem;
+	background-color: $color-white;
+}
+.section-top-seller {
+	padding: 0 0 6.4rem;
+	background-color: $color-white;
+	&.bgd02 {
+		padding: 9.6rem 0 6.4rem;
+	}
+	&.bgd03 {
+		padding: 6.8rem 0 6.4rem;
+	}
+}
+.section-trending-product {
+
+
+	height: 44.4rem;
+	position: relative;
+
+	@include responsive(SS){
+		height: auto;
+		padding: 10.4rem 0 10.4rem;
+	}
+	@include responsive(XS){
+		height: auto;
+		padding: 10.4rem 0 10.4rem;
+	}
+	@include responsive(SM){
+		height: auto;
+		padding: 10.4rem 0 10.4rem;
+	}
+	@include responsive(MD){
+		height: 26.4rem;
+	}
+	@include responsive(LG){
+		height: 30.4rem;
+	}
+	@include responsive(XL){
+	}	
+
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-black, .01), rgba($color-black, .01)), linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-02.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		filter: grayscale(30%);
+		z-index: -1;
+	}
+	&.bgd02 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .01), rgba($color-black, .01)), linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-48.jpg");
+		}
+	}
+	&.bgd03 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .01), rgba($color-black, .01)), linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-26.jpg");
+		}
+	}
+	&.bgd04 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .01), rgba($color-black, .01)), linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-49.jpg");
+		}
+	}
+}
+
+.section-best-seller {
+	padding: 21.2rem 0 6rem;
+	background-color: $color-white;
+
+	@include responsive(SS){
+		padding: 9.6rem 0 6rem;
+	}
+	@include responsive(XS){
+		padding: 9.6rem 0 6rem;
+	}
+	@include responsive(SM){
+		padding: 9.6rem 0 6rem;
+	}
+	@include responsive(MD){
+		padding: 17.6rem 0 6rem;
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}	
+
+}
+
+
+.section-category-product {
+	padding: 0 0 6.4rem;
+	background-color: $color-white;
+	overflow: hidden;
+	&.bgd02 {
+		padding: 9.6rem 0 6.4rem;
+	}
+}
+
+.section-trending-sale {
+	position: relative;
+
+	
+	@include responsive(SS){
+		padding: 9.6rem 0 10.4rem;
+	}
+	@include responsive(XS){
+		padding: 9.6rem 0 10.4rem;
+	}
+	@include responsive(SM){
+		padding: 9.6rem 0 10.4rem;
+	}
+	@include responsive(MD){
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}	
+
+
+
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-black, .01), rgba($color-black, .01)), linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-03.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		filter: grayscale(30%);
+		z-index: -1;
+	}
+	&.bgd02 {
+
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .01), rgba($color-black, .01)), linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-47.jpg");
+		}		
+	}
+	&.bgd04 {
+
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .01), rgba($color-black, .01)), linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-26.jpg");
+		}		
+	}
+	&.bgd05 {
+
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .01), rgba($color-black, .01)), linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-02.jpg");
+		}		
+	}
+	&.bgd06 {
+
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .01), rgba($color-black, .01)), linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-47.jpg");
+		}		
+	}
+}
+
+
+.section-trending-collection {
+	position: relative;
+	padding: 10.4rem 0 10.4rem;
+	
+	@include responsive(SS){
+	}
+	@include responsive(XS){
+	}
+	@include responsive(SM){
+	}
+	@include responsive(MD){
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}	
+
+
+
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-black, .01), rgba($color-black, .01)), linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-26.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		filter: grayscale(30%);
+		z-index: -1;
+	}
+	&.bgd02 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .01), rgba($color-black, .01)), linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-47.jpg");
+		}		
+	}
+	&.bgd03 {
+		background-color: $color-white-f2;
+		&:before {
+		  	background-image: none;
+		}		
+	}
+	&.bgd04 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .01), rgba($color-black, .01)), linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-48.jpg");
+		}		
+	}
+	
+}
+
+.section-new-product {
+	padding: 9.6rem 0 6.4rem;
+	&.bgd02 {
+		padding: 21.2rem 0 6.4rem;
+		@include responsive(SS){
+			padding: 9.6rem 0 6.4rem;
+		}
+		@include responsive(XS){
+			padding: 9.6rem 0 6.4rem;
+		}
+		@include responsive(SM){
+			padding: 9.6rem 0 6.4rem;
+		}
+		@include responsive(MD){
+			padding: 17.2rem 0 6.4rem;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+	}
+}
+
+.section-statistic {
+	padding: 9.6rem 0 5.6rem;
+
+	position: relative;
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-black, .9), rgba($color-black, .9)), linear-gradient(rgba($color-white, .001), rgba($color-white, .001)), url("../images/background/background-m-04.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		filter: grayscale(80%);
+		z-index: -1;
+	}
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: url("../images/accessories/pattern_caro.png");
+	  	filter: opacity(40%);
+		background-position: center;
+		z-index: -1;
+	}	
+	&.bgd02 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .9), rgba($color-black, .9)), url("../images/background/background-m-17.jpg");
+		}
+	}
+	&.bgd03 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .8), rgba($color-black, .8)), url("../images/background/background-m-27.jpg");
+		}
+	}
+}
+
+.section-statistic-light {
+	padding: 9.6rem 0 5.6rem;
+
+	position: relative;
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-white, .85), rgba($color-white, .85)), url("../images/background/background-m-06.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		filter: grayscale(50%);
+		z-index: -1;
+	}
+	&.bgd02 {
+		&:before {
+			filter: grayscale(0%);
+			background-color: $color-white-f2;
+			background-image: none;
+		}
+	}
+	&.bgd03 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-white, .85), rgba($color-white, .85)), url("../images/background/background-m-44.jpg");
+			filter: grayscale(50%);
+		}
+	}
+	
+}
+
+.section-img-bg {
+	padding: 0 0 0;
+	background-color: $color-white;
+	position: relative;
+}
+
+.section-blog {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+	&.bgd02 {
+		background-color: $color-white-f2;
+	}
+	&.bgd03 {
+		padding: 21.2rem 0 6.4rem;
+		@include responsive(SS){
+			padding: 9.6rem 0 6.4rem;
+		}
+		@include responsive(XS){
+			padding: 9.6rem 0 6.4rem;
+		}
+		@include responsive(SM){
+			padding: 9.6rem 0 6.4rem;
+		}
+		@include responsive(MD){
+			padding: 17.6rem 0 6.4rem;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}
+}
+
+.section-blog-v2 {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+}
+.section-blog-v3 {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white-f2;
+}
+
+.section-features {
+	padding: 10.4rem 0 6.4rem;
+	background-color: $color-white;
+	position: relative;
+	&.bgd02 {
+		background-color: transparent;
+
+		&:before {
+			content: "";
+		  	position: absolute;
+		  	top: 0;
+		  	left: 0;
+		  	width: 100%;
+		  	height: 100%;
+
+		  	background-image: linear-gradient(rgba($color-white, .89), rgba($color-white, .89)), url("../images/background/background-m-29.jpg");
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			filter: grayscale(50%);
+			z-index: -1;
+		}
+
+		&:after {
+			
+			content: "";
+		  	position: absolute;
+		  	top: 100%;
+		  	left: 0;
+		  	width: 100%;
+		  	height: 16rem;
+			z-index: -1;
+			background-image: url("../images/accessories/pattern_caro.png");
+	  		filter: opacity(5%);
+		}		
+	}
+	&.bgd03 {
+		background-color: $color-white-f2;
+	}
+}
+
+.section-what-we-do {
+	padding: 9.2rem 0 6.4rem;
+	background-color: $color-white;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.section-features-round {
+	padding: 10.4rem 0 6.4rem;
+	background-color: $color-white;
+	position: relative;
+	&.bgd02 {
+		background-color: $color-white-f2;
+	}
+
+}
+
+.section-show-case {
+	padding: 10rem 0 0rem;
+	min-height: 20rem;
+	position: relative;
+	margin-bottom: 16rem;
+	
+
+	background-image: url("../images/accessories/pattern_cross.png");
+	background-position: center;
+	background-attachment: fixed;
+
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-black, .89), rgba($color-black, .89)), url("../images/background/background-m-05_l.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		filter: grayscale(20%);
+		z-index: -1;
+	}
+
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 100%;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 16rem;
+		z-index: -1;
+		background-color: $color-white-f1;
+	}	
+	&.bgd02 {
+		&:before {
+			background-image: linear-gradient(rgba($color-black, .89), rgba($color-black, .89)), url("../images/background/background-m-09.jpg");
+		}
+	}
+	&.bgd03 {
+		&:before {
+			background-image: linear-gradient(rgba($color-black, .89), rgba($color-black, .89)), url("../images/background/background-m-37.jpg");
+		}
+	}
+	&.bgd04 {
+		&:before {
+			background-image: linear-gradient(rgba($color-black, .89), rgba($color-black, .89)), url("../images/background/background-m-42.jpg");
+		}
+	}
+}
+
+.section-show-case-light {
+	padding: 10rem 0 0rem;
+	min-height: 20rem;
+	position: relative;
+	margin-bottom: 16rem;
+	
+
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-color: $color-white;
+
+		z-index: -1;
+	}
+
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 100%;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 16rem;
+		z-index: -1;
+		background-color: $color-white-f3;
+	}	
+}
+
+.section-show-case-v2 {
+	padding: 10.4rem 0 10.4rem;
+	min-height: 20rem;
+	position: relative;
+	// background-color: $color-white-f2;
+	overflow: hidden;
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	// background-image: linear-gradient(rgba($color-white, .6), rgba($color-black, .1));
+	  	background-image: radial-gradient(circle at 73% 93%, rgba($color-black, .1) 15%, rgba($color-white, .1) 75%);
+		z-index: -1;
+	}
+
+
+}
+.section-show-case-v3 {
+	padding: 10.4rem 0 10.4rem;
+	min-height: 20rem;
+	position: relative;
+	background-color: $color-white;
+	overflow: hidden;
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	// background-image: linear-gradient(rgba($color-white, .6), rgba($color-black, .1));
+	  	// background-image: radial-gradient(circle at 73% 93%, rgba($color-black, .06) 15%, rgba($color-white, .2) 75%);
+		z-index: -1;
+	}
+
+
+}
+
+
+.section-show-case-v4 {
+	padding: 10.4rem 0 10.4rem;
+	min-height: 20rem;
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		content: "";
+	  	position: absolute; 
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image:  linear-gradient(rgba($color-black, .95), rgba($color-black, .95)), url("../images/background/background-m-16.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+		filter: opacity(30%);
+	  	background-image: url("../images/accessories/pattern_cross.png");
+		background-position: center;
+		z-index: -1;
+	}
+	&.bgd02 {
+		&:before {
+		  	background-image:  linear-gradient(rgba($color-black, .95), rgba($color-black, .95)), url("../images/background/background-m-40.jpg");
+		}
+	}
+
+
+}
+
+
+.section-show-case-v5 {
+	padding: 10.4rem 0 10.4rem;
+	// padding: 0 0 0;
+	min-height: 20rem;
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image:  linear-gradient(rgba($color-black, .95), rgba($color-black, .95)), url("../images/background/background-m-31.jpg");
+	  	filter: grayscale(50%);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+		filter: opacity(25%);
+	  	background-image: url("../images/accessories/pattern_caro.png");
+		background-position: center;
+		z-index: -1;
+	}
+
+
+}
+.section-show-case-v6 {
+	padding: 10.4rem 0 10.4rem;
+	min-height: 20rem;
+	position: relative;
+	background-color: $color-white;
+	overflow: hidden;
+
+}
+
+.section-show-case-v7 {
+	padding: 10.4rem 0 10.4rem;
+	min-height: 20rem;
+	position: relative;
+	background-color: $color-white-f2;
+	overflow: hidden;
+	&.bgd02 {
+		background-color: $color-white;
+	}
+
+}
+
+.section-show-case-v8 {
+	padding: 10rem 0 0rem;
+	min-height: 20rem;
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-black, .9), rgba($color-black, .9)), linear-gradient(rgba($color-white, .001), rgba($color-white, .001)), url("../images/background/background-m-36.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		filter: grayscale(20%);
+		z-index: -1;
+	}
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: url("../images/accessories/pattern_cross.png");
+	  	filter: opacity(40%);
+		background-position: center;
+		z-index: -1;
+	}	
+	
+}
+
+
+.section-show-case-v9 {
+	padding: 10rem 0 0rem;
+	min-height: 20rem;
+	position: relative;
+	margin-bottom: 16rem;
+	
+
+	background-image: url("../images/accessories/pattern_cross.png");
+	background-position: center;
+	background-attachment: fixed;
+
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-black, .89), rgba($color-black, .89)), url("../images/background/background-m-32.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		filter: grayscale(20%);
+		z-index: -1;
+	}
+
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 100%;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 16rem;
+		z-index: -1;
+		background-color: $color-white-f1;
+	}
+	&.bgd02 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .89), rgba($color-black, .89)), url("../images/background/background-m-45.jpg");
+			filter: grayscale(20%);
+		}
+	}	
+	
+}
+
+
+.section-show-case-v10 {
+	padding: 10rem 0 6.4rem;
+	min-height: 20rem;
+	position: relative;
+	
+
+	background-image: url("../images/accessories/pattern_cross.png");
+	background-position: center;
+	background-attachment: fixed;
+
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-black, .89), rgba($color-black, .89)), url("../images/background/background-m-32.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		filter: grayscale(20%);
+		z-index: -1;
+	}
+
+		
+	
+}
+
+.section-show-case-v11 {
+	padding: 10rem 0 0rem;
+	min-height: 20rem;
+	position: relative;
+	margin-bottom: 16rem;
+	
+
+	background-image: url("../images/accessories/pattern_cross.png");
+	background-position: center;
+	background-attachment: fixed;
+
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-black, .89), rgba($color-black, .89)), url("../images/background/background-m-32.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		filter: grayscale(20%);
+		z-index: -1;
+	}
+
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 100%;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 16rem;
+		z-index: -1;
+		background-color: $color-white-f1;
+	}
+	&.bgd02 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .89), rgba($color-black, .89)), url("../images/background/background-m-45.jpg");
+			filter: grayscale(20%);
+		}
+	}	
+	
+}
+
+.section-special-portfolio {
+	padding: 10rem 0 10.4rem;
+	min-height: 8rem;
+	position: relative;
+	z-index: 0;
+	&.bgd02 {
+		background-color: $color-white-f2; 
+
+	}
+}
+
+.section-special-portfolio-v1 {
+	padding: 10.4rem 0 8.4rem;
+	min-height: 8rem;
+	position: relative;
+	z-index: 0;
+	background-color: $color-white-f2;
+}
+
+.section-special-portfolio-v2 {
+	padding: 10.4rem 0 8.4rem;
+	min-height: 8rem;
+	position: relative;
+	z-index: 0;
+	background-color: $color-white;
+}
+
+.section-feature-work {
+	padding: 10rem 0 0rem;
+	min-height: 50rem;
+	position: relative;
+	background-color: $color-white-f1;
+}
+
+.section-call-to-action {
+	padding: 6.4rem 0 6.4rem;
+
+	position: relative;
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-black, .9), rgba($color-black, .9)), url("../images/background/background-m-07.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		filter: grayscale(50%);
+		z-index: -1;
+	}
+	&.bgd02 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .9), rgba($color-black, .9)), url("../images/background/background-m-13.jpg");
+		}
+		
+	}
+	&.bgd03 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .9), rgba($color-black, .9)), url("../images/background/background-m-38.jpg");
+		}
+		
+	}
+	&.bgd04 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .9), rgba($color-black, .9)), url("../images/background/background-m-41.jpg");
+		}
+		
+	}
+	
+}
+
+
+.section-call-to-action-v2 {
+	padding: 2.4rem 0 2.4rem;
+
+	position: relative;
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-black, .9), rgba($color-black, .9)), url("../images/background/background-m-07.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		filter: grayscale(50%);
+		z-index: -1;
+	}
+	
+}
+
+.section-call-to-action-v3 {
+	padding: 4rem 0 0rem;
+	position: relative;
+	background-color: $color-white;
+	
+}
+
+.section-call-to-action-v4 {
+	padding: 9.6rem 0 10.4rem;
+	background-color: $color-white-f2;
+	&.bgd02 {
+		background-color: $color-white;
+	}
+	
+}
+
+
+
+.section-call-to-action-v5 {
+	padding: 0rem 0 0rem;
+	position: relative;
+	background-color: $color-white;
+	
+}
+.section-title {
+	padding: 9.6rem 0 10.4rem;
+	background-color: $color-white;
+	
+}
+
+
+
+.section-skill {
+	padding: 10.4rem 0 6rem;
+
+	position: relative;
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-08.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+	&.bgd02 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-22.jpg");
+		}
+		
+	}
+	&.bgd03 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-43.jpg");
+		}
+		
+	}
+	
+}
+
+.section-skill-dark {
+	padding: 10.4rem 0 6rem;
+
+	position: relative;
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-black, .85), rgba($color-black, .85)), url("../images/background/background-m-26.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+		filter: opacity(30%);
+	  	background-image: url("../images/accessories/pattern_caro.png");
+		background-position: center;
+		z-index: -1;
+	}
+	&.bgd02 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .85), rgba($color-black, .85)), url("../images/background/background-m-33.jpg");
+		}
+	}
+	&.bgd03 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .85), rgba($color-black, .85)), url("../images/background/background-m-35.jpg");
+		}
+	}
+	&.bgd04 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .85), rgba($color-black, .85)), url("../images/background/background-m-39.jpg");
+		}
+	}
+	
+	
+}
+
+.section-news {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+	&.bgd02 {
+		background-color: $color-white-f2;
+	}
+}
+
+.section-brand-v1 {
+	padding: 10.4rem 0 10.4rem;
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-black, .85), rgba($color-black, .85)), url("../images/background/background-m-40.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: url("../images/accessories/pattern_caro.png");
+	  	filter: opacity(30%);
+		background-position: center;
+		z-index: -1;
+	}
+	&.bgd01 {
+		padding: 9.6rem 0 10.4rem;
+		&:before {
+		  	background-image: linear-gradient(rgba($color-black, .85), rgba($color-black, .85)), url("../images/background/background-m-09.jpg");
+		}
+		&:after {
+		}		
+	}	
+	&.bgd02 {
+		padding: 9.6rem 0 10.4rem;
+		background-color: $color-white;
+		&:before {
+		  	background-image: none;
+		}
+		&:after {
+		  	background-image: none;
+		}		
+	}	
+	&.bgd03 {
+		padding: 9.6rem 0 10.4rem;
+		&:before {
+		  	background-image: linear-gradient(rgba($color-white, .95), rgba($color-white, .95)), url("../images/background/background-m-18.jpg");
+		  	filter: grayscale(50%);
+		}
+		&:after {
+			background-image: none; 
+		}	
+	}
+	&.bgd05 {
+		padding: 9.6rem 0 10.4rem;
+		background-color: $color-white-f2;
+		&:before {
+		  	background-image: none;
+		}
+		&:after {
+		  	background-image: none;
+		}		
+	}
+	&.bgd06 {
+		padding: 10.4rem 0 10.4rem;
+		background-color: $color-white-f2;
+		&:before {
+		  	background-image: none;
+		}
+		&:after {
+		  	background-image: none;
+		}		
+	}
+	&.bgd07 {
+		padding: 10.4rem 0 10.4rem;
+		background-color: $color-white;
+		&:before {
+		  	background-image: none;
+		}
+		&:after {
+		  	background-image: none;
+		}		
+	}
+	&.bgd08 {
+		padding: 10.4rem 0 10.4rem;
+		&:before {
+		  	background-image: linear-gradient(rgba($color-white, .85), rgba($color-white, .85)), url("../images/background/background-m-50.jpg");
+		  	filter: grayscale(50%);
+		}
+		&:after {
+			background-image: none;
+		}	
+	}			
+}
+.section-brand {
+	padding: 9.6rem 0 6.4rem;
+	max-height: 41.6rem;
+	position: relative;
+
+	overflow: hidden;
+
+	@include responsive(SS){
+		max-height: 100rem;
+	}
+	@include responsive(XS){
+		max-height: 100rem;
+	}
+	@include responsive(SM){
+		max-height: 100rem;
+	}
+	@include responsive(MD){
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}	
+
+
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-black, .85), rgba($color-black, .85)), url("../images/background/background-m-09.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: url("../images/accessories/pattern_caro.png");
+	  	filter: opacity(30%);
+		background-position: center;
+		z-index: -1;
+	}	
+	&.bgd02 {
+		background-color: $color-white;
+		&:before {
+		  	background-image: none;
+		}
+		&:after {
+		  	background-image: none;
+		}		
+	}
+	&.bgd03 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-white, .95), rgba($color-white, .95)), url("../images/background/background-m-18.jpg");
+		  	filter: grayscale(50%);
+		}
+		&:after {
+			background-image: none;
+		}	
+	}	
+	&.bgd04 {
+		&:before {
+		  	background-image: linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-20.jpg");
+		  	filter: grayscale(70%);
+		}
+		&:after {
+			background-image: none;
+		}	
+	}
+	&.bgd05 {
+		background-color: $color-white-f2;
+		&:before {
+		  	background-image: none;
+		}
+		&:after {
+		  	background-image: none;
+		}		
+	}
+	&.bgd06 {
+		padding: 6.4rem 0 6.4rem;
+		background-color: $color-white-f2;
+		&:before {
+		  	background-image: none;
+		}
+		&:after {
+		  	background-image: none;
+		}		
+	}
+	&.bgd07 {
+		padding: 6.4rem 0 6.4rem;
+		background-color: $color-white;
+		&:before {
+		  	background-image: none;
+		}
+		&:after {
+		  	background-image: none;
+		}		
+	}
+	&.bgd08 {
+		padding: 6.4rem 0 6.4rem;
+		&:before {
+		  	background-image: linear-gradient(rgba($color-white, .85), rgba($color-white, .85)), url("../images/background/background-m-50.jpg");
+		  	filter: grayscale(50%);
+		}
+		&:after {
+			background-image: none;
+		}	
+	}
+}
+
+
+.section-why-us {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+	&.bgd02 {
+		background-color: $color-white-f2;
+	}
+	&.bgd03 {
+		background-color: transparent;
+		position: relative;
+		&:before {
+			content: "";
+		  	position: absolute;
+		  	top: 0;
+		  	left: 0;
+		  	width: 100%;
+		  	height: 100%;
+
+		  	background-image: linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url("../images/background/background-m-26.jpg");
+		  	filter: grayscale(50%);
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+		
+		
+	}
+}
+
+.section-feature-btn {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+	
+}
+.section-feature-v2 {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+}
+.section-feature-v3 {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+}
+
+.section-some-service {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+}
+.section-some-service-dark {
+	padding: 9.6rem 0 6.4rem;
+	position: relative;
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image:  linear-gradient(rgba($color-black, .8), rgba($color-black, .8)), url("../images/background/background-m-28.jpg");
+	  	filter: grayscale(50%);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 0; 
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: url("../images/accessories/pattern_cross.png");
+	  	filter: opacity(30%);
+		background-position: center;
+		z-index: -1;
+	}	
+	&.bgd02 {
+		&:before {
+		  	background-image:  linear-gradient(rgba($color-black, .8), rgba($color-black, .8)), url("../images/background/background-m-32.jpg");
+		}
+
+	}
+	&.bgd03 {
+		&:before {
+		  	background-image:  linear-gradient(rgba($color-black, .8), rgba($color-black, .8)), url("../images/background/background-m-34.jpg");
+		}
+
+	}
+
+}
+
+.section-some-service-v2 {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+}
+
+.section-some-service-v3 {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+}
+.section-some-feature {
+	padding: 10.4rem 0 6.4rem;
+	background-color: $color-white;
+}
+
+
+.section-hero-static {
+	padding: 26rem 0 26rem;
+	min-height: 20rem;
+
+	position: relative;
+	
+	@include responsive(SS){
+		padding: 16rem 0 16rem;
+	}
+	@include responsive(XS){
+		padding: 16rem 0 16rem;
+	}
+	@include responsive(SM){
+		padding: 20rem 0 20rem;
+	}
+	@include responsive(MD){
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}		
+
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image:  linear-gradient(rgba($color-black, .35), rgba($color-black, .35)), url("../images/background/background-m-10.jpg");
+		background-size: cover;
+		background-position: center;
+		// background-attachment: fixed;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: url("../images/accessories/pattern_caro.png");
+	  	filter: opacity(50%);
+		background-position: center;
+		z-index: -1;
+	}
+	&.bgd02 {
+		&:before {
+		  	background-image:  linear-gradient(rgba($color-black, .35), rgba($color-black, .35)), url("../images/background/background-m-11.jpg");
+		}
+
+	}
+	&.bgd03 {
+		&:before {
+		  	background-image:  linear-gradient(rgba($color-black, .35), rgba($color-black, .35)), url("../images/background/background-m-15.jpg");
+		}
+
+	}
+	&.bgd04 {
+		&:before {
+		  	background-image:  linear-gradient(rgba($color-black, .35), rgba($color-black, .35)), url("../images/background/background-m-16.jpg");
+		}
+		&:after {
+		  	background-image: url("../images/accessories/pattern_cross.png");
+		  	filter: opacity(35%);
+		}
+
+	}
+	&.bgd05 {
+		&:before {
+		  	background-image:  linear-gradient(rgba($color-black, .35), rgba($color-black, .35)), url("../images/background/background-m-19.jpg");
+		}
+		&:after {
+		  	background-image: url("../images/accessories/pattern_cross.png");
+		  	filter: opacity(35%);
+		}
+
+	}
+	&.bgd06 {
+		&:before {
+		  	background-image:  linear-gradient(rgba($color-black, .4), rgba($color-black, .4)), linear-gradient(rgba($color-white, .05), rgba($color-white, .05)), url("../images/background/background-m-21.jpg");
+		  	filter: grayscale(30%);
+		}
+		&:after {
+		  	background-image: url("../images/accessories/pattern_cross.png");
+		  	filter: opacity(30%);
+		}
+
+	}
+	&.bgd07 {
+		&:before {
+		  	background-image:  linear-gradient(rgba($color-black, .35), rgba($color-black, .35)), linear-gradient(rgba($color-white, .05), rgba($color-white, .05)), url("../images/background/background-m-24.jpg");
+		  	filter: none;
+		}
+
+	}
+	&.bgd08 {
+		&:before {
+		  	background-image:  linear-gradient(rgba($color-black, .35), rgba($color-black, .35)), linear-gradient(rgba($color-white, .05), rgba($color-white, .05)), url("../images/background/background-m-46.jpg");
+		  	filter: none;
+		}
+
+	}
+	
+
+}
+
+
+
+.section-who-we-are {
+	padding: 10.4rem 0 10.4rem;
+	background-color: $color-white;
+	&.bgd02 {
+		padding: 8.4rem 0 8.4rem;
+		overflow: hidden;
+	}
+	&.bgd03 {
+		background-color: $color-white-f2;
+		padding: 8.4rem 0 8.4rem;
+		overflow: hidden;
+	}
+	&.bgd04 {
+		background-color: $color-white-f2;
+		padding: 8.4rem 0 6.4rem;
+		overflow: hidden;
+	}
+}
+.section-our-services {
+	padding: 10.4rem 0 10.4rem;
+
+	position: relative;
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: linear-gradient(rgba($color-white, .95), rgba($color-white, .95)), url("../images/background/background-m-12.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		filter: grayscale(40%);
+		z-index: -1;
+	}	
+}
+.section-our-team {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+	&.bgd02 {
+		background-color: $color-white-f2;
+	}
+}
+.section-our-team-v2 {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+	
+}
+
+.section-our-team-v3 {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+	position: relative;
+	
+}
+
+.section-news-v1 {
+	padding: 9.6rem 0 10.4rem;
+	background-color: $color-white;
+	position: relative;
+	
+}
+
+
+.section-testimonial-v1 {
+	padding: 6.4rem 0 9.4rem;
+	background-color: $color-white;
+	min-height: 2rem;
+	overflow: hidden;
+}
+.section-testimonial {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+	&.bgd02 {
+		background-color: transparent;
+		position: relative;
+		&:before {
+			content: "";
+		  	position: absolute;
+		  	top: 0;
+		  	left: 0;
+		  	width: 100%;
+		  	height: 100%;
+
+		  	background-image: linear-gradient(rgba($color-white, .95), rgba($color-white, .95)), url("../images/background/background-m-14.jpg");
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			filter: grayscale(60%);
+			z-index: -1;
+		}
+	}
+	&.bgd03 {
+		background-color: $color-white-f2;
+	}
+}
+.section-testimonial-one {
+	padding: 9.6rem 0 9.6rem;
+	background-color: $color-white;
+	overflow: hidden;
+	position: relative;
+
+	@include responsive(SS){
+		background-color: $color-white-f2;
+	}
+	@include responsive(XS){
+		background-color: $color-white-f2;
+	}
+	@include responsive(SM){
+	}
+	@include responsive(MD){
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}	
+	&.bgd02 {
+		background-color: transparent;
+		@include responsive(SS){
+			background-color: transparent;
+		}
+		@include responsive(XS){
+			background-color: transparent;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+		&:before {
+			content: "";
+		  	position: absolute;
+		  	top: 0;
+		  	left: 0;
+		  	width: 100%;
+		  	height: 100%;
+
+		  	background-image:  linear-gradient(rgba($color-white, .95), rgba($color-white, .95)), url("../images/background/background-m-25.jpg");
+	  		filter: grayscale(50%);
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+		&:after {
+			
+			content: "";
+		  	position: absolute;
+		  	top: 0;
+		  	left: 0;
+		  	width: 100%;
+		  	height: 100%;
+
+		  	background-image: url("../images/accessories/pattern_caro.png");
+		  	filter: opacity(5%);
+			background-position: center;
+			z-index: -1;
+		}		
+	}	
+
+}
+
+.section-testimonial-one-dark {
+	padding: 9.6rem 0 9.6rem;
+	overflow: hidden;
+	position: relative;
+		
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image:  linear-gradient(rgba($color-black, .90), rgba($color-black, .90)), url("../images/background/background-m-18.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: url("../images/accessories/pattern_cross.png");
+		background-position: center;
+		z-index: -1;
+	}
+	&.bgd02 {
+		&:before {
+		  	background-image:  linear-gradient(rgba($color-black, .90), rgba($color-black, .90)), url("../images/background/background-m-25.jpg");
+		}		
+	}
+	&.bgd03 {
+		&:before {
+		  	background-image:  linear-gradient(rgba($color-black, .90), rgba($color-black, .90)), url("../images/background/background-m-39.jpg");
+		}		
+	}
+
+}
+
+.section-testimonial-two {
+	padding: 9.6rem 0 9.6rem;
+	background-color: $color-white;
+	overflow: hidden;
+
+	@include responsive(SS){
+	}
+	@include responsive(XS){
+	}
+	@include responsive(SM){
+	}
+	@include responsive(MD){
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}	
+	&.bgd02 {
+		background-color: $color-white-f2;
+	}	
+
+}
+
+.section-testimonial-v2 {
+	padding: 9.6rem 0 9.6rem;
+	background-color: $color-white-f2;
+	overflow: hidden;
+
+}
+
+.section-testimonial-v3 {
+	padding: 9.6rem 0 9.6rem;
+	background-color: $color-white;
+	overflow: hidden;
+
+}
+
+.section-list-service {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+}
+.section-list-faqs {
+	padding: 9.6rem 0 1.2rem;
+	background-color: $color-white;
+}
+.section-map {
+	padding: 10.4rem 0 10.4rem;
+	background-color: $color-white-f2;
+	&.bgd02 {
+		padding: 0rem 0 0rem;
+	}
+}
+.section-in-touch {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+}
+
+.section-meet-out-team {
+	padding: 10rem 0 0;
+	min-height: 10rem;
+	position: relative;
+	background-color: $color-white-f2;
+
+	&.bgd02 {
+
+		background-color: transparent;
+
+		&:before {
+			content: "";
+		  	position: absolute;
+		  	top: 0;
+		  	left: 0;
+		  	width: 100%;
+		  	height: 100%;
+
+		  	background-image:  linear-gradient(rgba($color-white, .95), rgba($color-white, .95)), url("../images/background/background-m-30.jpg");
+		  	filter: grayscale(50%);
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+		&:after {
+			
+			content: "";
+		  	position: absolute;
+		  	top: 0;
+		  	left: 0;
+		  	width: 100%;
+		  	height: 100%;
+			filter: opacity(5%);
+		  	background-image: url("../images/accessories/pattern_cross.png");
+			background-position: center;
+			z-index: -1;
+		}
+
+
+	}
+	&.bgd03 {
+
+		background-color: $color-white;
+
+		
+
+
+	}
+}
+
+.section-meet-out-team-full {
+	padding: 0rem 0 0;
+	min-height: 10rem;
+	position: relative;
+	background-color: $color-white-f2;
+}
+
+.section-portfolio-full {
+	padding: 9.6rem 0 10.4rem;
+	min-height: 10rem;
+	position: relative;
+	background-color: $color-white;
+	@include responsive(SS){
+		background-color: $color-white-f2;
+	}
+	@include responsive(XS){
+		background-color: $color-white-f2;
+	}
+	@include responsive(SM){
+	}
+	@include responsive(MD){
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}	
+	&.bgd02 {
+		background-color: $color-white-f2;
+	}
+
+}
+
+.section-portfolio-v1 {
+	position: relative; 
+	&__top {
+		padding: 9.6rem 0 9.6rem;
+		min-height: 2rem;
+		position: relative; 
+		overflow: hidden;
+
+		&:before {
+			content: "";
+		  	position: absolute;
+		  	top: 0;
+		  	left: 0;
+		  	width: 100%;
+		  	height: 100%;
+
+		  	background-image:  linear-gradient(rgba($color-black, .95), rgba($color-black, .95)), url("../images/background/background-m-37.jpg");
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+		&:after {
+			
+			content: "";
+		  	position: absolute;
+		  	top: 0;
+		  	left: 0;
+		  	width: 100%;
+		  	height: 100%;
+
+		  	background-image: url("../images/accessories/pattern_caro.png");
+		  	filter: opacity(40%);
+			background-position: center;
+			z-index: -1;
+		}
+
+
+
+	}
+	&__bottom {
+		padding-right: 16rem;
+		padding-left: 16rem;
+		margin-top: -9.6rem;
+
+		@include responsive(SS){
+			padding-right: 16px;
+			padding-left: 16px;
+			margin-top: -9.6rem;
+		}
+		@include responsive(XS){
+			padding-right: 16px;
+			padding-left: 16px;
+			margin-top: -9.6rem;
+		}
+		@include responsive(SM){
+			padding-right: 6.4rem;
+			padding-left: 6.4rem;
+			margin-top: -9.6rem;
+		}
+		@include responsive(MD){
+			padding-right: 6.4rem;
+			padding-left: 6.4rem;
+			margin-top: -9.6rem;
+		}
+		@include responsive(LG){
+			padding-right: 6.4rem;
+			padding-left: 6.4rem;
+			margin-top: -9.6rem;
+		}
+		@include responsive(XL){
+		}
+		@include responsiveMxm(XXL){
+			padding-right: 6.4rem;
+			padding-left: 6.4rem;
+			margin-top: -9.6rem;
+		}
+
+		.row {
+		    margin-right: 0;
+		    margin-left: 0;
+		}
+		.row > [class*="col"] {
+		    padding-left: 0;
+		    padding-right: 0;
+		}
+
+	}
+}
+
+
+.section-number-v1 {
+	padding: 7.6rem 0 8.4rem;
+	// background-color: $color-white-f2;
+	background-color: $color-white;
+}
+
+.section-pricing-tables {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+	&.bgd02 {
+		background-color: $color-white-f2;
+	}
+}
+.section-banner-static {
+	padding: 11.2rem 0 11.2rem;
+	min-height: 10rem;
+
+	position: relative;
+	
+	@include responsive(SS){
+	}
+	@include responsive(XS){
+	}
+	@include responsive(SM){
+	}
+	@include responsive(MD){
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}		
+
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image:  linear-gradient(rgba($color-black, .85), rgba($color-black, .85)), url("../images/background/background-m-23.jpg");
+		background-size: cover;
+		background-position: center;
+		// background-attachment: fixed;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+	&:after {
+		
+		content: "";
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	width: 100%;
+	  	height: 100%;
+
+	  	background-image: url("../images/accessories/pattern_caro.png");
+	  	filter: opacity(40%);
+		background-position: center;
+		z-index: -1;
+	}
+	&.bgd02 {
+		&:before { 
+		  	background-image:  linear-gradient(rgba($color-black, .85), rgba($color-black, .85)), url("../images/background/background-m-51.jpg");
+		}
+	}
+
+}
+.section-detail-team {
+	padding: 10.4rem 0 6.4rem;
+	background-color: $color-white;
+}
+
+.section-slim-skill {
+	padding: 0rem 0 0rem;
+	background-color: $color-white;
+}
+.section-form-send {
+	padding: 4.8rem 0 0rem;
+	background-color: $color-white;
+	&.bgd02 {
+		padding: 4.8rem 0 6.4rem;
+	}
+	&.bgd03 {
+		padding: 4.8rem 0 6.4rem;
+		background-color: $color-white-f2;
+	}
+	&.bgd04 {
+		padding: 9.6rem 0 6.4rem;
+	}
+}
+.section-slim-team {
+	padding: 5.6rem 0 6.4rem;
+	background-color: $color-white;
+}
+.section-side-navigation {
+	padding: 10.4rem 0 6.4rem;
+	background-color: $color-white;
+	min-height: 50rem;
+	overflow: hidden;
+}
+.section-number {
+	padding: 10rem 0 6rem;
+	background-color: $color-white;
+	@include responsive(SS){
+		background-color: $color-white-f2;
+	}
+	@include responsive(XS){
+		background-color: $color-white-f2;
+	}
+	@include responsive(SM){
+	}
+	@include responsive(MD){
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}		
+}
+
+.section-news-special {
+	padding: 4rem 0 0rem;
+	background-color: $color-white-f2;
+
+	overflow: hidden;
+}
+
+.section-content-main {
+	padding: 10.4rem 0 6.4rem;
+	background-color: $color-white;
+	
+}
+.section-content-main-filter {
+	padding: 10.4rem 0 6.4rem;
+	
+	background-color: $color-white;
+	position: relative;
+	z-index: 0;
+	
+}
+.section-mini-sale {
+	padding: 2.8rem 0 0;
+	background-color: $color-white;
+}
+
+.section-ship-info {
+	padding: 9.6rem 0 6.4rem;
+	background-color: $color-white;
+}
+
+.section-white-space {
+	min-height: 21.7rem;
+	background-color: $color-white;
+	
+	@include responsive(SS){
+		min-height: 10.4rem;
+	}
+	@include responsive(XS){
+		min-height: 10.4rem;
+	}
+	@include responsive(SM){
+		min-height: 10.4rem;
+	}
+	@include responsive(MD){
+		min-height: 18.4rem;
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}	
+
+}
+
+.section-all-page {
+	min-height: 10rem;
+	background-color: $color-white;
+	padding: 9.6rem 0 6.4rem;
+
+	&.bgd02 {
+		background-color: $color-white-f2;
+	}
+}

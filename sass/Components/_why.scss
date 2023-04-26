@@ -1,0 +1,65 @@
+/*******************why***********************/
+.why {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	margin-bottom: 4rem;
+
+	&:hover &__icon i {
+		@include effectShadowCircleIconZoomText_placeInHover;
+	}
+
+
+	&__icon {
+		margin-right: 2rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+			margin-right: 1.2rem;
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+
+		i {
+			font-size: 4.4rem;
+			// color: $color-black-hi;
+			color: $color-primary-hi;
+			@include responsive(SS){
+			}
+			@include responsive(XS){
+			}
+			@include responsive(SM){
+				font-size: 3.6rem;
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}
+			
+			@include effectShadowCircleIconZoomText_placeOutHover;				
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		
+	}
+	&__name {
+
+	}
+	&__paragrahp {
+
+	}
+}

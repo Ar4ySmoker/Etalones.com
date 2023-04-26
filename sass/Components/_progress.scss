@@ -1,0 +1,212 @@
+/*******************progress***********************/
+.progress {
+
+	&__side {
+		position: relative;
+		width: 100%;
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: center;
+  		align-items: flex-start;
+
+  		margin: 2rem 0;
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}  		
+
+	}
+	&__title {
+		@include responsive(SS){
+			@include typo-h4;
+		}
+		@include responsive(XS){
+			@include typo-h4;
+		}
+		@include responsive(SM){
+			@include typo-h4;
+		}
+		@include responsive(MD){
+			@include typo-h4;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+
+	}
+	&__line {
+		width: 6rem;
+		height: 1px;
+		background-color: rgba($color-black, 0.12);
+		margin: 1.6rem 0 2.4rem;
+	}
+	&__paragraph {
+
+	}
+	&__btn {
+		margin-top: 3.6rem;
+	}
+
+	  
+
+
+	&__bar {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		margin: 2rem 0;
+	}	
+	&__group {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		width: 100%;
+		
+	}
+
+
+	&__group:not(:last-child) {
+		margin-bottom: 3.6rem;
+	}
+	&__ti {
+		position: relative;
+		width: 100%;
+
+	  	flex: 0 0 18%;
+  		max-width: 18%;
+		@include responsive(SS){
+			flex: 0 0 24%;
+  			max-width: 24%;
+		}
+		@include responsive(XS){
+			flex: 0 0 24%;
+  			max-width: 24%;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+			flex: 0 0 24%;
+  			max-width: 24%;
+		}
+		@include responsive(LG){
+			flex: 0 0 22%;
+  			max-width: 22%;
+		}
+		@include responsive(XL){
+		}	  		
+	}
+	&__progress {
+		position: relative;
+		width: 100%;
+
+	  	flex: 0 0 82%;
+  		max-width: 82%;
+
+		background-color: rgba($color-primary, .3);
+		height: 2px;
+
+		@include responsive(SS){
+			flex: 0 0 72%;
+  			max-width: 72%;
+		}
+		@include responsive(XS){
+			flex: 0 0 72%;
+  			max-width: 72%;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+			flex: 0 0 76%;
+  			max-width: 76%;
+		}
+		@include responsive(LG){
+			flex: 0 0 78%;
+  			max-width: 78%;
+		}
+		@include responsive(XL){
+		}
+
+
+		@for $i from 0 through 10 {
+			&--dot-#{$i} {
+				width: 2px;
+				height: 2px;
+				background-color: $color-primary;
+				border-radius: 50%;
+				position: absolute;
+				top: 50%;
+				@include prefix("transform", translateY(-50%), moz webkit ms o);
+				left: $i * 10%;
+			}
+		}
+
+	}
+	&__position {
+		background-color: $color-primary;
+		height: 2px;
+
+		position: relative;
+	}
+
+	@for $i from 0 through 100 {
+		.processSkillCircle.percent#{$i} &__position {
+			width: $i * 1%;
+			@include prefix("animation", goSlider#{$i} 2s ease-in-out .3s both, webkit);
+		}
+	}
+
+	&__popup {
+		width: 1.2rem;
+		height: 1.2rem;
+		background-color: $color-primary;
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		@include prefix("transform", translateY(-50%), moz webkit ms o);
+		left: 100%;
+	}
+	&__icon {
+		text-align: center;
+		@include typo-body2;
+		color: $color-white;
+		padding-top: .6rem;
+		
+		position: absolute;
+		bottom: calc(100% + .4rem);
+		left: 50%;
+		@include prefix("transform", translateX(-50%), moz webkit ms o);
+		width: 4rem;
+		height: 4rem;
+		background-color: $color-primary;
+		@include prefix("clip-path", polygon(86% 0, 100% 16%, 91% 66%, 66% 80%, 50% 100%, 34% 80%, 9% 66%, 0 16%, 14% 0), webkit);
+	}
+
+
+	
+}
+
+@for $i from 0 through 100 {
+	@keyframes goSlider#{$i} {
+	  0% {
+	    width: 0;
+	  }
+	  100% {
+	  	 width: $i * 1%;
+	  }
+	}	
+}

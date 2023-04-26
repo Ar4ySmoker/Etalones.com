@@ -1,0 +1,34 @@
+/*******************brand-v1***********************/
+.brand-v1 {
+	&__picture {
+		@include prefix("user-select", none, moz webkit ms);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+		&:hover img {
+			opacity: 1;
+		}
+		img {
+			height: auto;
+			max-width: 100%;
+			margin: 0 auto;
+			@include prefix("transition", all .3s linear, moz webkit o); 	
+			opacity: 0.6;
+
+		}
+	}
+}
+.dark {
+	.brand-v1 {
+		&__picture {
+			&:hover img {
+				opacity: 1;
+			}			
+			img {
+				opacity: 0.85;
+			}
+		}
+	}	
+}

@@ -1,0 +1,59 @@
+/*******************number-v1***********************/
+.number-v1 {
+	&__title {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	&__side {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+
+		flex-wrap: wrap;
+	}
+	&__num {
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%;	
+		
+		@include responsive(SS){
+			@include typo-h3;
+		}
+		@include responsive(XS){
+			@include typo-h3;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+
+		flex: 0 0 66.66667%;
+		max-width: 66.66667%;
+
+		padding-left: .8rem;
+	}
+	&__name {
+		margin-bottom: 2.4rem;
+	}
+	&__paragraph {
+		
+	}
+}
+
+

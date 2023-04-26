@@ -1,0 +1,26 @@
+/*******************blob***********************/
+.blob {
+  
+  &__obj01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: rgba($color-black, .02);
+    width: 50vmax;
+    animation: moveBlob 10s ease-in-out infinite;
+    transform-origin: 50% 50%;    
+  }
+
+  &__obj02 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    fill: rgba($color-black, .02);
+    width: 50vmax;
+    animation: moveBlob2 20s ease-in-out infinite;
+    transform-origin: 50% 50%;
+  }
+
+
+
+}

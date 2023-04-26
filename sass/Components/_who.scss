@@ -1,0 +1,330 @@
+/*******************who***********************/
+.who {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+
+	&__side {
+		position: relative;
+		width: 100%;
+
+	  	flex: 0 0 50%;
+  		max-width: 50%;
+
+  		padding-left: 15px;
+
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: center;
+  		align-items: flex-start;
+
+		@include responsive(SS){
+			flex: 0 0 100%;
+	  		max-width: 100%;
+	  		padding-left: 0px;
+		}
+		@include responsive(XS){
+			flex: 0 0 100%;
+	  		max-width: 100%;
+	  		padding-left: 0px;
+		}
+		@include responsive(SM){
+		  	flex: 0 0 100%;
+	  		max-width: 100%;
+	  		padding-left: 0px;			
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}  		
+
+	}
+	&__title {
+		@include responsive(SS){
+			@include typo-h4;
+		}
+		@include responsive(XS){
+			@include typo-h4;
+		}
+		@include responsive(SM){
+			@include typo-h4;
+		}
+		@include responsive(MD){
+			@include typo-h4;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+
+	}
+	&__line {
+		width: 6rem;
+		height: 1px;
+		background-color: rgba($color-black, 0.12);
+		margin: 1.6rem 0 2.4rem;
+	}
+	&__paragraph {
+
+	}
+	&__btn {
+		margin-top: 3.6rem;
+	}
+	&__swiper-slider {
+		position: relative;
+		width: 100%;
+
+	  	flex: 0 0 50%;
+  		max-width: 50%;
+		padding-right: 15px;
+		@include responsive(SS){
+			flex: 0 0 100%;
+	  		max-width: 100%;
+	  		padding-right: 0px;	
+	  		margin-bottom: 4rem;
+		}
+		@include responsive(XS){
+			flex: 0 0 100%;
+	  		max-width: 100%;
+	  		padding-right: 0px;	
+	  		margin-bottom: 4rem;
+		}
+		@include responsive(SM){
+		  	flex: 0 0 100%;
+	  		max-width: 100%;
+	  		padding-right: 0px;	
+	  		margin-bottom: 4rem;		
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		} 
+
+	}
+	&__slider {
+		position: relative;
+		width: 100%;
+
+	  	flex: 0 0 50%;
+  		max-width: 50%;
+		padding-right: 15px;
+		@include responsive(SS){
+			flex: 0 0 100%;
+	  		max-width: 100%;
+	  		padding-right: 0px;	
+	  		margin-bottom: 4rem;
+		}
+		@include responsive(XS){
+			flex: 0 0 100%;
+	  		max-width: 100%;
+	  		padding-right: 0px;	
+	  		margin-bottom: 4rem;
+		}
+		@include responsive(SM){
+		  	flex: 0 0 100%;
+	  		max-width: 100%;
+	  		padding-right: 0px;	
+	  		margin-bottom: 4rem;		
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		} 
+
+
+		&:hover .who__next,
+		&:hover .who__prev {
+			opacity: 1;
+		}		
+
+	}
+	&__viewport {
+		max-height: 40rem;
+		@include prefix("transition", all 1s ease, moz webkit o);
+		li {
+			display: none;
+			-webkit-backface-visibility: hidden;
+				
+			img {
+			  	max-width: 100%;
+				display: block;
+			  	height: auto;
+  				@include prefix("user-select", none, moz webkit ms);
+
+				@include responsive(SS){
+				}
+				@include responsive(XS){
+				}
+				@include responsive(SM){
+				}
+				@include responsive(MD){
+				}
+				@include responsive(LG){
+				}
+				@include responsive(XL){
+				}	  				
+			}				
+
+		}
+	}	
+	&__direction-nav {
+
+	}
+	&__nav-prev {
+
+	}
+	&__prev {
+		position: absolute;
+		top: 50%;
+		left: 2rem;
+		opacity: 0;
+		@include prefix("transform", translateY(-50%), moz webkit ms o);
+		@include prefix("user-select", none, moz webkit ms);
+		cursor: pointer;
+		display: block;
+
+		width: 4.8rem;
+		height: 4.8rem;
+		@include prefix("user-select", none, moz webkit ms);
+		@include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+
+		@include prefix("transition", all .6s ease, moz webkit o);
+
+
+		@include responsive(SS){
+			left: 0;
+			opacity: 1;
+		}
+		@include responsive(XS){
+			left: 0;
+			opacity: 1;
+		}
+		@include responsive(SM){
+			opacity: 1;
+		}
+		@include responsive(MD){
+			opacity: 1;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+
+
+		&.showMxm {
+			left: .4rem;
+		}
+
+		i {
+			position: absolute;
+			top: 2.1rem;
+			left: 1rem;
+			width: 2.2rem;
+			height: .5rem;
+			border-radius: .25rem;
+			background: $color-white-hi;
+			@include prefix("transition", all 0.15s ease, moz webkit o);
+
+			transform-origin: 0% 50%
+		}
+
+		@include arrowTransform( 40deg, 0, -.1rem );
+
+		&:hover {
+			@include arrowTransform( 30deg, 0, -.1rem );
+		}
+
+		&:active {
+			@include arrowTransform( 25deg, 0rem, -.1rem );
+		}
+
+	      
+
+	    
+  	}	
+  	&__nav-next {
+
+	}
+	&__next {
+		position: absolute;
+		top: 50%;
+		right: 2rem;
+		opacity: 0;
+		@include prefix("transform", translateY(-50%), moz webkit ms o);
+		@include prefix("user-select", none, moz webkit ms);
+		cursor: pointer;
+		display: block;
+
+		width: 4.8rem;
+		height: 4.8rem;
+		@include prefix("user-select", none, moz webkit ms);
+		@include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+
+		@include prefix("transition", all .6s ease, moz webkit o);
+
+		@include responsive(SS){
+			right: 0;
+			opacity: 1;
+		}
+		@include responsive(XS){
+			right: 0;
+			opacity: 1;
+		}
+		@include responsive(SM){
+			opacity: 1;
+		}
+		@include responsive(MD){
+			opacity: 1;
+			right: 3.5rem;
+		}
+		@include responsive(LG){
+			right: 3.5rem;
+		}
+		@include responsive(XL){
+			right: 3.5rem;
+		}			
+
+		&.showMxm {
+		  right: .4rem;
+		}
+
+		i {
+		  position: absolute;
+		  top: 2.1rem;
+		  right: 1rem;
+		  width: 2.2rem;
+		  height: .5rem;
+		  border-radius: .25rem;
+		  background: $color-white-hi;
+		  @include prefix("transition", all 0.15s ease, moz webkit o);
+
+		  transform-origin: 100% 50%
+		}
+
+		@include arrowTransform( 40deg, 0, .1rem );
+
+		&:hover {
+		  @include arrowTransform( 30deg, 0, .1rem );
+		}
+
+		&:active {
+		  @include arrowTransform( 25deg, 0rem, .1rem );
+		}
+
+		  
+
+
+	}  
+
+
+
+}

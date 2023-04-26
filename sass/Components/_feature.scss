@@ -1,0 +1,47 @@
+/*******************feat***********************/
+.feature {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 4rem;
+
+	&:hover &__icon i {
+		@include effectShadowCircleIconZoomText_placeInHover;
+	}
+	&:hover .feature__line {
+		@include effectLineWd_placeInHover;
+	}
+	
+	&__icon {
+		display: block;
+		// color: $color-black-hi;
+		color: $color-primary-hi;
+		margin-bottom: .4rem;
+		&:hover {
+			// color: $color-black-hi;
+			color: $color-primary;
+		}
+		i {
+			font-size: 5.2rem;
+			@include effectShadowCircleIconZoomText_placeOutHover;
+		}
+	}
+	&__name {
+		display: block;
+		text-align: center;
+	}
+	&__line {
+		width: 6rem;
+		height: 1px;
+		background-color: rgba($color-black, 0.12);
+		margin: .8rem auto 2rem;
+		@include effectLineWd_placeOutHover;
+	}
+	&__paragraph {
+		text-align: center;
+		margin-bottom: 1.6rem;
+	}
+	&__btn {
+	}
+}

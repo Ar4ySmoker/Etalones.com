@@ -1,0 +1,34 @@
+/*******************show-case***********************/
+.show-case {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+
+
+	&__title {
+		margin-bottom: 4.8rem;
+		text-align: center;
+	
+
+	}
+	&__wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	&__btn {
+		margin-bottom: 6.4rem;	
+		margin-left: 1.2rem;
+		margin-right: 1.2rem;
+	}
+	
+	&__hero {
+		@include filterDropShadow4;
+		height: auto;
+		margin: 0 auto -6rem;
+		max-width: 100%;
+	}
+}

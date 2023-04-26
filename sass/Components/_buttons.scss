@@ -1,0 +1,222 @@
+/*******************buttons***********************/
+.btn {
+
+	position: relative;
+	padding: 0 1.6rem 0;
+	border-radius: 4px;
+	@include typo-button;
+    @include prefix("user-select", none, moz webkit ms);
+	z-index: 1;
+
+    &--primary {
+
+    	@include elevation2;
+    	color: $color-white;
+    	background-color: $color-primary;
+        border: 1px solid $color-primary;
+        
+    	&:hover {
+            
+            color: $color-white;
+
+    		&:after{
+				@include effectButtonShine_placeInHover;
+	        }  
+    	}
+    	&:after {
+    		@include effectButtonShine_placeOutHover;
+    	}
+    	
+    }
+
+
+
+    &--secondary {
+
+    	color: $color-black-hi;
+    	background-color: transparent;
+    	border: 1px solid $color-black-md;
+
+    	 
+		@include effectButtonBgColor_placeOutHover;
+
+    	&:hover {
+              
+    		@include effectButtonBgColor_placeInHover;
+
+    	}
+        &.active {
+            @include effectButtonBgColor_placeInHover;
+        }
+
+		.text-up {
+			z-index: 6;
+			position: relative;
+		}		
+    } 
+
+    &--3th {
+    	color: $color-white-hi;
+    	background-color: transparent;
+    	border: 1px solid $color-white-md;
+
+		@include effectButtonColorText_placeOutHover;	
+		
+    	&:hover {
+    		@include effectButtonColorText_placeInHover;
+
+    		&:after{
+	    		@include effectButtonScaleX_placeInHover;
+	        }  
+    	}
+    	&:after {
+			@include effectButtonScaleX_placeOutHover;
+    	}
+    		
+		.text-up {
+			z-index: 6;
+			position: relative;
+		}		
+    }  
+    &--4th {
+        color: $color-white;
+        background-color: transparent;
+        border: 1px solid $color-white;
+         
+        @include effectButtonBgColor_placeOutHover;
+
+        &:hover {
+              
+            @include effectButtonBgColor_placeInHover;
+
+        }
+
+              
+    }  
+
+    &--5th {
+
+        position: relative;
+        padding: 0 0rem 0;
+        @include typo-button;
+        @include prefix("user-select", none, moz webkit ms);
+
+        z-index: 1;
+
+        color: $color-primary-hi;
+        background-color: transparent;
+        border: 1px solid transparent;
+
+         @include prefix("transition", all .3s, moz webkit o);
+         padding: 0;
+
+        &:hover {
+            color: $color-primary;
+        }
+        
+        
+              
+    }
+    &--6th {
+
+        padding: 0 0rem 0;
+        @include typo-button;
+        @include prefix("user-select", none, moz webkit ms);
+
+        z-index: 1;
+
+        color: $color-black-hi;
+        background-color: transparent;
+        border: 1px solid transparent;
+
+         @include prefix("transition", all .3s, moz webkit o);
+         padding: 0;
+
+        &:hover {
+            color: $color-primary;
+        }
+        
+        
+              
+    }   
+    &--7th {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+        // padding: 0 1.6rem 0;
+        padding: 0 0 0;
+        z-index: 1;     
+        @include prefix("user-select", none, moz webkit ms);   
+        
+        &:hover &---name{
+            color: $color-primary;
+        }
+        &:hover &---icon{
+            color: $color-primary;
+            @include prefix("transform", translateX(4px), moz webkit ms o);
+        }
+        
+
+
+
+        &---name {
+            margin-right: 0.8rem;
+            color: $color-black-hi;
+            @include typo-button;
+            @include prefix("transition", all .3s, moz webkit o);
+            
+        }
+        &---icon {
+            color: $color-primary-hi;
+            font-size: 1.6rem;
+            @include prefix("transition", all .3s cubic-bezier(.645,.045,.355,1), moz webkit o);
+        }        
+
+
+    } 
+
+
+    &--8th {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+        padding: 0 0 0;
+        z-index: 1;     
+        @include prefix("user-select", none, moz webkit ms);   
+        
+        &:hover &---name{
+            color: $color-primary;
+        }
+        &:hover &---icon{
+            color: $color-primary;
+            @include prefix("transform", translateX(4px), moz webkit ms o);
+        }
+        
+
+
+
+        &---name {
+            margin-right: 0.8rem;
+            color: $color-white;
+            @include typo-button;
+            @include prefix("transition", all .3s, moz webkit o);
+            
+        }
+        &---icon {
+            color: $color-primary-hi;
+            font-size: 1.6rem;
+            @include prefix("transition", all .3s cubic-bezier(.645,.045,.355,1), moz webkit o);
+        }        
+
+
+    }   
+
+}

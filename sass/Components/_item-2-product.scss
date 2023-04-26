@@ -1,0 +1,171 @@
+/*******************item-2-product***********************/
+.item-2-product {
+	border-radius: 4px;
+	padding: 1.6rem;
+	position: relative;
+	overflow: hidden;
+	// margin-bottom: 4rem;
+	
+	height: 100%;
+	
+	@include effectGetUp_placeOutHover();	
+
+	&:hover {
+		@include effectGetUp_placeInHover;
+	}
+	&:hover &__picture--hover{
+		@include effectSlideUpImg_placeInHover;
+	}
+
+	&__side {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+
+		position: relative;
+		@include responsive(SS){
+			flex-direction: column;
+		}
+		@include responsive(XS){
+			flex-direction: column;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}			
+	}
+	&__link {
+		position: relative;
+		@include responsive(SS){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(XS){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color-black, .03);
+			z-index: 4;
+		}
+	}
+	&__picture {
+		height: auto;
+		width: 100%;
+		max-width: 23.8rem;
+		min-width: 23.8rem;
+		z-index: 2;
+		@include responsive(SS){
+			max-width: none;
+			min-width: none;
+		}
+		@include responsive(XS){
+			max-width: none;
+			min-width: none;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+
+		&--hover {
+
+			@include effectSlideUpImg_placeOutHover();
+
+			img {
+				height: auto;
+				width: 100%;
+			}
+		}
+	}
+	&__popup-sale {
+		position: absolute;
+		top: 1.6rem;
+		right: 1.6rem;
+		width: 4.8rem;
+		height: 4.8rem;
+		border-radius: 50%;
+		background-color: $color-primary-md;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 9;
+	}
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		padding-left: 1.6rem;
+		@include responsive(SS){
+			padding-left: 0;
+		}
+		@include responsive(XS){
+			padding-left: 0;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}			
+	}
+
+	&__vote {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: .8rem;
+		&--icon {
+			color: $color-gold;
+			font-size: 2rem;
+			line-height: 1;
+		}
+	}
+	&__name {
+		margin-bottom: .8rem;
+	}
+	&__price {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 1.6rem;
+
+		&--sale {
+			margin-right: 3.2rem;
+		}
+		&--origin {
+		}
+	}
+	&__paragraph {
+		margin-bottom: 1.6rem;
+	}
+
+}

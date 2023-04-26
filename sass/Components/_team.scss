@@ -1,0 +1,124 @@
+/*******************team***********************/
+.team {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 4rem;
+
+		&:hover .team__picture:before{
+			
+			@include effectZoomImg_placeInHover;
+		}
+		&:hover img{
+			
+			@include effectZoomImg_placeInHover;
+		}
+		&:hover .team__social {
+			@include effectShowHide_placeInHover;
+			
+		}
+			
+	&__side {
+		position: relative;
+		margin-bottom: 2.4rem;
+		overflow: hidden;
+
+	}
+	&__picture {
+		position: relative;
+		display: block;
+		overflow: hidden;
+		z-index: 9;
+		
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color-grey-dark-v5, .1);
+			z-index: 9;
+			@include effectZoomImg_placeOutHover;
+		}
+		img {
+			height: auto;
+			max-width: 100%;
+			@include effectZoomImg_placeOutHover;
+		}
+
+	}
+	&__social {
+		@include effectShowHide_placeOutHover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba($color-black, .5);
+		z-index: 99;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;		
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			li {
+				margin: 0 .8rem;
+				a {
+					i {
+						font-size: 1.8rem;
+						color: $color-white-hi;
+						@include transition(.2s);
+					}
+					&:hover i {
+						color: $color-white;
+						@include prefix("transform", scale(1.2), moz webkit ms o);
+					}
+				}
+			}
+		}
+	}	
+	&__name {
+		margin-bottom: .8rem;
+		a {
+			text-align: center;
+		}
+	}
+	&__role {
+		margin-bottom: .4rem;
+		a {
+			text-align: center;
+		}
+	}
+	&__paragraph {
+		text-align: center;
+	}
+	&__line {
+		width: 6rem;
+		height: 1px;
+		background-color: rgba($color-black, 0.12);
+		margin: 1.2rem 0 1.2rem;
+	}
+	&__btn-parent {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__btn {
+		margin-bottom: 4rem;
+	}
+	
+
+
+}
+
+
+
+
+

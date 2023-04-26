@@ -1,0 +1,112 @@
+/*******************feature-btn***********************/
+.feature-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	margin-bottom: 4rem;
+
+	@include responsive(SS){
+	}
+	@include responsive(XS){
+	}
+	@include responsive(SM){
+		flex-direction: column;
+		align-items: center;
+	}
+	@include responsive(MD){
+		flex-direction: column;
+		align-items: center;
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}	
+
+	&:hover &__icon i {
+		@include effectShadowCircleIconZoomText_placeInHover;
+	}
+
+	&__icon {
+		margin-right: 2rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+			margin-right: 0;
+		}
+		@include responsive(MD){
+			margin-right: 0;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+
+		i {
+			font-size: 4.4rem;
+			// color: $color-black-hi;
+			color: $color-primary-hi;
+			@include responsive(SS){
+			}
+			@include responsive(XS){
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}
+
+			@include effectShadowCircleIconZoomText_placeOutHover;					
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+			align-items: center;
+		}
+		@include responsive(MD){
+			align-items: center;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+		
+	}
+	&__name {
+		margin-bottom: .8rem;
+	}
+	&__paragraph {
+		margin-bottom: 2rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+			text-align: center;
+		}
+		@include responsive(MD){
+			text-align: center;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}
+	&__btn {
+
+	}
+}

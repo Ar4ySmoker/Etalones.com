@@ -1,0 +1,148 @@
+/*******************special***********************/
+.special {
+
+	@include elevation4;
+	background-color: $color-white;
+
+	position: absolute;
+	width: 105%;
+	top: 16.4rem;
+	left: 1.5rem;
+	z-index: 90;
+
+	@include responsive(SS){
+		position: relative;
+		width: auto;
+		top: 0;
+		left: 0;
+		margin-bottom: 4rem;
+	}
+	@include responsive(XS){
+		position: relative;
+		width: auto;
+		top: 0;
+		left: 0;
+		margin-bottom: 4rem;
+	}
+	@include responsive(SM){
+		position: relative;
+		width: auto;
+		top: 0;
+		left: 0;
+		margin-bottom: 4rem;
+	}
+	@include responsive(MD){
+		top: 8.4rem;
+	}
+	@include responsive(LG){
+		
+		top: 10.4rem;
+	}
+	@include responsive(XL){
+	}		
+
+
+	&__side {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		min-height: 39.2rem;
+		
+		@include responsive(SS){
+			min-height: 24rem;
+		}
+		@include responsive(XS){
+			min-height: 24rem;
+		}
+		@include responsive(SM){
+			min-height: 24rem;
+		}
+		@include responsive(MD){
+			min-height: 25.8rem;
+		}
+		@include responsive(LG){
+			min-height: 31.2rem;
+		}
+		@include responsive(XL){
+		}		
+
+
+	}
+
+	
+	&__heading {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		text-align: center;
+
+		margin-bottom: 1.6rem;
+		
+		span {
+			&:not(:last-child){
+				margin-bottom: .8rem;
+			}
+		}
+
+	}
+	&-img {
+
+		position: absolute;
+		width: 105%;
+		top: 10.4rem;
+		right: 1.5rem;
+		z-index: 9;
+
+
+		@include responsive(SS){
+			position: relative;
+			width: auto;
+			top: 0;
+			right: 0;
+		}
+		@include responsive(XS){
+			position: relative;
+			width: auto;
+			top: 0;
+			right: 0;
+		}
+		@include responsive(SM){
+			position: relative;
+			width: auto;
+			top: 0;
+			right: 0;
+		}
+		@include responsive(MD){
+			top: 4.8rem;
+		}
+		@include responsive(LG){
+			top: 5.6rem;
+		}
+		@include responsive(XL){
+		}		
+
+		filter: grayscale(10%);
+
+		&:before {
+			content: "";
+		  	position: absolute;
+		  	top: 0;
+		  	left: 0;
+		  	width: 100%;
+		  	height: 100%;
+
+            background-image:radial-gradient(circle at 50% 50%, rgba($color-white, .03) 30%, rgba($color-black, .03) 100%);
+		}
+
+		img {
+			height: auto;
+			max-width: 100%;
+		}
+	}
+	
+}
+

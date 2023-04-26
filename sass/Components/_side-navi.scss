@@ -1,0 +1,228 @@
+/*******************side-navi***********************/
+.side-navi {
+	&__list {
+		margin-bottom: 4rem;
+		position: relative;
+		margin-top: 0;
+		
+		ul {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: stretch;
+			li {
+				margin-bottom: .4rem;
+				a {
+					display: block;
+					padding: .8rem 1.6rem .8rem 6.4rem;
+					border: 1px solid rgba($color-black, .12);
+					border-radius: 4px;
+					position: relative;
+
+					&:after {
+						content: "\E5CA";
+						position: absolute;
+						top: 50%;
+						left: 1.6rem;
+						@include prefix("transform", translateY(-50%), moz webkit ms o);
+						@include prefix("transform-origin", 50% 50%, moz webkit ms o);
+						font-family: "Material Icons";
+						font-size: 2.4rem;
+						color: $color-black-hi;
+						@include prefix("transition", all 0.3s, moz webkit o);
+
+						@include responsive(SS){
+						}
+						@include responsive(XS){
+						}
+						@include responsive(SM){
+						}
+						@include responsive(MD){
+						}
+						@include responsive(LG){
+						}
+						@include responsive(XL){
+						}			
+					}					
+
+				}
+			}
+		}
+	}
+
+	&--fixed {
+		position: fixed;
+		top:56px;
+		left: 500px;
+	}
+
+
+
+	&__content {
+		h5 {
+			@extend .heading-5th--dark-hi;
+			margin-bottom: 1.2rem
+		}
+		img {
+			float: left;
+			margin-right: 2rem;
+	  		margin-top: .8rem;
+	  		margin-bottom: .8rem;
+	  		display: block;
+	  		max-width: 100%;
+	  		height: auto;
+	  		@include responsive(SS){
+	  			float: none;
+				margin: .4rem auto;
+			}
+			@include responsive(XS){
+				float: none;
+				margin: .4rem auto;
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}
+		}
+		img.right {
+			float: right;
+			margin-left:  2rem;
+	  		margin-top: .8rem;
+	  		margin-bottom: .8rem;
+	  		display: block;
+	  		max-width: 100%;
+	  		height: auto;
+	  		@include responsive(SS){
+	  			float: none;
+				margin: .4rem auto;
+			}
+			@include responsive(XS){
+				float: none;
+				margin: .4rem auto;
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}	  		
+		}
+		p {
+			@extend .paragraph-2th--dark-md;
+			margin-bottom: 2rem;
+		}
+		.parent-mxm {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: flex-start;
+
+			@include responsive(SS){
+				flex-direction: column;
+			}
+			@include responsive(XS){
+				flex-direction: column;
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}			
+		}
+		ul {
+			
+			margin-bottom: 1.2rem;
+			&:not(:last-child) {
+				margin-right: 12rem;
+				@include responsive(SS){
+					margin-right: .4rem;
+				}
+				@include responsive(XS){
+					margin-right: 1.2rem;
+				}
+				@include responsive(SM){
+					margin-right: 1.2rem;
+				}
+				@include responsive(MD){
+					margin-right: 1.2rem;
+				}
+				@include responsive(LG){
+					margin-right: 4rem;
+				}
+				@include responsive(XL){
+				}				
+			}
+			
+			li {
+				@extend .paragraph-2th--dark-md;
+				
+				padding: 0rem .8rem 0rem 2.4rem;
+				position: relative;
+				&:not(:last-child) {
+					margin-bottom: 1.2rem;
+				}
+				&:before {
+					content: "\E86C";
+					position: absolute;
+					top: 50%;
+					left: 0;
+					@include prefix("transform", translateY(-50%), moz webkit ms o);
+					@include prefix("transform-origin", 50% 50%, moz webkit ms o);
+					font-family: "Material Icons";
+					font-size: 1.6rem;
+					color: $color-black-hi;
+				}
+			}
+		}
+		blockquote {
+			margin-bottom: 4rem;
+			margin-top: 4rem;
+			@extend .heading-7th--dark-md;
+			text-align: center;
+			padding: 5.4rem 10.4rem .4rem;
+			position: relative;
+			@include responsive(SS){
+				padding: 5.4rem 0rem .4rem;
+			}
+			@include responsive(XS){
+				padding: 5.4rem 0rem .4rem;
+			}
+			@include responsive(SM){
+				padding: 5.4rem 1.8rem .4rem;
+			}
+			@include responsive(MD){
+				padding: 5.4rem 1.8rem .4rem;
+			}
+			@include responsive(LG){
+				padding: 5.4rem 2.4rem .4rem;
+			}
+			@include responsive(XL){
+			}	
+
+			&:before { 
+				content: "\E244";
+				font-size: 6rem;
+				color: $color-black-hi;
+				position: absolute; 
+				top: 0;
+				transform: translateX(-50%);
+				left: 50%;
+				font-family: "Material Icons";
+			}
+
+			figcaption {
+				@extend .heading-10th--dark-md;
+				margin-top: 1.2rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,85 @@
+/*******************feature-do***********************/
+.feature-do {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 4px;
+	margin-bottom: 4rem;
+
+	background-color: $color-white;
+
+	@include effectGetUp_placeOutHover2();
+
+	padding: .8rem .8rem;
+
+	&:hover {
+		@include effectGetUp_placeInHover2;
+	}
+
+	&:hover &__icon i {
+		@include effectShadowCircleIconZoomText_placeInHover;
+	}
+	&:hover &__side {
+		border: 1px solid rgba($color-primary, .60);
+	}
+	
+	&__side {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 5.2rem 1.6rem;
+		border-radius: 4px;
+		border: 1px solid rgba($color-black, .12);
+		@include prefix("transition", border 0.3s, moz webkit o);
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+			padding: 4rem .8rem;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+
+	}
+
+	&__icon {
+		margin-bottom: 2.4rem;
+		i {
+			font-size: 4.8rem;
+			color: $color-primary-hi;
+			@include effectShadowCircleIconZoomText_placeOutHover;
+		}
+	}
+	&__name {
+		text-align: center;
+		margin-bottom: 2.4rem;
+	}
+	&__line {
+		width: 6rem;
+		height: 1px;
+		background-color: rgba($color-black, .12);
+		margin: .8rem auto 2rem;
+	}
+	&__paragraph {
+		text-align: center;
+		margin-bottom: 3.6rem;
+	}
+	&__btn {
+
+	}
+
+
+
+
+
+}
+
+

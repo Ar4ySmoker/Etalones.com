@@ -1,0 +1,116 @@
+/*******************info-box***********************/
+
+.info-box-2 {
+	position: relative;
+	background-color: $color-grey-dark;
+	// background-color: #222D41;
+	background-color: #414141;
+	background-color: $color-grey;
+	@include elevation2;
+
+	&__contact {
+		@include responsive(SS){
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+
+			text-align: center;
+		}
+		@include responsive(XS){
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+
+			text-align: center;
+		}
+		@include responsive(SM){
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;	
+
+			text-align: center;		
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+		&--link {
+			display: block;
+			color: $color-white-hi;
+	        @include typo-subtitle2;
+	        @include transition(.2s);
+	        padding: 1.6rem 0;
+	        &:hover {
+				color: $color-white;
+			}
+		}
+	}
+
+
+	&__social {
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			@include responsive(SS){
+				justify-content: center;
+				margin-bottom: 1.6rem;
+			}
+			@include responsive(XS){
+				justify-content: center;
+				margin-bottom: 1.6rem;
+			}
+			@include responsive(SM){
+				justify-content: center;
+				margin-bottom: 1.6rem;
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}	
+
+		}
+	}
+	&__item {
+		list-style: none;
+		margin-left: 1.2rem;
+	}
+	&__link {
+		color: $color-white-hi;
+		display: block;
+		@include transition(.2s);
+		&:hover {
+			color: $color-white;
+			@include prefix("transform", scale(1.2), moz webkit ms o);
+		}
+	}
+	&__icon {
+		font-size: 1.8rem;
+	}
+
+	&__contact2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+				
+		&--link {
+			display: block;
+			color: $color-white-hi;
+	        @include typo-subtitle2;
+	        @include transition(.2s);
+	        padding: 1.6rem 0;
+	        &:hover {
+				color: $color-white;
+			}
+		}
+	}	
+}

@@ -1,0 +1,21 @@
+/*******************numeral***********************/
+
+.numeral {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	margin-bottom: 4rem;
+
+	&__plus {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		text-align: center;
+		margin-bottom: 1.6rem;
+	}
+}

@@ -1,0 +1,914 @@
+/*******************portfolio-detail***********************/
+.portfolio-detail {
+	
+	margin-bottom: 6.4rem;	
+
+
+
+
+	&__picture {
+		margin-bottom: 4rem;
+		img {
+			width: 100%;
+			height: auto
+		}
+	}
+	&__side {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 4rem;
+	}
+	&__name {
+		margin-bottom: .4rem;
+	}
+	&__cate-date {
+		margin-bottom: 1.2rem;
+	}
+	&__paragraph {
+		margin-bottom: 1.6rem;
+	}
+	&__row {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-bottom: 1.6rem;
+
+		width: 100%;
+	}
+	&__t { 
+		position: relative;
+		width: 100%;
+		flex: 0 0 30%;
+		max-width: 30%;
+		@include responsive(SS){
+			flex: 0 0 28%;
+			max-width: 28%;
+		}
+		@include responsive(XS){
+			flex: 0 0 28%;
+			max-width: 28%;
+		}
+		@include responsive(SM){
+			flex: 0 0 20%;
+			max-width: 20%;
+		}
+		@include responsive(MD){
+			flex: 0 0 20%;
+			max-width: 20%;
+		}
+		@include responsive(LG){
+			flex: 0 0 14%;
+			max-width: 14%;
+		}
+		@include responsive(XL){
+		}		
+	}
+	.option2 &__t {
+		flex: 0 0 10%;
+		max-width: 10%;
+		@include responsive(SS){
+			flex: 0 0 28%;
+			max-width: 28%;
+		}
+		@include responsive(XS){
+			flex: 0 0 28%;
+			max-width: 28%;
+		}
+		@include responsive(SM){
+			flex: 0 0 20%;
+			max-width: 20%;
+		}
+		@include responsive(MD){
+			flex: 0 0 20%;
+			max-width: 20%;
+		}
+		@include responsive(LG){
+			flex: 0 0 14%;
+			max-width: 14%;
+		}
+		@include responsive(XL){
+		}
+	}
+	&__c {
+		position: relative;
+		width: 100%;
+		flex: 0 0 70%;
+		max-width: 70%;
+		@include responsive(SS){
+			flex: 0 0 72%;
+			max-width: 72%;
+		}
+		@include responsive(XS){
+			flex: 0 0 72%;
+			max-width: 72%;
+		}
+		@include responsive(SM){
+			flex: 0 0 80%;
+			max-width: 80%;
+		}
+		@include responsive(MD){
+			flex: 0 0 80%;
+			max-width: 80%;
+		}
+		@include responsive(LG){
+			flex: 0 0 86%;
+			max-width: 86%;
+		}
+		@include responsive(XL){
+		}		
+	}
+	.option2 &__c {
+		flex: 0 0 90%;
+		max-width: 90%;
+		@include responsive(SS){
+			flex: 0 0 72%;
+			max-width: 72%;
+		}
+		@include responsive(XS){
+			flex: 0 0 72%;
+			max-width: 72%;
+		}
+		@include responsive(SM){
+			flex: 0 0 80%;
+			max-width: 80%;
+		}
+		@include responsive(MD){
+			flex: 0 0 80%;
+			max-width: 80%;
+		}
+		@include responsive(LG){
+			flex: 0 0 86%;
+			max-width: 86%;
+		}
+		@include responsive(XL){
+		}
+	}
+	&__social {
+		margin-bottom: 2.4rem;
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: flex-start;
+			li {
+				margin-right: 1.6rem;
+				a {
+					i {
+						font-size: 1.8rem;
+						color: $color-black-hi;
+						@include transition(.2s);
+					}
+					&:hover i {
+						color: $color-black;
+						@include prefix("transform", scale(1.2), moz webkit ms o);
+					}
+				}
+			}
+		}
+	}
+
+	&__direct {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 4rem;
+		@include responsive(SS){
+			justify-content: space-between;
+		}
+		@include responsive(XS){
+			justify-content: space-between;
+		}
+		@include responsive(SM){
+			justify-content: space-between;
+		}
+		@include responsive(MD){
+			justify-content: space-between;
+		}
+		@include responsive(LG){
+			justify-content: space-between;
+		}
+		@include responsive(XL){
+		}
+		a {
+			margin-right: 2.4rem;
+			@include responsive(SS){
+				margin-right: 0rem;
+			}
+			@include responsive(XS){
+				margin-right: 0rem;
+			}
+			@include responsive(SM){
+				margin-right: 0rem;
+			}
+			@include responsive(MD){
+				margin-right: 0rem;
+			}
+			@include responsive(LG){
+				margin-right: 0rem;
+			}
+			@include responsive(XL){
+			}
+		}
+	}
+	.option2 &__direct {
+		justify-content: space-between;
+		@include responsive(SS){
+			justify-content: space-between;
+		}
+		@include responsive(XS){
+			justify-content: space-between;
+		}
+		@include responsive(SM){
+			justify-content: space-between;
+		}
+		@include responsive(MD){
+			justify-content: space-between;
+		}
+		@include responsive(LG){
+			justify-content: space-between;
+		}
+		@include responsive(XL){
+		}		
+		a {
+			margin-right: 0rem;
+			@include responsive(SS){
+				margin-right: 0rem;
+			}
+			@include responsive(XS){
+				margin-right: 0rem;
+			}
+			@include responsive(SM){
+				margin-right: 0rem;
+			}
+			@include responsive(MD){
+				margin-right: 0rem;
+			}
+			@include responsive(LG){
+				margin-right: 0rem;
+			}
+			@include responsive(XL){
+			}
+		}
+	}
+
+	&__gallery {
+		
+		position: relative;
+		margin-bottom: 4rem;
+
+		overflow: hidden;
+		display: block;
+		width: 100%;
+
+		&:hover .portfolio-detail__gallery--next,
+		&:hover .portfolio-detail__gallery--prev,
+		&:hover .portfolio-detail__gallery--control-nav {
+			opacity: 1;
+		}		
+
+
+		&--viewport {
+			@include prefix("transition", all 1s ease, moz webkit o);
+
+			li {
+				display: none;
+				-webkit-backface-visibility: hidden;
+					
+				img {
+				  	width: 100%;
+					display: block;
+				  	height: auto;
+					@include prefix("user-select", none, moz webkit ms);
+
+					@include responsive(SS){
+					}
+					@include responsive(XS){
+					}
+					@include responsive(SM){
+					}
+					@include responsive(MD){
+					}
+					@include responsive(LG){
+					}
+					@include responsive(XL){
+					}	  				
+				}				
+
+			}
+
+		}
+		&--direction-nav {
+
+		}
+		&--nav-prev {
+
+		}
+		&--prev {
+			position: absolute;
+			top: 50%;
+			left: 2rem;
+			opacity: 0;
+			@include prefix("transform", translateY(-50%), moz webkit ms o);
+			@include prefix("user-select", none, moz webkit ms);
+			cursor: pointer;
+			display: block;
+
+			width: 4.8rem;
+			height: 4.8rem;
+			@include prefix("user-select", none, moz webkit ms);
+			@include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+
+			@include prefix("transition", all .6s ease, moz webkit o);
+
+
+			@include responsive(SS){
+			}
+			@include responsive(XS){
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}	
+
+
+			
+
+			i {
+				position: absolute;
+				top: 2.1rem;
+				left: 1rem;
+				width: 2.2rem;
+				height: .5rem;
+				border-radius: .25rem;
+				background: $color-white-hi;
+				@include prefix("transition", all 0.15s ease, moz webkit o);
+
+				transform-origin: 0% 50%
+			}
+
+			@include arrowTransform( 40deg, 0, -.1rem );
+
+			&:hover {
+				@include arrowTransform( 30deg, 0, -.1rem );
+			}
+
+			&:active {
+				@include arrowTransform( 25deg, 0rem, -.1rem );
+			}
+
+		      
+
+		    
+	  	}
+	  	&--nav-next {
+
+		}
+		&--next {
+			position: absolute;
+			top: 50%;
+			right: 2rem;
+			opacity: 0;
+			@include prefix("transform", translateY(-50%), moz webkit ms o);
+			@include prefix("user-select", none, moz webkit ms);
+			cursor: pointer;
+			display: block;
+
+			width: 4.8rem;
+			height: 4.8rem;
+			@include prefix("user-select", none, moz webkit ms);
+			@include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+
+			@include prefix("transition", all .6s ease, moz webkit o);
+
+			@include responsive(SS){
+			}
+			@include responsive(XS){
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}			
+
+			
+
+			i {
+			  position: absolute;
+			  top: 2.1rem;
+			  right: 1rem;
+			  width: 2.2rem;
+			  height: .5rem;
+			  border-radius: .25rem;
+			  background: $color-white-hi;
+			  @include prefix("transition", all 0.15s ease, moz webkit o);
+
+			  transform-origin: 100% 50%
+			}
+
+			@include arrowTransform( 40deg, 0, .1rem );
+
+			&:hover {
+			  @include arrowTransform( 30deg, 0, .1rem );
+			}
+
+			&:active {
+			  @include arrowTransform( 25deg, 0rem, .1rem );
+			}
+
+			  
+
+
+		}
+
+		&--control-nav {
+
+		    position: absolute;
+		    bottom: 12%;
+		    left: 50%;
+		    opacity: 0;
+		    @include prefix("transform", translateX(-50%), moz webkit ms o);
+		    @include prefix("transition", all .6s ease, moz webkit o);
+
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: center;
+		    align-items: center;
+
+			li {
+				a {
+					text-indent: -9999px;
+					display: block;
+					cursor: pointer;
+				    height: 1.2rem;
+				    width: 1.2rem;
+				    margin: 0 .4rem;
+				    background-color: $color-white-md;
+				    border-radius: .6rem;
+				    @include prefix("user-select", none, moz webkit ms);
+				    @include prefix("transition", all .6s ease 0s, moz webkit o);
+				    &:hover {
+				      background-color: $color-white-hi;
+				    }
+				    &.portfolio-detail__gallery--active {
+				      width: 3.2rem;
+				      background-color: $color-white-hi;
+				      cursor: default;
+				    }
+
+				}
+			}
+		}			  	
+
+
+
+
+
+
+
+
+
+	}
+
+	&__thumbnail-slider {
+		
+		position: relative;
+		margin-bottom: .4rem;
+
+		overflow: hidden;
+		display: block;
+		width: 100%;
+
+		&:hover .portfolio-detail__thumbnail-slider--next,
+		&:hover .portfolio-detail__thumbnail-slider--prev,
+		&:hover .portfolio-detail__thumbnail-slider--control-nav {
+			opacity: 1;
+		}		
+
+ 
+		&--viewport {
+			@include prefix("transition", all 1s ease, moz webkit o);
+
+			li {
+				display: none;
+				-webkit-backface-visibility: hidden;
+					
+				img {
+				  	width: 100%;
+					display: block;
+				  	height: auto;
+					@include prefix("user-select", none, moz webkit ms);
+
+					@include responsive(SS){
+					}
+					@include responsive(XS){
+					}
+					@include responsive(SM){
+					}
+					@include responsive(MD){
+					}
+					@include responsive(LG){
+					}
+					@include responsive(XL){
+					}	  				
+				}				
+
+			}
+
+		}
+		&--direction-nav {
+
+		}
+		&--nav-prev {
+
+		}
+		&--prev {
+			position: absolute;
+			top: 50%;
+			left: 2rem;
+			opacity: 0;
+			@include prefix("transform", translateY(-50%), moz webkit ms o);
+			@include prefix("user-select", none, moz webkit ms);
+			cursor: pointer;
+			display: block;
+
+			width: 4.8rem;
+			height: 4.8rem;
+			@include prefix("user-select", none, moz webkit ms);
+			@include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+
+			@include prefix("transition", all .6s ease, moz webkit o);
+
+
+			@include responsive(SS){
+			}
+			@include responsive(XS){
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}	
+
+
+			
+
+			i {
+				position: absolute;
+				top: 2.1rem;
+				left: 1rem;
+				width: 2.2rem;
+				height: .5rem;
+				border-radius: .25rem;
+				background: $color-white-hi;
+				@include prefix("transition", all 0.15s ease, moz webkit o);
+
+				transform-origin: 0% 50%
+			}
+
+			@include arrowTransform( 40deg, 0, -.1rem );
+
+			&:hover {
+				@include arrowTransform( 30deg, 0, -.1rem );
+			}
+
+			&:active {
+				@include arrowTransform( 25deg, 0rem, -.1rem );
+			}
+
+		      
+
+		    
+	  	}
+	  	&--nav-next {
+
+		}
+		&--next {
+			position: absolute;
+			top: 50%;
+			right: 2rem;
+			opacity: 0;
+			@include prefix("transform", translateY(-50%), moz webkit ms o);
+			@include prefix("user-select", none, moz webkit ms);
+			cursor: pointer;
+			display: block;
+
+			width: 4.8rem;
+			height: 4.8rem;
+			@include prefix("user-select", none, moz webkit ms);
+			@include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+
+			@include prefix("transition", all .6s ease, moz webkit o);
+
+			@include responsive(SS){
+			}
+			@include responsive(XS){
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}			
+
+			
+
+			i {
+			  position: absolute;
+			  top: 2.1rem;
+			  right: 1rem;
+			  width: 2.2rem;
+			  height: .5rem;
+			  border-radius: .25rem;
+			  background: $color-white-hi;
+			  @include prefix("transition", all 0.15s ease, moz webkit o);
+
+			  transform-origin: 100% 50%
+			}
+
+			@include arrowTransform( 40deg, 0, .1rem );
+
+			&:hover {
+			  @include arrowTransform( 30deg, 0, .1rem );
+			}
+
+			&:active {
+			  @include arrowTransform( 25deg, 0rem, .1rem );
+			}
+
+			  
+
+
+		}
+
+		&--control-nav {
+
+		    position: absolute;
+		    bottom: 12%;
+		    left: 50%;
+		    opacity: 0;
+		    @include prefix("transform", translateX(-50%), moz webkit ms o);
+		    @include prefix("transition", all .6s ease, moz webkit o);
+
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: center;
+		    align-items: center;
+
+			li {
+				a {
+					text-indent: -9999px;
+					display: block;
+					cursor: pointer;
+				    height: 1.2rem;
+				    width: 1.2rem;
+				    margin: 0 .4rem;
+				    background-color: $color-white-md;
+				    border-radius: .6rem;
+				    @include prefix("user-select", none, moz webkit ms);
+				    @include prefix("transition", all .6s ease 0s, moz webkit o);
+				    &:hover {
+				      background-color: $color-white-hi;
+				    }
+				    &.portfolio-detail__gallery--active {
+				      width: 3.2rem;
+				      background-color: $color-white-hi;
+				      cursor: default;
+				    }
+
+				}
+			}
+		}			  	
+
+
+
+
+
+
+
+
+
+	}	
+
+	&__carousel {
+		
+		position: relative;
+		margin-bottom: 4rem;
+
+		overflow: hidden;
+		display: block;
+		width: 100%;
+
+
+		&--viewport {
+			
+			width: 88%;
+			left: 50%;
+			@include prefix("transform", translateX(-50%), moz webkit ms o);
+			@include prefix("transition", all 1s ease, moz webkit o);
+
+			@include responsive(SS){
+				width: 74%;
+			}
+			@include responsive(XS){
+				width: 74%;
+			}
+			@include responsive(SM){
+				width: 80%;
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}	
+
+			li {
+				padding: .4rem .4rem;					
+				img {
+				  	width: 100%;
+					display: block;
+				  	height: auto;
+					@include prefix("user-select", none, moz webkit ms);
+					cursor: pointer;
+
+					// @include prefix("transform", scale(1.0) , moz webkit ms o);
+					@include prefix("transition", all .3s , moz webkit o);
+
+					border-radius: 4px;	
+					&:hover {
+						// @include prefix("transform", scale(1.1) , moz webkit ms o);
+						@include elevation2;
+					}  				
+				}
+
+
+			}
+			.portfolio-detail__carousel--active-slide img {
+				@include elevation2;
+			}
+
+		}
+		&--direction-nav {
+
+		}
+		&--nav-prev {
+
+		}
+		&--prev {
+			position: absolute;
+			top: 50%;
+			left: .8rem;
+			@include prefix("transform", translateY(-50%), moz webkit ms o);
+			@include prefix("user-select", none, moz webkit ms);
+			cursor: pointer;
+			display: block;
+
+			width: 3rem;
+			height: 4.8rem;
+			background-color: transparent;	
+			border-radius: 4px;
+			border: 1px solid rgba($color-black, .12);
+
+			@include prefix("user-select", none, moz webkit ms);
+			// @include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+			@include prefix("transition", all .6s ease, moz webkit o);
+
+			&:hover {
+				@include elevation2;
+			}
+
+
+
+			
+
+			i {
+				position: absolute;
+				top:50%;
+				left:50%;
+				@include prefix("transform", translate(-50%, -50%), moz webkit ms o);
+				color: $color-black-hi;
+				z-index: 99;
+				font-size: 2.8rem;
+			}
+
+
+
+		      
+
+		    
+	  	}
+	  	&--nav-next {
+
+		}
+		&--next {
+			position: absolute;
+			top: 50%;
+			right: .8rem;
+			// opacity: 0;
+			@include prefix("transform", translateY(-50%), moz webkit ms o);
+			@include prefix("user-select", none, moz webkit ms);
+			cursor: pointer;
+			display: block;
+
+			width: 3rem;
+			height: 4.8rem;
+			background-color: transparent;	
+			border-radius: 4px;
+			border: 1px solid rgba($color-black, .12);
+
+			@include prefix("user-select", none, moz webkit ms);
+			// @include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+			@include prefix("transition", all .6s ease, moz webkit o);
+
+			
+			&:hover {
+				@include elevation2;
+			}
+			
+
+			i {
+				position: absolute;
+				top:50%;
+				left:50%;
+				@include prefix("transform", translate(-50%, -50%), moz webkit ms o);
+				color: $color-black-hi;
+				z-index: 99;
+				font-size: 2.8rem;
+			}
+
+			  
+
+
+		}
+
+		&--control-nav {
+
+		    position: absolute;
+		    bottom: 12%;
+		    left: 50%;
+		    opacity: 0;
+		    @include prefix("transform", translateX(-50%), moz webkit ms o);
+		    @include prefix("transition", all .6s ease, moz webkit o);
+
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: center;
+		    align-items: center;
+
+			li {
+				a {
+					text-indent: -9999px;
+					display: block;
+					cursor: pointer;
+				    height: 1.2rem;
+				    width: 1.2rem;
+				    margin: 0 .4rem;
+				    background-color: $color-white-md;
+				    border-radius: .6rem;
+				    @include prefix("user-select", none, moz webkit ms);
+				    @include prefix("transition", all .6s ease 0s, moz webkit o);
+				    &:hover {
+				      background-color: $color-white-hi;
+				    }
+				    &.portfolio-detail__gallery--active {
+				      width: 3.2rem;
+				      background-color: $color-white-hi;
+				      cursor: default;
+				    }
+
+				}
+			}
+		}			  	
+
+
+
+
+
+
+
+
+
+	}	
+
+
+	
+
+
+}

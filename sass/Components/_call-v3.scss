@@ -1,0 +1,86 @@
+/*******************call-v3***********************/
+.call-v3 {
+
+
+	&__title {
+
+		@include responsive(SS){
+			@include typo-h4;
+		}
+		@include responsive(XS){
+			@include typo-h4;
+		}
+		@include responsive(SM){
+			@include typo-h4;
+		}
+		@include responsive(MD){
+			@include typo-h4;
+		}
+		@include responsive(LG){
+			@include typo-h4;
+		}
+		@include responsive(XL){
+		}		
+	}
+	&__sub-title  {
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}
+	&__paragraph {
+		// text-align: center;
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}	
+	&__wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+	}
+	&__btn {
+		margin: 0 1.2rem;
+		@include responsive(SS){
+			margin: 0 .8rem;
+		}
+		@include responsive(XS){
+			margin: 0 .8rem;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}
+}
+
+
+
+
+
+

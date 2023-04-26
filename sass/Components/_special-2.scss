@@ -1,0 +1,67 @@
+/*******************special-2***********************/
+.special-2 {
+	@include responsive(SS){
+		margin-bottom: 4rem;
+	}
+	@include responsive(XS){
+		margin-bottom: 4rem;
+	}
+	@include responsive(SM){
+		margin-bottom: 4rem;
+	}
+	@include responsive(MD){
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}
+
+	&__side {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		
+		min-height: 69.6rem;
+
+		@include responsive(SS){
+			min-height: 10rem;
+		}
+		@include responsive(XS){
+			min-height: 10rem;
+		}
+		@include responsive(SM){
+			min-height: 10rem;
+		}
+		@include responsive(MD){
+			min-height: 46rem;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}			
+	}
+
+	
+	&__heading {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+
+		margin-bottom: 1.6rem;
+		span {
+			&:not(:last-child){
+				margin-bottom: .8rem;
+			}
+		}
+
+	}
+	&__paragraph {
+
+	}
+	
+	
+}
+

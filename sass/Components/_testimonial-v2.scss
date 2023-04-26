@@ -1,0 +1,120 @@
+/*******************testimonial-v2***********************/
+.testimonial-v2 { 
+
+	&__side {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		width: 60%;
+		margin: 0 auto;
+		@include responsive(SS){
+			width: 100%;
+		}
+		@include responsive(XS){
+			width: 100%;
+		}
+		@include responsive(SM){
+			width: 100%;
+		}
+		@include responsive(MD){
+			width: 80%;
+		}
+		@include responsive(LG){
+			width: 80%;
+		}
+		@include responsive(XL){
+		}		
+
+		&:hover img {
+			@include effectBlurImg_placeInHover;
+
+		}
+
+		&:hover .testimonial-v2__icon-link {
+			@include effectSliderIconLink_placeInHover;
+		}
+
+	}
+	 
+	&__avatar {
+		position: relative;
+  		border-radius: 50%;
+  		margin-bottom: 2rem;
+	}
+	&__picture {
+		border-radius: 50%;
+		display: block;
+		overflow: hidden;
+		border: 1px solid $color-black-di;
+		position: relative;		
+
+
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color-grey-dark-v5, .1);
+			z-index: 9;
+			border-radius: 50%;
+		}		
+		img {
+			height: auto;
+			max-width: 8rem;
+			width: 100%;
+
+			@include effectBlurImg_placeOutHover;
+			
+		}
+	}
+	&__icon-link {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		color: $color-white;
+		font-size: 2.4rem;
+		text-align: center;
+		@include effectSliderIconLink_placeOutHover;
+		
+	}
+
+	&__content {
+		margin-bottom: 2.4rem;
+		text-align: center;
+		position: relative;
+
+		&:before {
+			content: "\201C";
+		}
+		&:after {
+			
+			content: "\201D";
+		}
+		
+	}
+
+
+
+	&__name {
+		position: relative;
+		&:before {
+			position: absolute;
+			left: -1.2rem;
+			content: "\2013";
+		}
+	}
+
+	&__author {
+	}	
+	
+
+
+
+
+
+}

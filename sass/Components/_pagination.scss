@@ -1,0 +1,88 @@
+/*******************pagination***********************/
+.pagination {
+	margin-bottom: 2.4rem;
+	ul {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		li {
+			margin-right: .8rem;
+			margin-left: .8rem;
+			margin-bottom: 1.6rem;
+
+			@include responsive(SS){
+				margin-right: .4rem;
+				margin-left: .4rem;
+			}
+			@include responsive(XS){
+				margin-right: .4rem;
+				margin-left: .4rem;
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}	
+
+			a {
+				display: block;
+				width: 4rem;
+				height: 4rem;
+				border: 1px solid $color-black-md;
+				border-radius: 4px;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+
+				background-color: $color-white;
+				@include prefix("transition", color .4s ease-in ',' background-color .4s ease-in ',' border .4s ease-in, moz webkit o);
+
+				@include responsive(SS){
+					width: 3.6rem;
+					height: 3.6rem;
+				}
+				@include responsive(XS){
+					width: 3.6rem;
+					height: 3.6rem;
+				}
+				@include responsive(SM){
+				}
+				@include responsive(MD){
+				}
+				@include responsive(LG){
+				}
+				@include responsive(XL){
+				}
+
+				&:hover {
+					border: 1px solid $color-primary;
+					background-color: $color-primary;
+					color: $color-white;
+				}
+				&.active {
+					border: 1px solid $color-primary;
+					background-color: $color-primary;
+					color: $color-white;
+				}
+			}
+		}
+	}
+	&__side {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+	}
+	&__btn {
+		margin-bottom: 1.6rem;
+	}
+}

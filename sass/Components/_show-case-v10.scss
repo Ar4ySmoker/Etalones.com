@@ -1,0 +1,315 @@
+/*******************show-case-v10***********************/
+.show-case-v10 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+
+
+	&__title {
+		margin-bottom: 4.8rem;
+		text-align: center;
+		@include responsive(SS){
+			// @include typo-h5;
+		}
+		@include responsive(XS){
+			// @include typo-h5;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+
+	}
+	&__wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	&__btn {
+		margin-bottom: 6.4rem;	
+		margin-left: 1.2rem;
+		margin-right: 1.2rem;
+	}
+	
+	&__hero {
+		@include filterDropShadow4;
+		height: auto;
+		margin: 0 auto 4rem;
+		max-width: 100%;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+	}
+
+	&__feature {
+		display: flex;
+		flex-direction:  row-reverse;
+		justify-content: flex-start;
+		align-items: flex-start;
+
+		margin-bottom: 4rem;
+		position: relative;
+
+		&:hover .show-case-v10__icon--parent {
+			@include effectShadowCircleIconBorderOut_placeInHover;
+		}
+		&:hover .show-case-v10__icon--parent:after{
+			@include effectShadowCircleIconBorderInside_placeInHover;
+		}
+		&:hover .show-case-v10__line {
+			@include effectLineWd_placeInHover;
+		}
+
+
+
+		@include responsive(SS){
+			flex-direction:  column;
+			align-items: center;
+		}
+		@include responsive(XS){
+			flex-direction:  column;
+			align-items: center;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}			
+
+
+	}
+	&__feature.right {
+		flex-direction: row;
+
+		@include responsive(SS){
+			flex-direction:  column;
+			align-items: center;
+		}
+		@include responsive(XS){
+			flex-direction:  column;
+			align-items: center;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+
+	}
+
+	&__icon {
+		margin-left: 1.6rem;
+		@include responsive(SS){
+			margin-left: 0rem;
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(XS){
+			margin-left: 0rem;
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+
+		&--parent {
+			width: 7.2rem;
+			height: 7.2rem;
+			border-radius: 50%;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			position: relative;
+			
+			
+
+			@include effectShadowCircleIconBorderOut_placeOutHover;
+			&:after {
+				content: "";
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			    position: absolute;
+			    border-radius: 50%;
+				@include effectShadowCircleIconBorderInside_placeOutHover;
+			}
+
+
+		}
+		&--child {
+			font-size: 3.2rem;
+			color: $color-white;
+
+			@include effectShadowCircleIconZoomText_placeOutHover;	
+		}
+	}
+
+	.right &__icon {
+		margin-left: 0rem;
+		margin-right: 1.6rem; 
+		@include responsive(SS){
+			margin-left: 0rem;
+			margin-right: 0rem; 
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(XS){
+			margin-left: 0rem;
+			margin-right: 0rem; 
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-end;
+
+		@include responsive(SS){
+			align-items: center;
+		}
+		@include responsive(XS){
+			align-items: center;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+
+	}
+	.right &__content {
+		align-items: flex-start;
+		@include responsive(SS){
+			align-items: center;
+		}
+		@include responsive(XS){
+			align-items: center;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+	}
+	&__name {
+		margin-bottom: .8rem;
+		text-align: right;
+		@include responsive(SS){
+			text-align: center;
+		}
+		@include responsive(XS){
+			text-align: center;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+	}
+	.right &__name {
+		text-align: left;
+		@include responsive(SS){
+			text-align: center;
+		}
+		@include responsive(XS){
+			text-align: center;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+	}
+	&__line {
+		width: 6rem;
+		height: 1px;
+		background-color: rgba($color-white, 0.2);
+		margin: 0.8rem 0 2rem;
+
+		@include effectLineWd_placeOutHover;
+	}
+	&__paragraph {
+		text-align: right;
+		@include responsive(SS){
+			text-align: center;
+		}
+		@include responsive(XS){
+			text-align: center;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+	}
+	.right &__paragraph {
+		text-align: left;
+		@include responsive(SS){
+			text-align: center;
+		}
+		@include responsive(XS){
+			text-align: center;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+	}
+}

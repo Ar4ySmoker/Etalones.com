@@ -1,0 +1,308 @@
+/*******************testimonial-two***********************/
+.testimonial-two {
+	&__slider {
+		
+		margin: 0 auto;
+
+		&:hover .testimonial-two__next,
+		&:hover .testimonial-two__prev {
+			opacity: 1;
+		}
+
+	}
+	&__side {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		&:hover img {
+			@include effectBlurImg_placeInHover;
+
+		}
+
+		&:hover .testimonial-two__icon-link {
+			@include effectSliderIconLink_placeInHover;
+		}
+
+	}
+	
+	&__content {
+		margin-bottom: 2.4rem;
+
+		position: relative;
+		&:before {
+			content: "\201C";
+		}
+		&:after {
+			
+			content: "\201D";
+		}
+		@include responsive(SS){
+			@include typo-subtitle1;
+		}
+		@include responsive(XS){
+			@include typo-subtitle1;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+	}
+	&__wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	&__avatar {
+		position: relative;
+  		margin-right: 4rem;
+  		border-radius: 50%;
+	}
+	&__picture {
+		border-radius: 50%;
+		display: block;
+		overflow: hidden;
+		border: 1px solid $color-black-di;
+		position: relative;		
+
+
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color-grey-dark-v5, .1);
+			z-index: 9;
+			border-radius: 50%;
+		}		
+		img {
+			height: auto;
+			max-width: 13.6rem;
+			width: 100%;
+
+			@include effectBlurImg_placeOutHover;
+
+			@include responsive(SS){
+				max-width: 8rem;
+			}
+			@include responsive(XS){
+				max-width: 10rem;
+			}
+			@include responsive(SM){
+				max-width: 12rem;
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}				
+		}
+	}
+	&__icon-link {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		color: $color-white;
+		font-size: 2.4rem;
+		text-align: center;
+		@include effectSliderIconLink_placeOutHover;
+		
+	}
+	&__author {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	
+	}
+	&__name {
+		position: relative;
+		&:before {
+			position: absolute;
+			left: -1.2rem;
+			content: "\2013";
+			color: $color-black-hi;
+		}
+	}
+	
+
+
+
+
+
+	&__viewport {
+		max-height: 40rem;
+		@include prefix("transition", all 1s ease, moz webkit o);
+		li {
+			display: none;
+			-webkit-backface-visibility: hidden;
+				
+			img {
+  				@include prefix("user-select", none, moz webkit ms);
+
+				@include responsive(SS){
+				}
+				@include responsive(XS){
+				}
+				@include responsive(SM){
+				}
+				@include responsive(MD){
+				}
+				@include responsive(LG){
+				}
+				@include responsive(XL){
+				}	  				
+			}				
+
+		}
+	}	
+	&__direction-nav {
+
+	}
+	&__nav-prev {
+
+	}
+	&__prev {
+		position: absolute;
+		top: 50%;
+		left: -8rem;
+		opacity: 0;
+		@include prefix("transform", translateY(-50%), moz webkit ms o);
+		@include prefix("user-select", none, moz webkit ms);
+		cursor: pointer;
+		display: block;
+
+		width: 4.8rem;
+		height: 4.8rem;
+		@include prefix("user-select", none, moz webkit ms);
+		@include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+
+		@include prefix("transition", all .6s ease, moz webkit o);
+
+
+		@include responsive(SS){
+			left: 1rem;
+		}
+		@include responsive(XS){
+			left: 1rem;
+		}
+		@include responsive(SM){
+			left: 0rem;
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+
+
+		&.showMxm {
+			left: .4rem;
+		}
+
+		i {
+			position: absolute;
+			top: 2.1rem;
+			left: 1rem;
+			width: 2.2rem;
+			height: .5rem;
+			border-radius: .25rem;
+			background: $color-black-hi;
+			@include prefix("transition", all 0.15s ease, moz webkit o);
+
+			transform-origin: 0% 50%
+		}
+
+		@include arrowTransform( 40deg, 0, -.1rem );
+
+		&:hover {
+			@include arrowTransform( 30deg, 0, -.1rem );
+		}
+
+		&:active {
+			@include arrowTransform( 25deg, 0rem, -.1rem );
+		}
+
+	      
+
+	    
+  	}	
+  	&__nav-next {
+
+	}
+	&__next {
+		position: absolute;
+		top: 50%;
+		right: -8rem;
+		opacity: 0;
+		@include prefix("transform", translateY(-50%), moz webkit ms o);
+		@include prefix("user-select", none, moz webkit ms);
+		cursor: pointer;
+		display: block;
+
+		width: 4.8rem;
+		height: 4.8rem;
+		@include prefix("user-select", none, moz webkit ms);
+		@include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+
+		@include prefix("transition", all .6s ease, moz webkit o);
+
+		@include responsive(SS){
+			right: 1rem;
+		}
+		@include responsive(XS){
+			right: 1rem;
+		}
+		@include responsive(SM){
+			right: 0rem;
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}			
+
+		&.showMxm {
+		  right: .4rem;
+		}
+
+		i {
+		  position: absolute;
+		  top: 2.1rem;
+		  right: 1rem;
+		  width: 2.2rem;
+		  height: .5rem;
+		  border-radius: .25rem;
+		  background: $color-black-hi;
+		  @include prefix("transition", all 0.15s ease, moz webkit o);
+
+		  transform-origin: 100% 50%
+		}
+
+		@include arrowTransform( 40deg, 0, .1rem );
+
+		&:hover {
+		  @include arrowTransform( 30deg, 0, .1rem );
+		}
+
+		&:active {
+		  @include arrowTransform( 25deg, 0rem, .1rem );
+		}
+
+		  
+
+
+	} 
+}

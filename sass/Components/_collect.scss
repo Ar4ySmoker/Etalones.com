@@ -1,0 +1,75 @@
+/*******************collect***********************/
+.collect {
+	@include elevation4;
+	background-color: $color-white;
+	padding: 10.4rem 9.6rem;
+	@include responsive(SS){
+	}
+	@include responsive(XS){
+		padding: 1.6rem 1.6rem;
+		margin-bottom: 4rem;
+	}
+	@include responsive(SM){
+		padding: 5.6rem 5.6rem;
+		margin-bottom: 4rem;
+	}
+	@include responsive(MD){
+		padding: 3.6rem 3.6rem;
+	}
+	@include responsive(LG){
+		padding: 5.6rem 5.6rem;
+	}
+	@include responsive(XL){
+	}	
+
+	&__side {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	&__heading {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		margin-bottom: 1.2rem;
+	}
+	&__paragraph {
+		margin-bottom: 2.4rem;
+	}
+	&__btn {
+
+	}
+	&__picture {
+		a {
+			img {
+				height: auto;
+				width: calc(100% + 30px);
+				@include prefix("transform", translateX(-30px), moz webkit ms o);
+				position: relative;
+				z-index: 99;
+
+				@include responsive(SS){
+					width: 100%;
+					@include prefix("transform", translateX(0), moz webkit ms o);
+				}
+				@include responsive(XS){
+					width: 100%;
+					@include prefix("transform", translateX(0), moz webkit ms o);
+				}
+				@include responsive(SM){
+					width: 100%;
+					@include prefix("transform", translateX(0), moz webkit ms o);
+				}
+				@include responsive(MD){
+				}
+				@include responsive(LG){
+				}
+				@include responsive(XL){
+				}	
+			}
+		}
+	}
+}

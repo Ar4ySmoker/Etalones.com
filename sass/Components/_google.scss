@@ -1,0 +1,45 @@
+/*******************google***********************/
+.google {
+	&__map {
+		width: 100%;
+		height: 656px;
+		@include responsive(SS){
+			height: 240px;
+		}
+		@include responsive(XS){
+			height: 260px;
+		}
+		@include responsive(SM){
+			height: 320px;
+		}
+		@include responsive(MD){
+			height: 360px;
+		}
+		@include responsive(LG){
+			height: 480px;
+		}
+		@include responsive(XL){
+		}			
+	}
+	&__map-v2 {
+		width: 100%;
+		height: 370px;
+		@include responsive(SS){
+			height: 370px;
+		}
+		@include responsive(XS){
+			height: 370px;
+		}
+		@include responsive(SM){
+			height: 370px;
+		}
+		@include responsive(MD){
+			height: 340px;
+		}
+		@include responsive(LG){
+			height: 370px;
+		}
+		@include responsive(XL){
+		}			
+	}
+} 

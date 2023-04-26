@@ -1,0 +1,64 @@
+/*******************pricing***********************/
+.pricing {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 2.4rem 1.6rem;
+	@include elevation1;
+	border-radius: 4px;
+
+	margin-bottom: 4rem;
+
+	&.active {
+		@include elevation6;
+	}
+	&__name {
+		text-align: center;
+	}
+	&__price {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+
+		margin-bottom: 1.2rem;
+		span {
+			text-align: center;
+		}
+		span:first-child {
+			position: relative;
+			&:before {
+				content: "\0024";
+			  	position: absolute;
+			  	top: 50%;
+			  	@include prefix("transform", translateY(-50%), moz webkit ms o);
+			  	right: 104%;
+			  	@include typo-h5;
+			  	color: $color-black-hi;
+			}
+		}
+	}
+	&__list {
+		
+		width: 100%;
+		margin-bottom: 2.4rem;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		li {
+			text-align: center;
+			border-bottom: 1px solid rgba($color-black, .06);
+			padding: 1.4rem .4rem;
+		}
+		li:first-child {
+			border-top: 1px solid rgba($color-black, .06);
+		}
+	}
+	&__btn {
+
+	}
+
+}

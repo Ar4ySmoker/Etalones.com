@@ -1,0 +1,867 @@
+/*******************item-2-portfolio***********************/
+
+.item-2-portfolio {
+
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+
+	
+	&__side {
+		width: 100%;
+		position: relative;
+
+  		img {
+  			height: auto;
+  			width: 100%;
+  			margin: auto;
+  		}
+  		&:hover .item-2-portfolio__content {
+  			@include effectShowPortfolio_placeInHover;
+  		}
+	}
+	
+
+	&__content {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color-black, .35);
+		z-index: 99;
+
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-start;
+		@include effectShowPortfolio_placeOutHover;
+
+	}
+	
+
+	.column2 &__content {
+
+		padding: 1.6rem 1.6rem 1.6rem;
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		} 
+		@include responsive(XL){
+		}	
+			
+			
+	}
+	.column3 &__content {
+
+		padding: 1.6rem 1.6rem 1.6rem;
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		} 
+		@include responsive(XL){
+		}	
+			
+			
+	}
+	.column4 &__content {
+
+		padding: 1.6rem 1.6rem 1.6rem;
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		} 
+		@include responsive(XL){
+		}	
+			
+			
+	}
+	.column5 &__content {
+
+		padding: 1.6rem 1.6rem 1.6rem;
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		} 
+		@include responsive(XL){
+		}	
+			
+			
+	}
+	.column2Full &__content {
+
+		padding: 1.6rem 1.6rem 1.6rem;
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		} 
+		@include responsive(XL){
+		}	
+			
+			
+	}
+	.column3Full &__content {
+
+		padding: 1.6rem 1.6rem 1.6rem;
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		} 
+		@include responsive(XL){
+		}	
+			
+			
+	}
+	.column4Full &__content {
+
+		padding: 1.6rem 1.6rem 1.6rem;
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		} 
+		@include responsive(XL){
+		}	
+			
+			
+	}
+	.column5Full &__content {
+
+		padding: 1.6rem 1.6rem 1.6rem;
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		} 
+		@include responsive(XL){
+		}	
+			
+			
+	}
+	&__icon {
+		i {
+			color: $color-white;
+		}
+		
+	}
+	
+	.column2 &__icon {
+		position: absolute;
+		top: 1.6rem;
+		left: 1.6rem;
+
+		i {
+			font-size: 2.4rem;
+		}
+		
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+			
+	}
+	.column3 &__icon {
+		position: absolute;
+		top: 1.6rem;
+		left: 1.6rem;
+
+		i {
+			font-size: 2.4rem;
+		}
+		
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+			
+	}
+	.column4 &__icon {
+		position: absolute;
+		top: 1.6rem;
+		left: 1.6rem;
+
+		i {
+			font-size: 2.4rem;
+		}
+		
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+			
+	}
+	.column5 &__icon {
+		position: absolute;
+		top: 1.6rem;
+		left: 1.6rem;
+
+		i {
+			font-size: 2.4rem;
+		}
+		
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+			
+	}
+	.column2Full &__icon {
+		position: absolute;
+		top: 1.6rem;
+		left: 1.6rem;
+
+		i {
+			font-size: 2.4rem;
+		}
+		
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+			
+	}
+	.column3Full &__icon {
+		position: absolute;
+		top: 1.6rem;
+		left: 1.6rem;
+
+		i {
+			font-size: 2.4rem;
+		}
+		
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+			
+	}
+	.column4Full &__icon {
+		position: absolute;
+		top: 1.6rem;
+		left: 1.6rem;
+
+		i {
+			font-size: 2.4rem;
+		}
+		
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+			
+	}
+	.column5Full &__icon {
+		position: absolute;
+		top: 1.6rem;
+		left: 1.6rem;
+
+		i {
+			font-size: 2.4rem;
+		}
+		
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+			
+	}
+	
+			
+	&__date-cate {
+		a {
+
+		}
+		span {
+			color: $color-white;
+		}
+			
+	}
+	
+	.column2 &__date-cate {
+		margin-bottom: .4rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+			
+	}
+	.column3 &__date-cate {
+		margin-bottom: .4rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+			
+	}
+	.column4 &__date-cate {
+		margin-bottom: .4rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+			
+	}
+	.column5 &__date-cate {
+		margin-bottom: .4rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+			display: none;
+		}
+			
+	}
+	.column2Full &__date-cate {
+		margin-bottom: .4rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+			
+	}
+	.column3Full &__date-cate {
+		margin-bottom: .4rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+			
+	}
+	.column4Full &__date-cate {
+		margin-bottom: .4rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+			
+	}
+	.column5Full &__date-cate {
+		margin-bottom: .4rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+			display: none;
+		}
+			
+	}
+	
+	&__name {
+	}
+	
+	.column2 &__name {
+		margin-bottom: .8rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+		
+	}
+	.column3 &__name {
+		margin-bottom: .8rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+		
+	}
+	.column4 &__name {
+		margin-bottom: .8rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+		
+	}
+	.column5 &__name {
+		margin-bottom: .8rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+		
+	}
+	.column2Full &__name {
+		margin-bottom: .8rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+		
+	}
+	.column3Full &__name {
+		margin-bottom: .8rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+		
+	}
+	.column4Full &__name {
+		margin-bottom: .8rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+		
+	}
+	.column5Full &__name {
+		margin-bottom: .8rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+		
+	}
+	
+	
+	&__paragraph {
+	}
+	
+	.column2 &__paragraph {
+		margin-bottom: 2rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+			display: none;
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+			
+	}
+	.column3 &__paragraph {
+		margin-bottom: 2rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+			display: none;
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+			display: none;
+		}
+		@include responsive(XL){
+		}	
+			
+	}
+	.column4 &__paragraph {
+		margin-bottom: 2rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+			display: none;
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+			display: none;
+		}
+		@include responsive(XL){
+			display: none;
+		}	
+			
+	}
+	.column5 &__paragraph {
+		margin-bottom: 2rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+			display: none;
+		}
+		@include responsive(MD){
+			display: none;
+		}
+		@include responsive(LG){
+			display: none;
+		}
+		@include responsive(XL){
+			display: none;
+		}	
+			
+	}
+	.column2Full &__paragraph {
+		margin-bottom: 2rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+			display: none;
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+			
+	}
+	.column3Full &__paragraph {
+		margin-bottom: 2rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+			display: none;
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+			display: none;
+		}
+		@include responsive(XL){
+		}	
+			
+	}
+	.column4Full &__paragraph {
+		margin-bottom: 2rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+			display: none;
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+			display: none;
+		}
+		@include responsive(XL){
+			
+		}
+		@include responsiveMxm(XXL){
+			display: none;
+		}	
+			
+	}
+	.column5Full &__paragraph {
+		margin-bottom: 2rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+			display: none;
+		}
+		@include responsive(MD){
+			display: none;
+		}
+		@include responsive(LG){
+			display: none;
+		}
+		@include responsive(XL){
+			display: none;
+		}
+		@include responsiveMxm(XXL){
+		}	
+			
+	}
+	
+
+	&__btn {
+
+	}
+	.column5 &__btn {
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+			display: none;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+			display: none;
+		}	
+			
+	}
+	.column5Full &__btn {
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+			display: none;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+		@include responsiveMxm(XXL){
+			display: none;
+		}
+			
+	}
+	
+
+
+
+		
+}
+

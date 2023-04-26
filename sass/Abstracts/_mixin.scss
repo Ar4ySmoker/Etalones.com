@@ -1,0 +1,844 @@
+/*******************mixin***********************/
+@mixin prefix($property, $value, $vendors: webkit moz ms o, $default: true) {
+  @if $vendors {
+    @each $vendor in $vendors {
+      #{"-" + $vendor + "-" + $property}: #{$value};
+    }
+  }
+  @if $default {
+    #{$property}: #{$value};
+  }
+}
+
+
+
+@mixin input-placeholder {
+  &:placeholder {
+    @content;
+  }
+  &::placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+@mixin arrowTransform( $angle, $x: 0, $y: 0 ) {
+  i:first-child {
+    transform: translate( $x, $y ) rotate( $angle );
+  }
+
+  i:last-child {
+    transform: translate( $x, -$y ) rotate( -$angle );
+  }
+}
+
+@mixin responsive($screen: XL) {
+  @if $screen == SS {
+    @media screen and (max-width: #{$extra-small-w - 1px}) {
+      @content;
+    }
+  }
+  @if $screen == XS {
+    @media screen and (min-width: #{$extra-small-w}) and (max-width: #{$small-w - 1px}) {
+      @content;
+    }
+  }
+
+  @if $screen == SM {
+    @media screen and (min-width: #{$small-w}) and (max-width: #{$medium-w - 1px}) {
+      @content;
+    }
+  }
+
+  @if $screen == MD {
+    @media screen and (min-width: #{$medium-w}) and (max-width: #{$large-w - 1px}) {
+      @content;
+    }
+  }
+  @if $screen == LG {
+    @media screen and (min-width: #{$large-w}) and (max-width: #{$extra-large-w - 1px}) {
+      @content;
+    }
+  }
+  @if $screen == XL {
+    @media screen and (min-width: #{$extra-large-w}) {
+      @content;
+    }
+  }
+}
+
+
+@mixin responsiveMxm($screen: XXL) {
+
+  @if $screen == XXL {
+    @media screen and (min-width: 1200px) and (max-width: 1686px) {
+      @content;
+    }
+  }
+
+}
+
+
+@mixin font-face($font-name, $file-name, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url($file-name + '.ttf')  format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin font-face-otf($font-name, $file-name, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url($file-name + '.otf')  format('opentype');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin font-face-woff2($font-name, $file-name, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url($file-name + '.woff2')  format('woff2');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+
+@mixin typo-h1{
+	font-size: 9.6rem;
+	line-height: 9.6rem;
+	letter-spacing: -0.067rem;
+	text-transform: none;
+	font-weight: 300;
+}
+
+@mixin typo-h2{
+	font-size: 6rem;
+	line-height: 6rem;
+	letter-spacing: 0rem;
+	text-transform: none;
+	font-weight: 300;
+}
+@mixin typo-h3{
+	font-size: 4.8rem;
+	line-height: 5.2rem;
+	letter-spacing: 0.043rem;
+	text-transform: none;
+	font-weight: 400;
+}
+@mixin typo-h4{
+	font-size: 3.4rem;
+	line-height: 4rem;
+	letter-spacing: 0.054rem;
+	text-transform: none;
+	font-weight: 400;
+}
+@mixin typo-h5{
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+	letter-spacing: 0.014rem;
+	text-transform: none;
+	font-weight: 500;
+}
+@mixin typo-h6{
+	font-size: 2rem;
+	line-height: 3.2rem;
+	letter-spacing: 0.024rem;
+	text-transform: none;
+	font-weight: 500;
+}
+@mixin typo-subtitle1{
+	font-size: 1.6rem;
+	line-height: 2.8rem;
+	letter-spacing: 0.014rem;
+	text-transform: none;
+	font-weight: 500;
+}
+@mixin typo-subtitle2{
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+	letter-spacing: 0.017rem;
+	text-transform: none;
+	font-weight: 500;
+}
+@mixin typo-body1{
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	letter-spacing: 0.05rem;
+	text-transform: none;
+	font-weight: 400;
+}
+@mixin typo-body2{
+	font-size: 1.4rem;
+	line-height: 2rem;
+	letter-spacing: 0.025rem;
+	text-transform: none;
+	font-weight: 400;
+}
+@mixin typo-button{
+	font-size: 1.4rem;
+	line-height: 3.6rem;
+	// line-height: 1;
+	letter-spacing: 0.125rem;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+@mixin typo-caption{
+	font-size: 1.2rem;
+	line-height: 2rem;
+	letter-spacing: 0.046rem;
+	text-transform: none;
+	font-weight: 400;
+}
+@mixin typo-overline{
+	font-size: 1.4rem;
+	line-height: 3.2rem;
+	letter-spacing: 0.15rem;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+
+
+
+@mixin filterDropShadow1{
+	filter: drop-shadow(0px 1px 1px  rgba($color-black, .14)) drop-shadow(0px 1px 3px  rgba($color-black, .12));
+}
+@mixin filterDropShadow2{
+	filter: drop-shadow(0px 2px 2px  rgba($color-black, .14)) drop-shadow(0px 1px 5px  rgba($color-black, .12));
+}
+@mixin filterDropShadow3{
+	filter: drop-shadow(0px 3px 4px  rgba($color-black, .14)) drop-shadow(0px 1px 8px  rgba($color-black, .12));
+}
+@mixin filterDropShadow4{
+	filter: drop-shadow(0px 4px 5px  rgba($color-black, .14)) drop-shadow(0px 1px 10px  rgba($color-black, .12));
+}
+@mixin filterDropShadow5{
+	filter: drop-shadow(0px 5px 8px  rgba($color-black, .14)) drop-shadow(0px 1px 14px  rgba($color-black, .12));
+}
+@mixin filterDropShadow6{
+	filter: drop-shadow(0px 6px 10px  rgba($color-black, .14)) drop-shadow(0px 1px 18px  rgba($color-black, .12));
+}
+@mixin filterDropShadow7{
+	filter: drop-shadow(0px 7px 11px  rgba($color-black, .14)) drop-shadow(0px 2px 17px  rgba($color-black, .12));
+}
+@mixin filterDropShadow8{
+	filter: drop-shadow(0px 8px 11px  rgba($color-black, .14)) drop-shadow(0px 3px 16px  rgba($color-black, .12));
+}
+
+
+
+
+
+@mixin box-shadow($left, $top, $blur, $spread, $color, $inset: false) {
+  @if $inset {
+    @include prefix("box-shadow", $left $top $blur $spread $color inset, moz webkit);
+  } @else {
+    @include prefix("box-shadow", $left $top $blur $spread $color, moz webkit);
+  }
+}
+@mixin box-shadow2($left1, $top1, $blur1, $spread1, $color1, $left2, $top2, $blur2, $spread2, $color2) {
+    @include prefix("box-shadow", $left1 $top1 $blur1 $spread1 $color1 ',' $left2 $top2 $blur2 $spread2 $color2, moz webkit);
+}
+
+@mixin elevation1{
+	@include box-shadow2(0px, 1px, 1px, 0px, rgba(#000000, .14), 0px, 1px, 3px, 0px, rgba(#000000, .12));
+}
+@mixin elevation2{
+	@include box-shadow2(0px, 2px, 2px, 0px, rgba(#000000, .14), 0px, 1px, 5px, 0px, rgba(#000000, .12));
+}
+@mixin elevation3{
+	@include box-shadow2(0px, 3px, 4px, 0px, rgba(#000000, .14), 0px, 1px, 8px, 0px, rgba(#000000, .12));
+}
+@mixin elevation4{
+	@include box-shadow2(0px, 4px, 5px, 0px, rgba(#000000, .14), 0px, 1px, 10px, 0px, rgba(#000000, .12));
+}
+@mixin elevation5{
+	@include box-shadow2(0px, 5px, 8px, 0px, rgba(#000000, .14), 0px, 1px, 14px, 0px, rgba(#000000, .12));
+}
+@mixin elevation6{
+	@include box-shadow2(0px, 6px, 10px, 0px, rgba(#000000, .14), 0px, 1px, 18px, 0px, rgba(#000000, .12));
+}
+@mixin elevation7{
+	@include box-shadow2(0px, 7px, 11px, 9px, rgba(#000000, .14), 0px, 2px, 17px, 6px, rgba(#000000, .12));
+}
+@mixin elevation8{
+	@include box-shadow2(0px, 8px, 11px, 9px, rgba(#000000, .14), 0px, 3px, 16px, 13px, rgba(#000000, .12));
+}
+@mixin elevation9{
+	@include box-shadow2(0px, 9px, 13px, 8px, rgba(#000000, .14), 0px, 3px, 18px, 11px, rgba(#000000, .12));
+}
+@mixin elevation10{
+	@include box-shadow2(0px, 10px, 15px, 7px, rgba(#000000, .14), 0px, 4px, 21px, 15px, rgba(#000000, .12));
+}
+@mixin elevation11{
+	@include box-shadow2(0px, 11px, 16px, 7px, rgba(#000000, .14), 0px, 4px, 23px, 13px, rgba(#000000, .12));
+}
+@mixin elevation12{
+	@include box-shadow2(0px, 12px, 19px, 11px, rgba(#000000, .14), 0px, 5px, 26px, 16px, rgba(#000000, .12));
+}
+@mixin elevation13{
+	@include box-shadow2(0px, 13px, 21px, 10px, rgba(#000000, .14), 0px, 5px, 28px, 15px, rgba(#000000, .12));
+}
+@mixin elevation14{
+	@include box-shadow2(0px, 14px, 23px, 9px, rgba(#000000, .14), 0px, 5px, 30px, 14px, rgba(#000000, .12));
+}
+@mixin elevation15{
+	@include box-shadow2(0px, 15px, 24px, 9px, rgba(#000000, .14), 0px, 6px, 33px, 15px, rgba(#000000, .12));
+}
+@mixin elevation16{
+	@include box-shadow2(0px, 16px, 26px, 8px, rgba(#000000, .14), 0px, 6px, 35px, 15px, rgba(#000000, .12));
+}
+@mixin elevation17{
+	@include box-shadow2(0px, 17px, 28px, 7px, rgba(#000000, .14), 0px, 6px, 37px, 14px, rgba(#000000, .12));
+}
+@mixin elevation18{
+	@include box-shadow2(0px, 18px, 30px, 7px, rgba(#000000, .14), 0px, 7px, 40px, 15px, rgba(#000000, .12));
+}
+@mixin elevation19{
+	@include box-shadow2(0px, 19px, 31px, 7px, rgba(#000000, .14), 0px, 7px, 42px, 15px, rgba(#000000, .12));
+}
+@mixin elevation20{
+	@include box-shadow2(0px, 20px, 34px, 9px, rgba(#000000, .14), 0px, 8px, 45px, 16px, rgba(#000000, .12));
+}
+@mixin elevation21{
+	@include box-shadow2(0px, 21px, 36px, 8px, rgba(#000000, .14), 0px, 8px, 47px, 15px, rgba(#000000, .12));
+}
+@mixin elevation22{
+	@include box-shadow2(0px, 22px, 38px, 8px, rgba(#000000, .14), 0px, 8px, 49px, 15px, rgba(#000000, .12));
+}
+@mixin elevation23{
+	@include box-shadow2(0px, 23px, 39px, 8px, rgba(#000000, .14), 0px, 9px, 52px, 16px, rgba(#000000, .12));
+}
+@mixin elevation24{
+	@include box-shadow2(0px, 24px, 41px, 8px, rgba(#000000, .14), 0px, 9px, 54px, 15px, rgba(#000000, .12));
+}
+
+
+
+@mixin linear($direction: to right bottom, $start-color, $end-color, $url: null) {
+		background-image: -webkit-linear-gradient($direction, $start-color, $end-color), $url;
+		background-image: -moz-linear-gradient($direction, $start-color, $end-color), $url;
+		background-image: -o-linear-gradient($direction, $start-color, $end-color), $url;
+		background-image: linear-gradient($direction, $start-color, $end-color), $url;
+}
+
+@mixin radial($shape: ellipse, $start-color, $end-color, $url: null) {
+		@if $shape == null {
+			background-image: -webkit-radial-gradient($start-color, $end-color), $url;
+			background-image: -moz-radial-gradient($start-color, $end-color), $url;
+			background-image: -o-radial-gradient($start-color, $end-color), $url;
+			background-image: radial-gradient($start-color, $end-color), $url;
+		}
+		@else {
+			background-image: -webkit-radial-gradient($shape, $start-color, $end-color), $url;
+			background-image: -moz-radial-gradient($shape, $start-color, $end-color), $url;
+			background-image: -o-radial-gradient($shape, $start-color, $end-color), $url;
+			background-image: radial-gradient($shape, $start-color, $end-color), $url;
+		}
+}
+
+@mixin radial-3-color($shape: ellipse, $color1, $color2, $color3) {
+		@if $shape == null {
+			background-image: -webkit-radial-gradient($color1, $color2, $color3);
+			background-image: -moz-radial-gradient($color1, $color2, $color3);
+			background-image: -o-radial-gradient($color1, $color2, $color3);
+			background-image: radial-gradient($color1, $color2, $color3);
+		}
+		@else {
+			background-image: -webkit-radial-gradient($shape, $color1, $color2, $color3);
+			background-image: -moz-radial-gradient($shape, $color1, $color2, $color3);
+			background-image: -o-radial-gradient($shape, $color1, $color2, $color3);
+			background-image: radial-gradient($shape, $color1, $color2, $color3);
+		}
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin transition($time: .3s, $seletor: all) {
+	@include prefix("transition", $seletor $time, moz webkit o);
+}
+
+
+
+
+@mixin effectGetUp_placeInHover {
+	@include elevation8;
+}
+@mixin effectGetUp_placeOutHover($time: 0.3s) {
+	@include elevation1;
+	// @include prefix("transition", box-shadow $time cubic-bezier(0.645, 0.045, 0.355, 1), moz webkit o);
+	@include prefix("transition", box-shadow 0.3s, moz webkit o);
+}
+
+@mixin effectGetUp_placeInHover2 {
+	@include elevation6;
+}
+@mixin effectGetUp_placeOutHover2($time: 0.3s) {
+	// @include elevation1;
+	// @include prefix("transition", box-shadow $time cubic-bezier(0.645, 0.045, 0.355, 1), moz webkit o);
+	@include prefix("transition", box-shadow 0.3s, moz webkit o);
+}
+
+
+@mixin effectSlideUpImg_placeInHover {
+	opacity: 1;
+	visibility: visible;
+	// @include prefix("transform", translateY(0px), moz webkit ms o);
+}
+
+
+@mixin effectSlideUpImg_placeOutHover($time: .6s) {
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	// @include prefix("transform", translateY(10px), moz webkit ms o);
+	@include prefix("transition", opacity $time ease 0s ',' visibility $time ease 0s, moz webkit o);
+	
+}
+
+
+
+@mixin effectCurtainUp_placeInHover {
+	opacity: 1;
+	@include prefix("transform", scaleY(1.0), moz webkit ms o);
+}
+@mixin effectCurtainUp_placeOutHover($time: .5s, $width: 100%) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: $width;
+	content: "";
+	@include prefix("transition", all $time ease-in-out .1s, moz webkit o);
+	@include prefix("transform-origin", bottom, moz webkit ms o);
+	@include prefix("transform-style", preserve-3d, moz webkit);
+	@include prefix("transform", scaleY(0), moz webkit ms o);
+	opacity: 1;
+	background-color: rgba($color-black, 0.3);
+	z-index: 4;	
+}
+
+
+
+@mixin effectCurtainDown_placeInHover {
+	opacity: 1;
+	@include prefix("transform", scaleY(1), moz webkit ms o);
+}
+@mixin effectCurtainDown_placeOutHover($time: .5s, $width: 100%) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: $width;
+	content: "";
+	@include prefix("transition", all $time ease-in-out .1s, moz webkit o);
+	@include prefix("transform-origin", top, moz webkit ms o);
+	@include prefix("transform-style", preserve-3d, moz webkit);
+	@include prefix("transform", scaleY(0), moz webkit ms o);
+	opacity: 1;
+	background-color: rgba($color-black, 0.3);
+	z-index: 4;	
+}
+
+
+@mixin effectCurtainUpNew_placeInHover {
+	top:auto;
+	bottom: 0;
+	height: 100%;
+}
+@mixin effectCurtainUpNew_placeOutHover($time: .5s, $width: 50%) {
+	position: absolute;
+
+	top: 0;
+	bottom: auto;
+	height: 0;
+	
+	left: 0;
+	width: $width;
+	content: "";
+	@include prefix("transition", all $time ease-in-out .1s, moz webkit o);
+	background-color: rgba($color-black, 0.3);
+	z-index: 4;	
+}
+
+
+@mixin effectCurtainDownNew_placeInHover {
+	top:0;
+	bottom: auto;
+	height: 100%;
+}
+@mixin effectCurtainDownNew_placeOutHover($time: .5s, $width: 50%) {
+	position: absolute;
+
+	top: auto;
+	bottom: 0;
+	height: 0;
+
+	right: 0;
+	width: $width;
+	content: "";
+	@include prefix("transition", all $time ease-in-out .1s, moz webkit o);
+	background-color: rgba($color-black, 0.3);
+
+
+	z-index: 4;	
+}
+
+
+
+@mixin effectZoomRotate_placeInHover {
+	@include prefix("transform", scale(1.2) rotate(1deg), moz webkit ms o);
+}
+@mixin effectZoomRotate_placeOutHover($time: .7s, $delay: .1s) {
+	@include prefix("transform", scale(1.0) rotate(0deg), moz webkit ms o);
+	@include prefix("transition", all $time ease-in-out $delay, moz webkit o);
+}
+
+
+@mixin effectZoomRotateLv2_placeInHover {
+	@include prefix("transform", scale(1.1) rotate(1deg), moz webkit ms o);
+}
+@mixin effectZoomRotateLv2_placeOutHover($time: .7s, $delay: .1s) {
+	@include prefix("transform", scale(1.0) rotate(0deg), moz webkit ms o);
+	@include prefix("transition", all $time ease-in-out $delay, moz webkit o);
+}
+
+
+@mixin effectPieceFan_placeInHover($time: 0.7s) {
+	opacity: 1;
+	left: 0;
+	@include prefix("transform", scaleY(1) skew(0deg, 0deg), moz webkit ms o);
+	@include prefix("transition", all $time cubic-bezier(0.62, 0.21, 0.45, 1.22), moz webkit o);	
+}
+@mixin effectPieceFan_placeOutHover($time: 0.9s) {
+	@include prefix("transition", all $time cubic-bezier(0.62, 0.21, 0.45, 1.22), moz webkit o);
+	@include prefix("transform-origin", top, moz webkit ms o);
+	@include prefix("transform-style", preserve-3d, moz webkit);
+	@include prefix("transform", scaleY(1) skew(-90deg, 0deg), moz webkit ms o);
+	position: absolute;
+	top: 0;
+	left: -100%;
+	bottom: 0;
+	width: 100%;
+	opacity: 0;
+	z-index: 2;	
+
+}
+
+
+
+@mixin effectFanIcon_placeInHover($time: 0.8s, $delay: 0.5s) {
+	opacity: 1;
+	@include prefix("transform", perspective(400px) rotate(0deg) , moz webkit ms o);
+	@include prefix("transition", all $time ease-in-out $delay, moz webkit o);
+}
+@mixin effectFanIcon_placeOutHover($time: 0.5s, $delay: 0s) {
+	@include prefix("transition", all $time ease-in-out $delay, moz webkit o);
+	@include prefix("transform-origin", top, moz webkit ms o);
+	@include prefix("transform-style", preserve-3d, moz webkit);
+	@include prefix("transform", perspective(400px) rotate(90deg), moz webkit ms o);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 3;	
+}
+
+
+@mixin effectZoom3D_placeInHover() {
+	@include prefix("transform", scale3d(1.05, 1.05, 1.05), moz webkit ms o);
+}
+@mixin effectZoom3D_placeOutHover($time: 1.5s) {
+	@include prefix("transform-style", preserve-3d, moz webkit);
+	@include prefix("transform", scale3d(1, 1, 1), moz webkit ms o);
+	@include prefix("transition", all $time cubic-bezier(0, 0, 0.2, 1), moz webkit o);			
+}
+
+
+@mixin effectUnderSlide_placeInHover() {
+	width: 100%;
+	left: 0;
+	right: auto;	
+}
+@mixin effectUnderSlide_placeOutHover($time: .6s) {
+	content: "";
+	position: absolute;
+	width: 0;
+	left: auto;
+	right: 0;
+
+	bottom: -.1rem;
+	height: .1rem;
+	@include prefix("transition", width $time cubic-bezier(0.25, 0.8, 0.25, 1) 0s, moz webkit o);	
+}
+
+
+
+
+
+@mixin effectButtonShine_placeInHover() {
+	opacity: 0;
+	@include prefix("transform", scaleX(1.4) scaleY(1.6), moz webkit ms o);
+	@include elevation2;	
+	@include prefix("transition", all .6s ease .1s, moz webkit o);
+}
+@mixin effectButtonShine_placeOutHover() {
+	background-color: $color-primary;
+	content: "";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 4px;
+	z-index: -1;
+	opacity: 1;
+	@include prefix("transition", all 0s ease 0s, moz webkit o); 	
+}
+
+
+@mixin effectButtonBgColor_placeInHover() {
+	color: $color-white;
+	border: 1px solid transparent;
+	background-color: $color-primary;
+	@include prefix("transition", background-color .4s ease 0s ',' color .1s ease 0s ',' border .1s ease 0s ,  moz webkit o);
+}
+@mixin effectButtonBgColor_placeOutHover() {
+	@include prefix("transition", background-color .1s ease 0s ',' color .1s ease 0s ',' border .1s ease 0s ,  moz webkit o);
+}
+
+
+
+
+
+@mixin effectButtonColorText_placeInHover() {
+	color: $color-white;
+	border: 1px solid transparent;
+}
+@mixin effectButtonColorText_placeOutHover() {
+	@include prefix("transition", color .0s ease 0s ',' border .3s ease 0s ,  moz webkit o);
+}
+
+
+@mixin effectButtonScaleX_placeInHover() {
+	opacity: 1;
+	@include prefix("transform",scale(1, 1), moz webkit ms o);	
+	border-radius: 4px;
+	@include elevation2;
+	@include prefix("transition", all .3s ease 0s,  moz webkit o);
+}
+@mixin effectButtonScaleX_placeOutHover() {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+	background-color: $color-primary;
+	@include prefix("transition", all .2s ease 0s,  moz webkit o);
+	@include prefix("transform",scale(0.5, 1), moz webkit ms o);
+	@include elevation2;	
+	border-radius: 12px;
+}
+
+
+@mixin effectShowPortfolio_placeInHover() {
+	opacity: 1;
+	visibility: visible;
+
+}
+@mixin effectShowPortfolio_placeOutHover() {
+	opacity: 0;
+	visibility: hidden;
+	@include prefix("transition", all 1.2s ease 0s,  moz webkit o); 
+
+	@include responsive(SS){
+		opacity: 1;
+		visibility: visible;
+	}
+	@include responsive(XS){
+		opacity: 1;
+		visibility: visible;
+	}
+	@include responsive(SM){
+		opacity: 1;
+		visibility: visible;
+	}
+	@include responsive(MD){
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}	
+}
+
+@mixin effectZoomImg_placeInHover() {
+	@include prefix("transform", scale3d(1.1, 1.1, 1.1), moz webkit ms o);
+
+}
+@mixin effectZoomImg_placeOutHover() {
+	@include prefix("transition", all 1.5s cubic-bezier(0, 0, 0.2, 1), moz webkit o);
+	@include prefix("transform", scale3d(1, 1, 1), moz webkit ms o);
+	@include prefix("transform-style", preserve-3d, moz webkit);
+}
+
+@mixin effectShowHide_placeInHover() {
+	visibility: visible;
+	opacity: 1;
+
+}
+@mixin effectShowHide_placeOutHover() {
+	visibility: hidden;
+	opacity: 0;
+	@include prefix("transition", all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), moz webkit o);
+
+}
+
+
+@mixin effectSliderIconLink_placeInHover() {
+	opacity: 1;
+	@include prefix("transform", translate(-50%, -50%), moz webkit ms o);
+
+}
+@mixin effectSliderIconLink_placeOutHover() {
+	opacity: 0;
+	@include prefix("transition", all .3s, moz webkit o);
+	@include prefix("transform", translate(-50%, -20%), moz webkit ms o);
+}
+
+@mixin effectBlurImg_placeInHover() {
+	filter: blur(.5rem) brightness(70%);
+	@include prefix("transform", scale(1.1), moz webkit ms o);
+}
+@mixin effectBlurImg_placeOutHover() {
+	@include prefix("transform", scale(1), moz webkit ms o);
+	@include prefix("transition", all .3s, moz webkit o);
+}
+
+
+@mixin effectShadowCircleIconBorderOut_placeInHover() {
+	box-shadow: 0 0 0 4px rgba($color-white, .38);
+}
+@mixin effectShadowCircleIconBorderOut_placeOutHover() {
+	@include prefix("transition", box-shadow 0.5s, moz webkit o);
+	box-shadow: 0 0 0 0px rgba($color-white, .38);
+}
+
+@mixin effectShadowCircleIconZoomText_placeInHover() {
+	@include prefix("transform", scale(1.08), moz webkit ms o);
+}
+@mixin effectShadowCircleIconZoomText_placeOutHover() {
+	@include prefix("transition", transform 0.5s, moz webkit o);
+    @include prefix("transform", scale(1), moz webkit ms o);	
+}
+
+@mixin effectShadowCircleIconBorderInside_placeInHover() {
+
+ 	@include prefix("transform", scale(.85), moz webkit ms o);
+    opacity: 0.5;
+}
+@mixin effectShadowCircleIconBorderInside_placeOutHover() {
+	opacity: 1;
+    @include prefix("transition", transform 0.5s, opacity 0.5s, moz webkit o);
+    @include prefix("transform", scale(1), moz webkit ms o);
+    box-shadow: 0 0 0 1px $color-white;
+}
+
+
+@mixin effectShadowCircleIconBorderInsideBlack_placeInHover() {
+
+ 	@include prefix("transform", scale(.85), moz webkit ms o);
+    opacity: 0.5;
+}
+@mixin effectShadowCircleIconBorderInsideBlack_placeOutHover() {
+	opacity: 1;
+    @include prefix("transition", transform 0.5s, opacity 0.5s, moz webkit o);
+    @include prefix("transform", scale(1), moz webkit ms o);
+    box-shadow: 0 0 0 1px $color-black-di;
+}
+@mixin effectShadowCircleIconBorderOutBlack_placeInHover() {
+	box-shadow: 0 0 0 4px rgba($color-black, .12);
+}
+@mixin effectShadowCircleIconBorderOutBlack_placeOutHover() {
+	@include prefix("transition", box-shadow 0.5s, moz webkit o);
+	box-shadow: 0 0 0 0px rgba($color-black, .12);
+}
+
+
+@mixin effectLineWd_placeInHover() {
+	@include prefix("transform", scaleX(.8), moz webkit ms o);
+}
+@mixin effectLineWd_placeOutHover() {
+	@include prefix("transition", all .3s, moz webkit o);
+	@include prefix("transform", scaleX(1), moz webkit ms o);	
+}
+
+
+
+@mixin effectShowNews_placeInHover() {
+	opacity: 1;
+	visibility: visible;
+
+}
+@mixin effectShowNews_placeOutHover() {
+	opacity: 0;
+	visibility: hidden;
+	@include prefix("transition", all .6s ease 0s,  moz webkit o);
+
+	@include responsive(SS){
+		opacity: 1;
+		visibility: visible;
+	}
+	@include responsive(XS){
+		opacity: 1;
+		visibility: visible;
+	}
+	@include responsive(SM){
+		opacity: 1;
+		visibility: visible;
+	}
+	@include responsive(MD){
+		opacity: 1;
+		visibility: visible;
+	}
+	@include responsive(LG){
+	}
+	@include responsive(XL){
+	}	
+}

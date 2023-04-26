@@ -1,0 +1,389 @@
+/*******************brand***********************/
+.brand {
+	position: relative;
+
+	&:hover .brand__prev,
+	&:hover .brand__next {
+		opacity: 1;
+	}
+
+	&__title {
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+
+	&__viewport {
+		max-height: 42.4rem;
+		@include prefix("transition", all 1s ease, moz webkit o);
+		li {
+			display: none;
+			-webkit-backface-visibility: hidden;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+			a {
+				&:hover img {
+					filter: none;
+				}
+				img {
+				  	max-width: 100%;
+					display: block;
+				  	height: auto;
+	  				@include prefix("user-select", none, moz webkit ms);
+	  				filter: contrast(10%);
+
+					@include responsive(SS){
+						filter: none;
+					}
+					@include responsive(XS){
+						filter: none;
+					}
+					@include responsive(SM){
+						filter: none;
+					}
+					@include responsive(MD){
+						filter: none;
+					}
+					@include responsive(LG){
+					}
+					@include responsive(XL){
+					}	  				
+				}				
+			}
+
+		}
+	}
+	&__direction-nav {
+
+	}
+	&__nav-prev {
+
+	}
+	&__prev {
+		position: absolute;
+		top: 50%;
+		left: -3.6rem;
+		opacity: 0;
+		@include prefix("transform", translateY(-50%), moz webkit ms o);
+		@include prefix("user-select", none, moz webkit ms);
+		cursor: pointer;
+		display: block;
+
+		width: 4.8rem;
+		height: 4.8rem;
+		@include prefix("user-select", none, moz webkit ms);
+		@include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+
+		@include prefix("transition", all .6s ease, moz webkit o);
+
+
+		@include responsive(SS){
+			left: 0;
+			opacity: 1;
+		}
+		@include responsive(XS){
+			left: 0;
+			opacity: 1;
+		}
+		@include responsive(SM){
+			opacity: 1;
+		}
+		@include responsive(MD){
+			opacity: 1;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+
+
+		&.showMxm {
+			left: .4rem;
+		}
+
+		i {
+			position: absolute;
+			top: 2.1rem;
+			left: 1rem;
+			width: 2.2rem;
+			height: .5rem;
+			border-radius: .25rem;
+			background: $color-white-hi;
+			@include prefix("transition", all 0.15s ease, moz webkit o);
+
+			transform-origin: 0% 50%
+		}
+
+		@include arrowTransform( 40deg, 0, -.1rem );
+
+		&:hover {
+			@include arrowTransform( 30deg, 0, -.1rem );
+		}
+
+		&:active {
+			@include arrowTransform( 25deg, 0rem, -.1rem );
+		}
+
+	      
+
+	    
+  	}
+	&__nav-next {
+
+	}
+	&__next {
+		position: absolute;
+		top: 50%;
+		right: -3.6rem;
+		opacity: 0;
+		@include prefix("transform", translateY(-50%), moz webkit ms o);
+		@include prefix("user-select", none, moz webkit ms);
+		cursor: pointer;
+		display: block;
+
+		width: 4.8rem;
+		height: 4.8rem;
+		@include prefix("user-select", none, moz webkit ms);
+		@include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+
+		@include prefix("transition", all .6s ease, moz webkit o);
+
+		@include responsive(SS){
+			right: 0;
+			opacity: 1;
+		}
+		@include responsive(XS){
+			right: 0;
+			opacity: 1;
+		}
+		@include responsive(SM){
+			opacity: 1;
+		}
+		@include responsive(MD){
+			opacity: 1;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}			
+
+		&.showMxm {
+		  right: .4rem;
+		}
+
+		i {
+		  position: absolute;
+		  top: 2.1rem;
+		  right: 1rem;
+		  width: 2.2rem;
+		  height: .5rem;
+		  border-radius: .25rem;
+		  background: $color-white-hi;
+		  @include prefix("transition", all 0.15s ease, moz webkit o);
+
+		  transform-origin: 100% 50%
+		}
+
+		@include arrowTransform( 40deg, 0, .1rem );
+
+		&:hover {
+		  @include arrowTransform( 30deg, 0, .1rem );
+		}
+
+		&:active {
+		  @include arrowTransform( 25deg, 0rem, .1rem );
+		}
+
+		  
+
+
+	}
+}
+
+
+
+
+
+
+
+
+.bgd02 .brand {
+
+	&__viewport {
+		li {
+			a {
+				img {
+	  				filter: none;
+				}				
+			}
+
+		}
+	}
+	
+	&__prev {
+		i {
+			background: $color-black-hi;
+		}
+  	}
+	&__next {
+		i {
+		  background: $color-black-hi;
+
+		}
+	}
+}
+
+.bgd03 .brand {
+
+	&__viewport {
+		li {
+			a {
+				img {
+	  				filter: none;
+				}				
+			}
+
+		}
+	}
+	
+	&__prev {
+		i {
+			background: $color-black-hi;
+		}
+  	}
+	&__next {
+		i {
+		  background: $color-black-hi;
+
+		}
+	}
+}
+
+.bgd04 .brand {
+
+	&__viewport {
+		li {
+			a {
+				img {
+	  				filter: none;
+				}				
+			}
+
+		}
+	}
+	
+	&__prev {
+		i {
+			background: $color-black-hi;
+		}
+  	}
+	&__next {
+		i {
+		  background: $color-black-hi;
+
+		}
+	}
+}
+
+.bgd05 .brand {
+
+	&__viewport {
+		li {
+			a {
+				img {
+	  				filter: none;
+				}				
+			}
+
+		}
+	}
+	
+	&__prev {
+		i {
+			background: $color-black-hi;
+		}
+  	}
+	&__next {
+		i {
+		  background: $color-black-hi;
+
+		}
+	}
+}
+
+.bgd06 .brand {
+
+	&__viewport {
+		li {
+			a {
+				img {
+	  				filter: none;
+				}				
+			}
+
+		}
+	}
+	
+	&__prev {
+		i {
+			background: $color-black-hi;
+		}
+  	}
+	&__next {
+		i {
+		  background: $color-black-hi;
+
+		}
+	}
+}
+
+.bgd07 .brand {
+
+	&__viewport {
+		li {
+			a {
+				img {
+	  				filter: none;
+				}				
+			}
+
+		}
+	}
+	
+	&__prev {
+		i {
+			background: $color-black-hi;
+		}
+  	}
+	&__next {
+		i {
+		  background: $color-black-hi;
+
+		}
+	}
+}
+
+.bgd08 .brand {
+
+	&__viewport {
+		li {
+			a {
+				img {
+	  				filter: none;
+				}				
+			}
+
+		}
+	}
+	
+	&__prev {
+		i {
+			background: $color-black-hi;
+		}
+  	}
+	&__next {
+		i {
+		  background: $color-black-hi;
+
+		}
+	}
+}

@@ -1,0 +1,740 @@
+/*******************slider-swiper-v1***********************/
+.slider-swiper-v1 {
+ 
+  &__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__box {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include responsive(SS){
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+      max-width: 540px;
+    }
+    @include responsive(MD){
+      max-width: 720px;
+    }
+    @include responsive(LG){
+      max-width: 960px;
+    }
+    @include responsive(XL){
+      max-width: 1170px;
+    }     
+    
+  }
+
+  &__img {
+
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    // width:100%;
+
+    @include responsive(SS){  
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+    }
+    @include responsive(MD){
+    }
+    @include responsive(LG){
+    }
+    @include responsive(XL){
+    } 
+
+  }  
+
+
+
+
+}
+
+
+.slider-swiper-v5 {
+ 
+  &__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__box {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include responsive(SS){
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+      max-width: 540px;
+    }
+    @include responsive(MD){
+      max-width: 720px;
+    }
+    @include responsive(LG){
+      max-width: 960px;
+    }
+    @include responsive(XL){
+      max-width: 1170px;
+    }     
+    
+  }
+
+  &__img {
+
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    // width:100%;
+
+    @include responsive(SS){  
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+    }
+    @include responsive(MD){
+    }
+    @include responsive(LG){
+    }
+    @include responsive(XL){
+    } 
+
+  }  
+
+
+
+
+}
+
+
+.slider-swiper-v8 {
+ 
+  &__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__box {
+    width: 100%;
+    padding-right: 56px;
+    padding-left: 56px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include responsive(SS){
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    @include responsive(XS){
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    @include responsive(SM){
+      max-width: 540px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    @include responsive(MD){
+      max-width: 720px;
+    }
+    @include responsive(LG){
+      max-width: 960px;
+    }
+    @include responsive(XL){
+      max-width: 1170px;
+    }     
+    
+  }
+
+  &__img {
+
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    // width:100%;
+
+    @include responsive(SS){  
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+    }
+    @include responsive(MD){
+    }
+    @include responsive(LG){
+    }
+    @include responsive(XL){
+    } 
+
+  }  
+
+
+
+
+}
+
+.slider-swiper-v9 {
+ 
+  &__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__box {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include responsive(SS){
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+      max-width: 540px;
+    }
+    @include responsive(MD){
+      max-width: 720px;
+    }
+    @include responsive(LG){
+      max-width: 960px;
+    }
+    @include responsive(XL){
+      max-width: 1170px;
+    }     
+    
+  }
+
+  &__img {
+
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    // width:100%;
+
+    @include responsive(SS){  
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+    }
+    @include responsive(MD){
+    }
+    @include responsive(LG){
+    }
+    @include responsive(XL){
+    } 
+
+  } 
+
+
+
+
+
+}
+
+
+.slider-swiper-v10 {
+ 
+  &__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__box {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include responsive(SS){
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+      max-width: 540px;
+    }
+    @include responsive(MD){
+      max-width: 720px;
+    }
+    @include responsive(LG){
+      max-width: 960px;
+    }
+    @include responsive(XL){
+      max-width: 1170px;
+    }     
+    
+  }
+
+  &__img {
+
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    // width:100%;
+
+    @include responsive(SS){  
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+    }
+    @include responsive(MD){
+    }
+    @include responsive(LG){
+    }
+    @include responsive(XL){
+    } 
+    @include responsiveMxm(XXL){
+    }
+
+  } 
+  &__list-pic {
+
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    @include responsive(SS){  
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+    }
+    @include responsive(MD){
+    }
+    @include responsive(LG){
+    }
+    @include responsive(XL){
+    } 
+    @include responsiveMxm(XXL){
+        // left: -240px;
+    }    
+    &--item {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        pointer-events: none;
+        user-select: none;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%) translateX(-45%);
+        opacity: 0;
+        transition: all .8s;  
+
+
+        height: 100%;
+        width: 100%;
+
+        &.active {
+            opacity: 1;
+            transform: translateY(-50%) translateX(0);
+            transition-delay: .4s;
+        }              
+    }
+    &--img {
+        object-fit: contain;
+        object-position: center right;   
+
+        height: auto;
+        max-width: 100%;     
+    }
+  } 
+
+
+
+
+
+  &__wrap-out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 99;
+  }
+
+  &__txt-box {
+
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+
+    @include responsive(SS){
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+      max-width: 540px;
+    }
+    @include responsive(MD){
+      max-width: 720px;
+    }
+    @include responsive(LG){
+      max-width: 960px;
+    }
+    @include responsive(XL){
+      max-width: 1170px;
+    } 
+
+    &--side {
+
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        @include prefix("transform", translateY(-50%), moz webkit ms o);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        
+        @include prefix("user-select", none, moz webkit ms);
+
+        z-index: 3;
+
+
+        & > * {
+            opacity: 0;
+            visibility: hidden;
+            @include prefix("transition", all 0s, moz webkit o);
+            @include prefix("transform", translateY(32px), moz webkit ms o);
+            @for $i from 0 to 9 {
+                &:nth-child(#{$i + 1}) {
+                  transition-delay: 0s;
+                }
+            }           
+        }
+        &.active {
+
+             z-index: 8;
+
+            & > * { 
+                opacity: 1;
+                visibility: visible;
+                @include prefix("transform", translateY(0px), moz webkit ms o); 
+                @include prefix("transition", all .8s, moz webkit o);
+
+                @for $i from 0 to 9 {
+                    &:nth-child(#{$i + 1}) {
+                      transition-delay: $i * 0.2 + 0.3s;
+                    }
+                }                
+            }
+
+        }        
+
+    }
+    &--title {
+        margin-bottom: 0.8rem;
+        text-align: right;
+
+        @include responsive(SS){
+            margin-bottom: 0.8rem;
+            @include typo-subtitle1;
+
+            text-shadow: 0px 4px 5px  rgba($color-black, .87);
+        }
+        @include responsive(XS){
+            margin-bottom: 0.8rem;
+            @include typo-subtitle1;
+            
+            text-shadow: 0px 4px 5px  rgba($color-black, .87);
+
+        }
+        @include responsive(SM){
+            margin-bottom: 0.8rem;
+            @include typo-subtitle1;
+
+            text-shadow: 0px 4px 5px  rgba($color-black, .87);
+        }
+        @include responsive(MD){
+            margin-bottom: 0.8rem;
+            @include typo-subtitle1;
+        }
+        @include responsive(LG){
+            @include typo-subtitle1;
+        }
+        @include responsive(XL){
+        }        
+    }
+    &--sub-title {
+        margin-bottom: 2rem;
+        text-align: right;
+
+        @include responsive(SS){
+            @include typo-h4;
+            margin-bottom: 1.2rem;
+
+            text-shadow: 0px 4px 5px  rgba($color-black, .87);
+        }
+        @include responsive(XS){
+            @include typo-h4;
+            margin-bottom: 1.2rem;
+
+            text-shadow: 0px 4px 5px  rgba($color-black, .87);
+        }
+        @include responsive(SM){
+            @include typo-h4;
+            margin-bottom: 1.2rem;
+
+            text-shadow: 0px 4px 5px  rgba($color-black, .87);
+        }
+        @include responsive(MD){
+            @include typo-h4;
+            margin-bottom: 1.2rem;
+        }
+        @include responsive(LG){
+            @include typo-h4;
+        }
+        @include responsive(XL){
+        }        
+    }
+    &--paragraph {
+        text-align: right;
+        margin-bottom: 2.4rem;
+
+        @include responsive(SS){
+            margin-bottom: 1.6rem;
+            br {
+                display: none;
+            }
+            display: none;
+        }
+        @include responsive(XS){
+            margin-bottom: 1.6rem;
+            br {
+                display: none;
+            }
+            display: none;
+        }
+        @include responsive(SM){
+            margin-bottom: 1.6rem;
+            display: none;
+        }
+        @include responsive(MD){
+            margin-bottom: 1.6rem;
+            display: none;
+        }
+        @include responsive(LG){
+        }
+        @include responsive(XL){
+        }           
+    }
+    &--btn {
+        
+    }
+  }
+
+
+
+
+}
+
+
+.slider-swiper-v11 {
+ 
+  &__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__box {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include responsive(SS){
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+      max-width: 540px;
+    }
+    @include responsive(MD){
+      max-width: 720px;
+    }
+    @include responsive(LG){
+      max-width: 960px;
+    }
+    @include responsive(XL){
+      max-width: 1170px;
+    }     
+    
+  }
+
+  &__img {
+
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    // width:100%;
+
+    @include responsive(SS){  
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+    }
+    @include responsive(MD){
+    }
+    @include responsive(LG){
+    }
+    @include responsive(XL){
+    } 
+
+  }  
+
+
+
+
+}
+
+
+.slider-swiper-v12 {
+ 
+  &__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__box {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include responsive(SS){
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+      max-width: 540px;
+    }
+    @include responsive(MD){
+      max-width: 720px;
+    }
+    @include responsive(LG){
+      max-width: 960px;
+    }
+    @include responsive(XL){
+      max-width: 1170px;
+    }     
+    
+  }
+
+  &__img {
+
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    // width:100%;
+
+    @include responsive(SS){  
+    }
+    @include responsive(XS){
+    }
+    @include responsive(SM){
+    }
+    @include responsive(MD){
+    }
+    @include responsive(LG){
+    }
+    @include responsive(XL){
+    } 
+
+  }  
+
+
+
+
+}
+
+
+

@@ -1,0 +1,48 @@
+/*******************number***********************/
+.number {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	margin-bottom: 4rem;
+	&__name {
+		text-align: center;
+		margin-bottom: 1.2rem;
+	}
+	&__percent {
+		text-align: center;
+		margin-bottom: .4rem;
+		position: relative;
+		&:before {
+			content: "\0025";
+		  	position: absolute;
+		  	top: 0;
+		  	left: 100%;
+		  	@include typo-h3;
+		  	color: $color-black-hi;
+		}
+	}
+	&__paragraph {
+		text-align: center;
+		padding: 0 1rem;
+		@include responsive(SS){
+			padding: 0 2rem;
+		}
+		@include responsive(XS){
+			padding: 0 4rem;
+		}
+		@include responsive(SM){
+			padding: 0 12rem;
+		}
+		@include responsive(MD){
+			padding: 0 1rem;
+		}
+		@include responsive(LG){
+			padding: 0 2rem;
+		}
+		@include responsive(XL){
+		}	
+
+	}
+}

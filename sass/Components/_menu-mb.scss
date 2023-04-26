@@ -1,0 +1,213 @@
+/*******************menu-mb***********************/
+.menu-mb {
+	background-color: $color-grey-dark;
+	position: relative;
+
+	width: 400px;
+	max-width: 84%;
+	height: 100%;
+
+	@include prefix("transition", all .3s, moz webkit o);
+	overflow-y: auto;
+	@include prefix("transform", translateX(-100%), moz webkit ms o);
+	
+	.menu-show & {
+		@include prefix("transform", none, moz webkit ms o);
+	}
+
+	&__header {
+		height: 56px;
+		background-color: $color-white;
+		width: 100%;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	&__logo-box {
+		margin-left: 16px;
+	}	
+
+	&__logo-link {
+		display: block;
+		img {
+			height: auto;
+			max-width: 72%;
+			margin: auto 0;
+		}
+	}
+	&__close-box {
+		margin-right: 8px;
+	}
+	&__close-link {
+
+		position: relative;
+		cursor: pointer;
+		height: 4rem;
+		width: 4rem;
+		display: block;
+
+		&:hover:before, &:hover:after {
+			@include prefix("transform", rotate(0deg), moz webkit ms o);
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 1.9rem;
+			left: .8rem;
+			
+			width: 2.4rem;
+			height: .3rem;
+			background: $color-grey;
+
+			@include prefix("transform-origin", 50% 50%, moz webkit ms o);
+			@include prefix("transition", all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), moz webkit o);
+			@include prefix("transform", rotate(-45deg), moz webkit ms o);
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			top: 1.9rem;
+			left: .8rem;
+			
+			width: 2.4rem;
+			height: .3rem;
+			background: $color-grey;
+
+			@include prefix("transform-origin", 50% 50%, moz webkit ms o);
+			@include prefix("transition", all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), moz webkit o);
+			@include prefix("transform", rotate(45deg), moz webkit ms o);
+
+		}
+
+	}
+	&__close-icon {
+
+	}
+
+	&__content {
+
+	}
+	&__list {
+		&--lv2 {
+
+		}
+		&--lv3 {
+
+		}
+
+	}
+	&__item {
+
+		&:hover > a {
+			color: $color-white;
+		}
+		
+
+		&--lv2 {
+			&:hover > a {
+				color: $color-white;
+			}
+			
+
+		}
+		&--lv3 {
+			&:hover > a {
+				color: $color-white;
+			}
+			
+
+		}
+	}
+	&__link {
+
+		@include typo-button;
+		color: $color-white;
+		display: block;
+		padding: 4px 16px;
+		border-bottom: 1px solid rgba($color-white, 0.2);
+		overflow: hidden;
+		position: relative;
+		background-color: $color-grey-dark;
+		@include prefix("transition", all 0.3s, moz webkit o);
+		&:hover {
+			color: $color-white;
+			
+		}
+		.menu-mb--drop > &:before {
+			content: "\E5CF";
+			position: absolute;
+			top: 50%;
+			right: 16px;
+			@include prefix("transform", translateY(-50%) rotate(0deg), moz webkit ms o);
+			@include prefix("transform-origin", 50% 50%, moz webkit ms o);
+			font-family: "Material Icons";
+			font-size: 2rem;
+			color: $color-white;
+			@include prefix("transition", all 0.3s, moz webkit o);
+		}
+		.menu-mb--drop.openMn > &:before {
+			@include prefix("transform", translateY(-50%) rotate(-180deg), moz webkit ms o);
+			
+		}
+
+		&--lv2 {
+			@include typo-overline;
+			color: $color-white;
+			display: block;
+			padding: 4px 24px;
+			border-bottom: 1px solid rgba($color-white, 0.2);
+			overflow: hidden;
+			position: relative;
+			background-color: $color-grey-dark-v2;
+			@include prefix("transition", all 0.3s, moz webkit o);
+			&:hover {
+				color: $color-white;
+			}
+			.menu-mb--drop > &:before {
+				content: "\E5CF";
+				position: absolute;
+				top: 50%;
+				right: 16px;
+				@include prefix("transform", translateY(-50%) rotate(0deg), moz webkit ms o);
+				@include prefix("transform-origin", 50% 50%, moz webkit ms o);
+				font-family: "Material Icons";
+				font-size: 2rem;
+				color: $color-white;
+				@include prefix("transition", all 0.3s, moz webkit o);
+			}
+			.menu-mb--drop.openMn > &:before {
+				@include prefix("transform", translateY(-50%) rotate(-180deg), moz webkit ms o);
+			}			
+		}
+		&--lv3 {
+			@include typo-overline;
+			color: $color-white;
+			display: block;
+			padding: 4px 24px;
+			border-bottom: 1px solid rgba($color-white, 0.2);
+			overflow: hidden;
+			position: relative;
+			background-color: $color-grey-dark-v3;
+			@include prefix("transition", all 0.3s, moz webkit o);
+			&:hover {
+				color: $color-white;
+				
+			}
+			.menu-mb--drop > &:before {
+				content: "\E5CF";
+				position: absolute;
+				top: 50%;
+				right: 16px;
+				@include prefix("transform", translateY(-50%) rotate(0deg), moz webkit ms o);
+				font-family: "Material Icons";
+				font-size: 2rem;
+				color: $color-white;
+			}
+		}
+	}
+
+}

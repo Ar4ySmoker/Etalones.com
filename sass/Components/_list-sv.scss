@@ -1,0 +1,204 @@
+/*******************list-sv***********************/
+.list-sv {
+	margin-bottom: 4rem;
+	&__list {
+		&--lv2 {
+			padding: 8px 16px 8px 72px;
+		}
+	}
+	&__item {
+		margin-bottom: .4rem;
+	}
+	&__link {
+		@include typo-subtitle1;
+		color: $color-black-hi;
+		display: block;
+		padding: 8px 42px 8px 72px;
+		border: 1px solid rgba($color-black, 0.12);
+		overflow: hidden;
+		position: relative;
+		background-color: $color-white;
+		@include prefix("transition", all 0.3s, moz webkit o);
+		&:hover {
+			color: $color-black;
+		}
+		.list-sv--drop > &:before {
+			content: "\E5CF";
+			position: absolute;
+			top: 50%;
+			right: 16px;
+			@include prefix("transform", translateY(-50%) rotate(0deg), moz webkit ms o);
+			@include prefix("transform-origin", 50% 50%, moz webkit ms o);
+			font-family: "Material Icons";
+			font-size: 2.4rem;
+			color: $color-black-hi;
+			@include prefix("transition", all 0.3s, moz webkit o);
+		}
+		.list-sv--drop > &:after {
+			content: "\E5CA";
+			position: absolute;
+			top: 50%;
+			left: 16px;
+			@include prefix("transform", translateY(-50%), moz webkit ms o);
+			@include prefix("transform-origin", 50% 50%, moz webkit ms o);
+			font-family: "Material Icons";
+			font-size: 2.4rem;
+			color: $color-black-hi;
+			@include prefix("transition", all 0.3s, moz webkit o);
+		}
+		.list-sv--drop.openMn > &:before {
+			@include prefix("transform", translateY(-50%) rotate(-180deg), moz webkit ms o);
+			
+		}
+	}
+	&__paragraph {
+		margin-bottom: 4rem;
+	}
+
+
+
+
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+
+		margin-bottom: 4rem;
+	}
+
+
+	&__news {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+
+		&:not(:last-child){
+			margin-bottom: 2.4rem;
+		}
+
+		&:hover .list-sv__picture{
+			@include effectZoom3D_placeInHover;
+		}
+		&:hover .list-sv__link1--overlay {
+			@include effectPieceFan_placeInHover();
+		}
+		&:hover .list-sv__link1--icon {
+			@include effectFanIcon_placeInHover();
+		}
+
+	}
+	&__link1 {
+
+		overflow: hidden;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color-black, .03);
+			z-index: 1;
+		}
+
+		&--overlay {
+			background-color: rgba($color-black, 0.5);
+			@include effectPieceFan_placeOutHover();
+			
+		}
+		&--icon {
+			@include effectFanIcon_placeOutHover();
+			
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+
+			i {
+				color: white;
+				font-size: 2.4rem;
+			}
+			
+		}
+
+	}
+	&__picture {
+		height: auto;
+		width: 100%;
+		max-width: 16rem;
+		
+		@include effectZoom3D_placeOutHover();
+
+	}
+	&__content {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding-left: 1.6rem;
+	}
+	&__name {
+
+	}
+
+
+
+
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 4rem;
+	}
+	&__group {
+		width: 100%;
+		position: relative;
+	}
+	&__input {
+		padding: 1.2rem 1.6rem;
+		border: 1px solid $color-black-md;
+		border-radius: 4px; 
+		background-color: $color-white;
+		width: 100%;
+
+		&:focus {
+			outline: none;
+			@include elevation2;
+			&:invalid {
+				border: 1px solid $color-danger-border;
+			}
+		}
+
+		@include input-placeholder{
+			color: $color-black-md;
+		}
+
+		&:placeholder-shown + .list-sv__label{
+			opacity:0;
+			visibility: hidden;
+			@include prefix("transform", translateY(-4rem), moz webkit ms o);
+		}
+	}
+
+	&__label {
+		opacity:1;
+		visibility: visible;
+		margin-left: 1.6rem;
+		margin-top: .4rem;
+		margin-bottom: .4rem;
+        @include prefix("transition", all .3s, moz webkit o);
+	}
+
+
+
+
+
+}

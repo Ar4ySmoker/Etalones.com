@@ -1,0 +1,26 @@
+/*******************table***********************/
+.table {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+
+	// padding: 1.6rem 1.6rem;
+	border-radius: 4px;
+	@include elevation1;
+
+	&__row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		// padding: 1.6rem 1.6rem;
+	}
+	&__row:not(:last-child) {
+		border-bottom: 1px solid rgba($color-black, .12);
+	}
+	&__col {
+		padding: 1.6rem 3.2rem;
+	}
+}

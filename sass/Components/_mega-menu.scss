@@ -1,0 +1,66 @@
+/*******************mega-menu***********************/
+.mega-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background-color: rgba($color-white, 1);
+	width: auto;
+	min-width: 30rem;
+	max-width: none;
+	padding: 8rem 0;
+	@include elevation4;
+
+	display: none;
+
+	z-index: 999;
+
+	&__list {
+
+	}
+	&__title {
+
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		li {
+			@include typo-overline;
+			color: $color-black-hi;
+			&:first-child {
+				border-bottom: 1px solid $color-black-li;
+				padding-bottom: 0.4rem;
+				margin-bottom: 1.2rem;
+				// width: 100%;
+				margin-right: 2rem;
+				// display: block;
+			}
+			&:hover > a span:after{
+				@include effectUnderSlide_placeInHover;
+			}	
+			a {
+				@include typo-overline;
+				color: $color-black-hi;
+
+				display: block;
+				overflow: hidden;
+				padding: .8rem 0;
+				position: relative;
+
+				@include prefix("transition", all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), moz webkit o);							
+				span {
+					overflow: hidden;
+					position: relative;
+
+					&:after {
+						@include effectUnderSlide_placeOutHover();
+						background-color: $color-black-md;
+					}					
+
+				}
+			}
+		}
+	}
+}

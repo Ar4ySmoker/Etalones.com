@@ -1,0 +1,245 @@
+/*******************review***********************/
+.review {
+
+	margin-bottom: 2.8rem;
+
+	&__title {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 4rem;
+		margin-top: 0rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}			
+	}
+
+	ul {
+		li {
+			ul {
+				margin-left: 4.8rem;
+				@include responsive(SS){
+					margin-left: 2.4rem;
+				}
+				@include responsive(XS){
+					margin-left: 2.4rem;
+				}
+				@include responsive(SM){
+				}
+				@include responsive(MD){
+				}
+				@include responsive(LG){
+				}
+				@include responsive(XL){
+				}						
+				li {
+					
+					ul {
+						li {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+			
+	&__level {
+		padding: 1.6rem;
+		margin-bottom: 2.4rem;
+		@include effectGetUp_placeOutHover;
+		&:hover {
+			@include effectGetUp_placeInHover;
+		}
+
+		&:hover .review__avatar:before{
+			
+			@include effectZoomImg_placeInHover;
+		}
+		&:hover img{
+			
+			@include effectZoomRotateLv2_placeInHover;
+		}	
+		&:hover .review__avatar:after {
+			@include effectShowHide_placeInHover;
+			
+		}			
+	}
+
+
+	&__side {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}
+	}
+	&__avatar {
+		width: 100%;
+		max-width: 8rem;
+		min-width: 8rem;
+		margin-right: 1.6rem;
+		position: relative;
+		overflow: hidden;
+
+		@include responsive(SS){
+			max-width: 6.8rem;
+			min-width: 6.8rem;
+		}
+		@include responsive(XS){
+			max-width: 6.8rem;
+			min-width: 6.8rem;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color-grey-dark-v5, .05);
+			z-index: 9;
+			@include effectZoomImg_placeOutHover;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color-black, .1);
+			z-index: 10;
+			@include effectShowHide_placeOutHover;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+
+			@include effectZoomRotateLv2_placeOutHover;
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+
+		position: relative;
+
+		width: 100%;
+
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}			
+	}
+	&__name {
+
+	}
+	&__date {
+		margin-bottom: .4rem;
+	}
+	&__paragraph {
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){ 
+		}	
+	}
+	&__btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&__vote {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;	
+		margin-bottom: .8rem;	
+
+		@include responsive(SS){
+			position: static;
+			top: auto;
+			right: auto;
+		}
+		@include responsive(XS){
+			position: static;
+			top: auto;
+			right: auto;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+
+		&--icon {
+			color: $color-gold;
+			font-size: 2rem;
+			line-height: 1;
+		}
+	}
+
+
+
+
+
+
+}

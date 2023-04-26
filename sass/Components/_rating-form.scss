@@ -1,0 +1,107 @@
+/*******************rating-form***********************/
+.rating-form {
+	&__form {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-bottom: 4rem;
+	}
+	&__title {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 1.2rem;
+		@include responsive(SS){
+		}
+		@include responsive(XS){
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}			
+	}	
+	&__tip {
+		margin-bottom: 1.2rem;
+	}
+	&__group {
+		width: 100%;
+		position: relative;
+	}
+	&__group-2 {
+		width: 100%;
+		position: relative;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+
+		margin-bottom: 1.2rem;
+	}
+	&__lbl {
+		margin-right: 1.6rem;
+	}
+	&__input {
+		padding: 1.2rem 1.6rem;
+		border: 1px solid $color-black-md;
+		border-radius: 4px; 
+		background-color: $color-white;
+		width: 100%;
+
+		&:focus {
+			outline: none;
+			@include elevation2;
+			&:invalid {
+				border: 1px solid $color-danger-border;
+			}
+		}
+
+		@include input-placeholder{
+			color: $color-black-md;
+		}
+
+		&:placeholder-shown + .rating-form__label{
+			opacity:0;
+			visibility: hidden;
+			@include prefix("transform", translateY(-4rem), moz webkit ms o);
+		}
+	}
+
+	&__label {
+		opacity:1;
+		visibility: visible;
+		margin-left: 1.6rem;
+		margin-top: .4rem;
+		margin-bottom: .4rem;
+        @include prefix("transition", all .3s, moz webkit o);
+	}
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	&__vote {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;	
+		&--icon {
+			color: $color-gold;
+			font-size: 2rem;
+			line-height: 1;
+		}
+	}	
+
+
+	
+
+
+
+}

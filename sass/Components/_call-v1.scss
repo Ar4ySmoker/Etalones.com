@@ -1,0 +1,32 @@
+/*******************call-v1***********************/
+.call-v1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	&__text {
+		margin: auto 1.2rem;
+		text-align: center;
+	    @include responsive(SS){
+	    	@include typo-h5;
+	    }
+	    @include responsive(XS){
+	    	@include typo-h5;
+	    }
+	    @include responsive(SM){
+	    	@include typo-h5;
+	    }
+	    @include responsive(MD){
+	    	@include typo-h5;
+	    }
+	    @include responsive(LG){
+	    	@include typo-h5;
+	    }
+	    @include responsive(XL){
+	    }		
+	}
+	&__btn {
+		margin: 1.6rem 1.2rem;
+	}
+}

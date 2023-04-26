@@ -1,0 +1,38 @@
+/*******************some-service***********************/
+.some-service {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	margin-bottom: 4rem;
+
+	&:hover &__icon i {
+		@include effectShadowCircleIconZoomText_placeInHover;
+	}
+	&:hover .some-service__line {
+			@include effectLineWd_placeInHover;
+		}
+	
+	&__icon {
+		i {
+			font-size: 4.4rem;
+			// color: $color-black-hi;
+			color: $color-primary-hi;
+			@include effectShadowCircleIconZoomText_placeOutHover;
+		}
+	}
+	&__name {
+		text-align: center;
+	}
+	&__line {
+		width: 6rem;
+		height: 1px;
+		background-color: rgba($color-black, .12);
+		margin: 1.2rem auto 2rem;
+		@include effectLineWd_placeOutHover;
+	}
+	&__paragraph {
+		text-align: center;
+	}
+}

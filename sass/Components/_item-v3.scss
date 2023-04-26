@@ -1,0 +1,131 @@
+/*******************item-v3***********************/
+.item-v3 {
+	border-radius: 4px;
+	padding: 1.6rem;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 4rem;
+
+	@include effectGetUp_placeOutHover;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	@include responsive(SS){
+		flex-direction: column;
+	}
+	@include responsive(XS){
+		flex-direction: column;
+	}
+	@include responsive(SM){
+	}
+	@include responsive(MD){
+		flex-direction: column;
+	}
+	@include responsive(LG){
+
+	}
+	@include responsive(XL){
+	}
+
+
+
+	&:hover {
+		@include effectGetUp_placeInHover;
+	}
+
+	&:hover &__picture img {
+		@include effectZoomRotate_placeInHover;
+	}
+	&:hover &__picture:after {
+		@include effectCurtainDownNew_placeInHover;
+	}
+	&:hover &__picture:before {
+		@include effectCurtainUpNew_placeInHover;
+	}
+	
+	&__side {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		position: relative;
+
+
+		
+	}
+	
+	&__name {
+		margin-bottom: .4rem;
+	}
+	&__date-cate {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: .4rem;
+
+	}
+
+
+	
+	&__picture {
+		overflow: hidden;
+
+		width: 100%;
+		max-width: 18.5rem;
+		position: relative;
+
+		margin-right: 1.6rem;
+
+		@include responsive(SS){
+			max-width: none;
+			margin-bottom: .8rem;
+			margin-right: 0;
+		}
+		@include responsive(XS){
+			max-width: none;
+			margin-bottom: .8rem;
+			margin-right: 0;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+			max-width: none;
+			margin-bottom: .8rem;
+			margin-right: 0;
+		}
+		@include responsive(LG){
+
+		}
+		@include responsive(XL){
+		}		
+
+
+		img {
+			height: auto;
+			max-width: 100%;
+
+			@include effectZoomRotate_placeOutHover();
+		}
+
+		&:before {
+			@include effectCurtainUpNew_placeOutHover();
+
+		}
+		&:after {
+			@include effectCurtainDownNew_placeOutHover();
+
+		}
+		
+	}
+	&__paragraph {
+
+	}
+	
+	
+	
+}

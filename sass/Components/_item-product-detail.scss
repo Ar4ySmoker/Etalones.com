@@ -1,0 +1,776 @@
+/*******************item-product-detail***********************/
+.item-product-detail {
+
+	margin-bottom: 6.4rem;
+	
+	&__picture {
+		position: relative;
+		margin-bottom: .8rem;
+
+		overflow: hidden;
+		display: block;
+		width: 100%;
+
+		@include elevation1;
+
+		&:hover .item-product-detail__picture--next,
+		&:hover .item-product-detail__picture--prev,
+		&:hover .item-product-detail__picture--control-nav {
+			opacity: 1;
+		}		
+
+ 
+
+		ul.slides {
+			@include prefix("transition", all 1s ease, moz webkit o);
+
+			li {
+				display: none;
+				-webkit-backface-visibility: hidden;
+					
+				img {
+				  	width: 100%;
+					display: block;
+				  	height: auto;
+					@include prefix("user-select", none, moz webkit ms);
+
+					@include responsive(SS){
+					}
+					@include responsive(XS){
+					}
+					@include responsive(SM){
+					}
+					@include responsive(MD){
+					}
+					@include responsive(LG){
+					}
+					@include responsive(XL){
+					}	  				
+				}				
+
+			}
+
+		}		
+		&--direction-nav {
+
+		}
+		&--nav-prev {
+
+		}
+		&--prev {
+			position: absolute;
+			top: 50%;
+			left: 2rem;
+			opacity: 0;
+			z-index: 9;
+			@include prefix("transform", translateY(-50%), moz webkit ms o);
+			@include prefix("user-select", none, moz webkit ms);
+			cursor: pointer;
+			display: block;
+
+			width: 4.8rem;
+			height: 4.8rem;
+			@include prefix("user-select", none, moz webkit ms);
+			@include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+
+			@include prefix("transition", all .6s ease, moz webkit o);
+
+
+			@include responsive(SS){
+			}
+			@include responsive(XS){
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}	
+
+
+			
+
+			i {
+				position: absolute;
+				top: 2.1rem;
+				left: 1rem;
+				width: 2.2rem;
+				height: .5rem;
+				border-radius: .25rem;
+				background: $color-black-di;
+				@include prefix("transition", all 0.15s ease, moz webkit o);
+
+				transform-origin: 0% 50%
+			}
+
+			@include arrowTransform( 40deg, 0, -.1rem );
+
+			&:hover {
+				@include arrowTransform( 30deg, 0, -.1rem );
+			}
+
+			&:active {
+				@include arrowTransform( 25deg, 0rem, -.1rem );
+			}
+
+		      
+
+		    
+	  	}
+	  	&--nav-next {
+
+		}
+		&--next {
+			position: absolute;
+			top: 50%;
+			right: 2rem;
+			opacity: 0;
+			z-index: 9;
+			@include prefix("transform", translateY(-50%), moz webkit ms o);
+			@include prefix("user-select", none, moz webkit ms);
+			cursor: pointer;
+			display: block;
+
+			width: 4.8rem;
+			height: 4.8rem;
+			@include prefix("user-select", none, moz webkit ms);
+			@include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+
+			@include prefix("transition", all .6s ease, moz webkit o);
+
+			@include responsive(SS){
+			}
+			@include responsive(XS){
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}			
+
+			
+
+			i {
+			  position: absolute;
+			  top: 2.1rem;
+			  right: 1rem;
+			  width: 2.2rem;
+			  height: .5rem;
+			  border-radius: .25rem;
+			  background: $color-black-di;
+			  @include prefix("transition", all 0.15s ease, moz webkit o);
+
+			  transform-origin: 100% 50%
+			}
+
+			@include arrowTransform( 40deg, 0, .1rem );
+
+			&:hover {
+			  @include arrowTransform( 30deg, 0, .1rem );
+			}
+
+			&:active {
+			  @include arrowTransform( 25deg, 0rem, .1rem );
+			}
+
+			  
+
+
+		}
+
+		&--control-nav {
+
+		    position: absolute;
+		    bottom: 12%;
+		    left: 50%;
+		    opacity: 0;
+		    @include prefix("transform", translateX(-50%), moz webkit ms o);
+		    @include prefix("transition", all .6s ease, moz webkit o);
+
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: center;
+		    align-items: center;
+
+			li {
+				a {
+					text-indent: -9999px;
+					display: block;
+					cursor: pointer;
+				    height: 1.2rem;
+				    width: 1.2rem;
+				    margin: 0 .4rem;
+				    background-color: $color-white-md;
+				    border-radius: .6rem;
+				    @include prefix("user-select", none, moz webkit ms);
+				    @include prefix("transition", all .6s ease 0s, moz webkit o);
+				    &:hover {
+				      background-color: $color-white-hi;
+				    }
+				    &.portfolio-detail__gallery--active {
+				      width: 3.2rem;
+				      background-color: $color-white-hi;
+				      cursor: default;
+				    }
+
+				}
+			}
+		}			  	
+
+	}
+
+
+
+	&__carousel {
+		position: relative;
+		margin-bottom: 4rem;
+
+		overflow: hidden;
+		display: block;
+		width: 100%;
+
+		// @include elevation1;
+
+		&--viewport {
+			
+			width: 76%;
+			left: 50%;
+			@include prefix("transform", translateX(-50%), moz webkit ms o);
+			@include prefix("transition", all 1s ease, moz webkit o);
+
+			@include responsive(SS){
+				width: 74%;
+			}
+			@include responsive(XS){
+				width: 74%;
+			}
+			@include responsive(SM){
+				width: 80%;
+			}
+			@include responsive(MD){
+				width: 74%;
+			}
+			@include responsive(LG){
+				width: 74%;
+			}
+			@include responsive(XL){
+			}	
+
+			li {
+				padding: .8rem .4rem;
+				position: relative;
+						
+				img {
+				  	width: 100%;
+					display: block;
+				  	height: auto;
+					@include prefix("user-select", none, moz webkit ms);
+					cursor: pointer;
+
+					// @include prefix("transform", scale(1.0) , moz webkit ms o);
+					@include prefix("transition", all .3s , moz webkit o);
+
+					// border-radius: 4px;	
+
+					@include elevation1; 
+					// @include prefix("filter", grayscale(100%), webkit);
+
+					&:hover {
+						// @include prefix("transform", scale(1.1) , moz webkit ms o);
+						@include elevation3;
+					}  				
+				}
+
+
+			}
+			.item-product-detail__carousel--active-slide img {
+				@include elevation3;
+			}
+
+		}
+
+		&--direction-nav {
+
+		}
+		&--nav-prev {
+
+		}
+		&--prev {
+			position: absolute;
+			top: 50%;
+			left: .8rem;
+			@include prefix("transform", translateY(-50%), moz webkit ms o);
+			@include prefix("user-select", none, moz webkit ms);
+			cursor: pointer;
+			display: block;
+
+			width: 3rem;
+			height: 4.8rem;
+			background-color: transparent;	
+			border-radius: 4px;
+			border: 1px solid rgba($color-black, .12);
+
+			@include prefix("user-select", none, moz webkit ms);
+			// @include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+			@include prefix("transition", all .6s ease, moz webkit o);
+
+			&:hover {
+				@include elevation2;
+			}
+
+
+
+			
+
+			i {
+				position: absolute;
+				top:50%;
+				left:50%;
+				@include prefix("transform", translate(-50%, -50%), moz webkit ms o);
+				color: $color-black-hi;
+				z-index: 99;
+				font-size: 2.8rem;
+			}
+
+
+
+		      
+
+		    
+	  	}
+	  	&--nav-next {
+
+		}
+		&--next {
+			position: absolute;
+			top: 50%;
+			right: .8rem;
+			// opacity: 0;
+			@include prefix("transform", translateY(-50%), moz webkit ms o);
+			@include prefix("user-select", none, moz webkit ms);
+			cursor: pointer;
+			display: block;
+
+			width: 3rem;
+			height: 4.8rem;
+			background-color: transparent;	
+			border-radius: 4px;
+			border: 1px solid rgba($color-black, .12);
+
+			@include prefix("user-select", none, moz webkit ms);
+			// @include prefix("filter", drop-shadow( 0px 0px 2px rgba(0,0,0,0.1) ), webkit);
+			@include prefix("transition", all .6s ease, moz webkit o);
+
+			
+			&:hover {
+				@include elevation2;
+			}
+			
+
+			i {
+				position: absolute;
+				top:50%;
+				left:50%;
+				@include prefix("transform", translate(-50%, -50%), moz webkit ms o);
+				color: $color-black-hi;
+				z-index: 99;
+				font-size: 2.8rem;
+			}
+
+			  
+
+
+		}
+	}
+
+	&__popup-sale {
+		position: absolute;
+		top: 1.6rem;
+		right: 1.6rem;
+		width: 4.8rem;
+		height: 4.8rem;
+		border-radius: 50%;
+		background-color: $color-primary-md;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 9;
+	}
+
+	&__side {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 4rem;
+	}
+	&__name {
+		margin-bottom: .8rem;
+	}
+	&__vote {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;	
+		margin-bottom: .8rem;	
+		&--icon {
+			color: $color-gold;
+			font-size: 2rem;
+			line-height: 1;
+		}
+	}
+	&__price {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 1.2rem;
+		&--sale {
+			margin-right: 3.2rem;
+		}
+		&--origin {
+
+		}
+	}
+	&__paragraph {
+		margin-bottom: 2rem;
+	}
+	
+	&__row {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-bottom: 1.6rem;
+
+		width: 100%;
+	}
+	&__t {
+		position: relative;
+		width: 100%;
+		flex: 0 0 30%;
+		max-width: 30%;
+	}
+	&__c {
+		position: relative;
+		width: 100%;
+		flex: 0 0 70%;
+		max-width: 70%;
+	}
+	&__social {
+		margin-bottom: 3.2rem;
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: flex-start;
+			li {
+				margin-right: 1.6rem;
+				a {
+					i {
+						font-size: 1.8rem;
+						color: $color-black-hi;
+						@include transition(.2s);
+					}
+					&:hover i {
+						color: $color-black;
+						@include prefix("transform", scale(1.2), moz webkit ms o);
+					}
+				}
+			}
+		}
+	}
+	&__quantity {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	&__number {
+		outline: none;
+		padding: 0px;
+		margin: 0px;
+
+		height:  3.6rem;
+		width: 4.4rem;
+		border: 1px solid rgba($color-black, .12);
+		color: $color-black-hi;
+		text-align: center;
+		@include typo-button;
+		margin-right: 2.8rem;
+	}
+	&__btn {
+
+	}
+
+	&__content {
+
+		&--tab-descrip {
+			overflow: hidden;
+			ul {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: flex-start;
+
+				border-bottom: 1px solid rgba($color-black, .12);
+
+				li {
+					margin-right: 2.8rem;
+
+					@include responsive(SS){
+					}
+					@include responsive(XS){
+						margin-right: 1.2rem;
+					}
+					@include responsive(SM){
+					}
+					@include responsive(MD){
+					}
+					@include responsive(LG){
+					}
+					@include responsive(XL){
+					}						
+				}
+			}
+
+		}
+		&--link {
+			display: block;
+			padding: 0.4rem 0rem;
+			border-bottom: 2px solid transparent; 
+			@include typo-button;
+			color: $color-black-md;
+			@include prefix("transition", all .3s ease 0s, moz webkit o);
+			cursor: pointer;
+
+			&.active {  
+				color: $color-black-hi;
+				border-bottom: 2px solid $color-black-md;
+			}
+			&:hover {
+				color: $color-black-hi;
+				border-bottom: 2px solid $color-black-md;
+			}
+			
+		}
+		&--tab-container {
+			
+
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+
+
+			position: relative;
+			
+			&---inside {
+				display: none;
+
+				&.openMxm {
+					display: flex;
+				}
+			}
+			&---style-1 {
+
+				padding: 2.4rem 0 7.2rem;
+
+				
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: flex-start;
+
+				h5 {
+					@extend .heading-5th--dark-hi;
+					margin-bottom: 1.2rem
+				}
+				img {
+					float: left;
+					margin-right: 2rem;
+			  		margin-top: .8rem;
+			  		margin-bottom: .8rem;
+			  		display: block;
+			  		max-width: 100%;
+			  		height: auto;
+			  		@include responsive(SS){
+			  			float: none;
+						margin: .4rem auto;
+					}
+					@include responsive(XS){
+						float: none;
+						margin: .4rem auto;
+					}
+					@include responsive(SM){
+					}
+					@include responsive(MD){
+					}
+					@include responsive(LG){
+					}
+					@include responsive(XL){
+					}
+				}
+				img.right {
+					float: right;
+					margin-left:  2rem;
+			  		margin-top: .8rem;
+			  		margin-bottom: .8rem;
+			  		display: block;
+			  		max-width: 100%;
+			  		height: auto;
+			  		@include responsive(SS){
+			  			float: none;
+						margin: .4rem auto;
+					}
+					@include responsive(XS){
+						float: none;
+						margin: .4rem auto;
+					}
+					@include responsive(SM){
+					}
+					@include responsive(MD){
+					}
+					@include responsive(LG){
+					}
+					@include responsive(XL){
+					}	  		
+				}
+				p {
+					@extend .paragraph-2th--dark-md;
+					margin-bottom: 2rem;
+				}
+				.parent-mxm {
+					display: flex;
+					flex-direction: row;
+					justify-content: flex-start;
+					align-items: flex-start;
+
+					@include responsive(SS){
+						flex-direction: column;
+					}
+					@include responsive(XS){
+						flex-direction: column;
+					}
+					@include responsive(SM){
+					}
+					@include responsive(MD){
+					}
+					@include responsive(LG){
+					}
+					@include responsive(XL){
+					}			
+				}
+				ul {
+					
+					margin-bottom: 1.2rem;
+					&:not(:last-child) {
+						margin-right: 12rem;
+						@include responsive(SS){
+							margin-right: .4rem;
+						}
+						@include responsive(XS){
+							margin-right: 1.2rem;
+						}
+						@include responsive(SM){
+							margin-right: 1.2rem;
+						}
+						@include responsive(MD){
+							margin-right: 1.2rem;
+						}
+						@include responsive(LG){
+							margin-right: 4rem;
+						}
+						@include responsive(XL){
+						}				
+					}
+					
+					li {
+						@extend .paragraph-2th--dark-md;
+						
+						padding: 0rem .8rem 0rem 2.4rem;
+						position: relative;
+						&:not(:last-child) {
+							margin-bottom: 1.2rem;
+						}
+						&:before {
+							content: "\E86C";
+							position: absolute;
+							top: 50%;
+							left: 0;
+							@include prefix("transform", translateY(-50%), moz webkit ms o);
+							@include prefix("transform-origin", 50% 50%, moz webkit ms o);
+							font-family: "Material Icons";
+							font-size: 1.6rem;
+							color: $color-black-hi;
+						}
+					}
+				}
+				blockquote {
+					margin-bottom: 4rem;
+					margin-top: 4rem;
+					@extend .heading-7th--dark-md;
+					text-align: center;
+					padding: 5.4rem 10.4rem .4rem;
+					position: relative;
+					@include responsive(SS){
+						padding: 5.4rem 0rem .4rem;
+					}
+					@include responsive(XS){
+						padding: 5.4rem 0rem .4rem;
+					}
+					@include responsive(SM){
+						padding: 5.4rem 1.8rem .4rem;
+					}
+					@include responsive(MD){
+						padding: 5.4rem 1.8rem .4rem;
+					}
+					@include responsive(LG){
+						padding: 5.4rem 2.4rem .4rem;
+					}
+					@include responsive(XL){
+					}	
+
+					&:before { 
+						content: "\E244";
+						font-size: 6rem;
+						color: $color-black-hi;
+						position: absolute; 
+						top: 0;
+						transform: translateX(-50%);
+						left: 50%;
+						font-family: "Material Icons";
+					}
+
+					figcaption {
+						@extend .heading-10th--dark-md;
+						margin-top: 1.2rem;
+					}
+				}
+
+
+
+
+
+				
+			}
+			&---style-2 {
+				padding: 2.4rem 0 5.6rem;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: flex-start;
+			}
+			&---style-3 {
+				padding: 2.4rem 0 9.4rem;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: flex-start;
+			}
+		}
+	}
+}

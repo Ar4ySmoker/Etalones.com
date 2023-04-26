@@ -1,0 +1,24 @@
+/*******************service-v2***********************/
+.service-v2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	margin-bottom: 4rem;
+
+
+	&__name {
+		span {
+			color: $color-primary-hi;
+		}
+	}
+	&__line {
+		width: 100%;
+		height: 1px;
+		background-color: rgba($color-primary, .38);
+		margin: 1.2rem auto 2rem;
+	}
+	&__paragraph {
+	}
+}

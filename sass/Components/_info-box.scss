@@ -1,0 +1,78 @@
+/*******************info-box***********************/
+
+.info-box {
+	position: relative;
+	min-height: 4rem;
+	background-color: $color-grey;
+	@include elevation2;
+	z-index: 900;
+
+	&__contact {
+		ul {
+			display: flex;
+			align-items: center;
+			min-height: 4rem;
+		}
+	}
+	&__item--left {
+		margin-right: 2rem;
+	}
+	&__link--left {
+		&,
+		&:link,
+	    &:visited {
+	        color: $color-white-hi;
+	        @include typo-subtitle2;
+	        @include transition(.2s);
+
+	        display: flex;
+			align-items: center;
+	    }
+		&:hover {
+			color: $color-white;
+			
+		}
+		&:hover .info-box__icon--left{
+			@include prefix("transform", scale(1.2), moz webkit ms o);
+			
+		}
+	}
+	&__icon--left {
+		margin-right: .8rem;
+		@include transition(.2s);
+
+	}
+
+
+
+
+	&__social {
+		ul {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			min-height: 4rem;
+		}
+	}
+	&__item--right {
+		list-style: none;
+		margin-left: 1.2rem;
+	}
+	&__link--right {
+		&,
+		&:link,
+	    &:visited {
+			color: $color-white-hi;
+			display: flex;
+			align-items: center;
+			@include transition(.2s);
+		}
+		&:hover {
+			color: $color-white;
+			@include prefix("transform", scale(1.2), moz webkit ms o);
+		}
+	}
+	&__icon--right {
+		font-size: 1.8rem;
+	}
+}

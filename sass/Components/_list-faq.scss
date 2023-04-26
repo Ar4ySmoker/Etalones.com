@@ -1,0 +1,119 @@
+/*******************list-faq***********************/
+.list-faq {
+	margin-bottom: 4rem;
+	&__list {
+		&--lv2 {
+			padding: .8rem 4.2rem .8rem 7.2rem;
+			@include responsive(SS){
+				padding: .8rem 2.8rem .8rem 3.2rem;
+			}
+			@include responsive(XS){
+				
+				padding: .8rem 4rem .8rem 4rem;
+			}
+			@include responsive(SM){
+				padding: .8rem 4rem .8rem 4rem;
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}	
+
+		}
+	}
+	&__item {
+		margin-bottom: .4rem;
+	}
+	&__link {
+		@include typo-subtitle1;
+		color: $color-black-hi;
+		display: block;
+		padding: .8rem 4.2rem .8rem 7.2rem;
+		border: 1px solid rgba($color-black, 0.12);
+		overflow: hidden;
+		position: relative;
+		background-color: $color-white;
+		@include prefix("transition", all 0.3s, moz webkit o);
+		@include responsive(SS){
+			padding: .8rem 2.8rem .8rem 3.2rem;
+		}
+		@include responsive(XS){
+			padding: .8rem 4rem .8rem 4rem;
+		}
+		@include responsive(SM){
+			padding: .8rem 4rem .8rem 4rem;
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+		&:hover {
+			color: $color-black;
+		}
+		.list-faq--drop > &:before {
+			content: "\E5CF";
+			position: absolute;
+			top: 50%;
+			right: 1.6rem;
+			@include prefix("transform", translateY(-50%) rotate(0deg), moz webkit ms o);
+			@include prefix("transform-origin", 50% 50%, moz webkit ms o);
+			font-family: "Material Icons";
+			font-size: 2.4rem;
+			color: $color-black-hi;
+			@include prefix("transition", all 0.3s, moz webkit o);
+			@include responsive(SS){
+				right: .4rem;
+			}
+			@include responsive(XS){
+				right: .8rem;
+			}
+			@include responsive(SM){
+				right: .8rem;
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}			
+		}
+		.list-faq--drop > &:after {
+			content: "\E5CA";
+			position: absolute;
+			top: 50%;
+			left: 1.6rem;
+			@include prefix("transform", translateY(-50%), moz webkit ms o);
+			@include prefix("transform-origin", 50% 50%, moz webkit ms o);
+			font-family: "Material Icons";
+			font-size: 2.4rem;
+			color: $color-black-hi;
+			@include prefix("transition", all 0.3s, moz webkit o);
+			@include responsive(SS){
+				left: .4rem;
+			}
+			@include responsive(XS){
+				left: .8rem;
+			}
+			@include responsive(SM){
+				left: .8rem;
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}			
+		}
+		.list-faq--drop.openMn > &:before {
+			@include prefix("transform", translateY(-50%) rotate(-180deg), moz webkit ms o);
+			
+		}
+	}
+	&__paragraph {
+		margin-bottom: 4rem;
+	}
+}

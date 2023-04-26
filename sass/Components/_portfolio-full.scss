@@ -1,0 +1,371 @@
+/*******************portfolio-full***********************/
+
+.portfolio-full {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	flex-wrap: wrap;	
+
+	margin-right: -15px;
+	margin-left: -15px;
+	
+	&__wrap-full {
+		position: relative;
+		width: 100%;
+
+	  	flex: 0 0 100%;
+		max-width: 100%;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: stretch;
+		flex-wrap: wrap;
+
+		@include responsive(SS){
+			flex: 0 0 100%;
+  			max-width: 100%;
+		}
+		@include responsive(XS){
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		@include responsive(SM){
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		@include responsive(MD){
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+		
+		&:hover .portfolio-full__picture:before{
+			
+			@include effectZoomImg_placeInHover;
+		}
+		&:hover img{
+			
+			@include effectZoomImg_placeInHover;
+		}	
+		&:hover .portfolio-full__picture:after {
+			@include effectShowHide_placeInHover;
+			
+		}
+		&:hover .portfolio-full__line{
+			
+			@include effectLineWd_placeInHover;
+		}	
+		
+	}
+
+	&__wrap {
+		position: relative;
+		width: 100%;
+
+	  	flex: 0 0 50%;
+		max-width: 50%;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: stretch;
+		flex-wrap: wrap;
+
+		@include responsive(SS){
+			flex: 0 0 100%;
+  			max-width: 100%;
+		}
+		@include responsive(XS){
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		@include responsive(SM){
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		@include responsive(MD){
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}		
+		
+		&:hover .portfolio-full__picture:before{
+			
+			@include effectZoomImg_placeInHover;
+		}
+		&:hover img{
+			
+			@include effectZoomImg_placeInHover;
+		}	
+		&:hover .portfolio-full__picture:after {
+			@include effectShowHide_placeInHover;
+			
+		}	
+		&:hover .portfolio-full__line{
+			
+			@include effectLineWd_placeInHover;
+		}
+		
+	}
+	
+	&__side {
+		position: relative;
+		width: 100%;
+
+	  	flex: 0 0 50%;
+  		max-width: 50%;
+
+
+
+		@include responsive(SS){
+			flex: 0 0 100%;
+  			max-width: 100%;
+		}
+		@include responsive(XS){
+			flex: 0 0 100%;
+  			max-width: 100%;
+		}
+		@include responsive(SM){
+		}
+		@include responsive(MD){
+		}
+		@include responsive(LG){
+		}
+		@include responsive(XL){
+		}	
+  		
+	}
+
+	&__side-info {
+		position: relative;
+		width: 100%;
+
+	  	flex: 0 0 50%;
+  		max-width: 50%;
+		
+		padding: 4.8rem 4.8rem;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		background-color: $color-white;		
+
+		@include responsive(SS){
+			flex: 0 0 100%;
+  			max-width: 100%;
+
+  			padding: 4.8rem 4.8rem;
+		}
+		@include responsive(XS){
+			flex: 0 0 100%;
+  			max-width: 100%;
+  			
+  			padding: 4.8rem 4.8rem;
+		}
+		@include responsive(SM){
+			padding: .8rem 1.6rem;
+		}
+		@include responsive(MD){
+			padding: .8rem 6.4rem;
+		}
+		@include responsive(LG){
+			padding: 1.2rem 1.6rem;
+		}
+		@include responsive(XL){
+		}	
+		@include responsiveMxm(XXL){
+			padding: 1.2rem 1.6rem;
+		}
+  		
+	}	
+	&__wrap-full &__side-info {
+		padding: 4.8rem 4.8rem;
+
+		@include responsive(SS){
+			padding: 4.8rem 4.8rem;
+		}
+		@include responsive(XS){
+			padding: 4.8rem 4.8rem;
+		}
+		@include responsive(SM){
+			padding: .8rem 1.6rem;
+		}
+		@include responsive(MD){
+			padding: .8rem 6.4rem;
+		}
+		@include responsive(LG){
+			padding: .8rem 1.2rem;
+		}
+		@include responsive(XL){
+		}	
+		@include responsiveMxm(XXL){
+			padding: 1.2rem 1.6rem;
+		}
+  		
+	} 
+	&__picture {
+		position: relative;
+		display: block;
+		overflow: hidden;
+		z-index: 9;
+		
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color-grey-dark-v5, .1);
+			z-index: 9;
+			@include effectZoomImg_placeOutHover;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color-black, .5);
+			z-index: 10;
+			@include effectShowHide_placeOutHover;
+		}
+		img {
+			height: auto;
+			max-width: 100%;
+			margin: 0 auto;
+			@include effectZoomImg_placeOutHover;
+		}
+	}
+
+
+	&__wrap-full &__picture {
+		
+		img {
+			
+			@include responsive(SS){
+				max-width: 200%;
+				margin: 0 auto;
+				@include prefix("transform", translateX(-25%), moz webkit ms o);
+			}
+			@include responsive(XS){
+				max-width: 200%;
+				margin: 0 auto;
+				@include prefix("transform", translateX(-25%), moz webkit ms o);
+			}
+			@include responsive(SM){
+				max-width: 200%;
+				margin: 0 auto;
+				@include prefix("transform", translateX(-25%), moz webkit ms o);
+			}
+			@include responsive(MD){
+				max-width: 200%;
+				margin: 0 auto;
+				@include prefix("transform", translateX(-25%), moz webkit ms o);
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}	
+
+		}
+	}
+	
+	&__date-cate {
+		margin-bottom: .8rem;
+	}
+	&__name {
+		a {
+			@include responsive(SS){
+				@include typo-h6;
+			}
+			@include responsive(XS){
+				@include typo-h6;
+			}
+			@include responsive(SM){
+				@include typo-h6;
+			}
+			@include responsive(MD){
+				@include typo-h6;
+			}
+			@include responsive(LG){
+				@include typo-h6;
+			}
+			@include responsive(XL){
+			}
+			@include responsiveMxm(XXL){
+			}	
+		}
+
+	}
+	&__line {
+		width: 6rem;
+		height: 1px;
+		background-color: rgba($color-black, .12);
+		margin: 2rem 0 2rem;
+
+		@include effectLineWd_placeOutHover;
+
+		@include responsive(SS){
+			margin: .8rem 0 .8rem;
+		}
+		@include responsive(XS){
+			margin: .8rem 0 .8rem;
+		}
+		@include responsive(SM){
+			margin: .8rem 0 .8rem;
+		}
+		@include responsive(MD){
+			margin: .8rem 0 .8rem;
+		}
+		@include responsive(LG){
+			margin: .8rem 0 .8rem;
+		}
+		@include responsive(XL){
+		}
+		@include responsiveMxm(XXL){
+			margin: 1.2rem 0 1.2rem;
+		}		
+	}
+	&__paragraph {
+		margin-bottom: 4.8rem;
+		@include responsive(SS){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(XS){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(SM){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(MD){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(LG){
+			margin-bottom: 1.6rem;
+		}
+		@include responsive(XL){
+		}
+		@include responsiveMxm(XXL){
+			margin-bottom: 2.8rem;
+		}			
+	}
+	&__btn {
+
+	}
+	
+
+}
+

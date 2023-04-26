@@ -1,0 +1,80 @@
+/*******************base***********************/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    @include prefix("box-sizing", border-box, moz webkit);
+}
+
+h1, h2, h3, h4, h5, h6, p, address, ol, ul, dl, blockquote, pre, figure, caption, label, form, li {
+	margin: 0;
+	padding: 0;
+}
+
+ul, ul li, ol, ol li {
+	list-style: none outside none;
+}
+a, a:hover, a:focus{
+	text-decoration: none;
+	outline: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+
+html {
+    font-size: pixelToPercent(10px);
+
+    // overflow: hidden;
+
+    @include responsive(SS){
+    	font-size: pixelToPercent(7px);
+    };
+    @include responsive(XS){
+    	font-size: pixelToPercent(9px);
+    };
+    @include responsive(SM){
+    	font-size: pixelToPercent(9px);
+    };
+    @include responsive(MD){
+    	font-size: pixelToPercent(9px);
+    };
+    @include responsive(LG){
+    	font-size: pixelToPercent(10px);
+    };
+    @include responsive(XL){
+    	font-size: pixelToPercent(10px);
+    };
+}
+body {
+    @include prefix("box-sizing", border-box, moz webkit);
+}
+.container-mxm {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include responsive(SS){
+        max-width: 319px;
+    }
+    @include responsive(XS){
+        max-width: 575px;
+    }
+    @include responsive(SM){
+        max-width: 640px;
+    }
+    @include responsive(MD){
+    }
+    @include responsive(LG){
+    }
+    @include responsive(XL){
+    }
+}

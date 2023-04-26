@@ -1,0 +1,336 @@
+/*******************cart***********************/
+.cart {
+	
+	&__table {
+
+		margin-bottom: 10rem;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;	
+
+		border-radius: 4px;
+		@include elevation1;
+			
+		&--row {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			width: 100%;
+			border-bottom: 1px solid rgba($color-black, .12);
+		}
+		&--row:not(:last-child) {
+			// border-bottom: 1px solid rgba($color-black, .12);
+		}
+		&--row-2 {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+
+			width: 100%;
+
+		}
+		&--col {
+			padding: 1.6rem 4.4rem;
+			flex: 0 0 18%;
+			max-width: 18%;
+			@include responsive(SS){
+				padding: 1.6rem .4rem;
+			}
+			@include responsive(XS){
+				padding: 1.6rem .4rem;
+			}
+			@include responsive(SM){
+				padding: 1.6rem 1.6rem;
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}			
+		}
+		&--col-2 {
+			padding: 1.6rem 4.4rem;
+			flex: 0 0 46%;
+			max-width: 46%;
+			@include responsive(SS){
+				padding: 1.6rem .4rem;
+			}
+			@include responsive(XS){
+				padding: 1.6rem .4rem;
+			}
+			@include responsive(SM){
+				padding: 1.6rem 1.6rem;
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}			
+		}
+		&--col-3 {
+			padding: 1.6rem 4.4rem;
+			flex: 0 0 50%;
+			max-width: 50%;
+			@include responsive(SS){
+				padding: 1.6rem .4rem;
+			}
+			@include responsive(XS){
+				padding: 1.6rem .4rem;
+			}
+			@include responsive(SM){
+				padding: 1.6rem 1.6rem;
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}			
+		}
+
+		&--title {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+
+			h4 {
+				 
+				@include responsive(SS){
+					word-break: break-all;
+				 	@include typo-subtitle1;
+				}
+				@include responsive(XS){
+					word-break: break-all;
+				 	@include typo-subtitle1;
+				}
+				@include responsive(SM){
+				}
+				@include responsive(MD){
+				}
+				@include responsive(LG){
+				}
+				@include responsive(XL){
+				}				 
+			}
+ 
+		}
+		&--content {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		&--content-2 {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		&--content-3 {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-end;
+		}
+		&--txt {
+			padding: 1.2rem 1.6rem;
+			border: 1px solid rgba($color-black, 0.6);
+			border-radius: 4px;
+			background-color: $color-white;
+			width: 50%;
+
+			margin-bottom: 1.6rem;
+
+			@include responsive(SS){
+				width: 100%;
+			}
+			@include responsive(XS){
+				width: 100%;
+			}
+			@include responsive(SM){
+				width: 100%;
+			}
+			@include responsive(MD){
+				width: 80%;
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}				
+		}
+		&--close {
+			cursor: pointer;
+			margin-right: 2rem;
+			font-size: 2rem;
+			color: $color-black-md;
+			@include prefix("transition", all .3s, moz webkit o);
+
+			@include responsive(SS){
+				margin-right: .8rem;
+			}
+			@include responsive(XS){
+				margin-right: .8rem;
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}
+
+			&:hover {
+				color: $color-primary;
+			}
+		}
+		&--avatar {
+			display: block;
+			margin-right: 2rem;
+			@include responsive(SS){
+				margin-right: .8rem;
+			}
+			@include responsive(XS){
+				margin-right: .8rem;
+			}
+			@include responsive(SM){
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}			
+			img {
+				width: 100%;
+				max-width: 10.4rem;
+				min-width: 10.4rem;
+				@include responsive(SS){
+					max-width: 6rem;
+					min-width: 6rem;
+				}
+				@include responsive(XS){
+					max-width: 6rem;
+					min-width: 6rem;
+				}
+				@include responsive(SM){
+				}
+				@include responsive(MD){
+				}
+				@include responsive(LG){
+				}
+				@include responsive(XL){
+				}				
+			}
+		}
+		&--name {
+
+		}
+		&--number {
+			outline: none;
+			padding: 0px;
+			margin: 0px;
+
+			height:  3.6rem;
+			width: 4.4rem;
+			border: 1px solid rgba($color-black, .12);
+			color: $color-black-hi;
+			text-align: center;
+			@include typo-button;
+			margin-right: 2.8rem;
+		}
+	}
+	&__title {
+		margin-bottom: 5.4rem;
+	}
+	&__table-2 {
+
+		margin-bottom: 4rem;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;	
+
+		border-radius: 4px;
+		@include elevation1;
+			
+		&--row {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			width: 100%;
+		}
+		&--row:not(:last-child) {
+			border-bottom: 1px solid rgba($color-black, .12);
+		}
+		
+		&--col {
+			padding: 1.6rem 4.4rem;
+			flex: 0 0 50%;
+			max-width: 50%;
+			@include responsive(SS){
+				padding: 1.6rem .4rem;
+			}
+			@include responsive(XS){
+				padding: 1.6rem .4rem;
+			}
+			@include responsive(SM){
+				padding: 1.6rem 1.6rem;
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}			
+		}
+		&--col-2 {
+			padding: 1.6rem 4.4rem;
+			flex: 0 0 100%;
+			max-width: 100%;
+			@include responsive(SS){
+				padding: 1.6rem .4rem;
+			}
+			@include responsive(XS){
+				padding: 1.6rem .4rem;
+			}
+			@include responsive(SM){
+				padding: 1.6rem 1.6rem;
+			}
+			@include responsive(MD){
+			}
+			@include responsive(LG){
+			}
+			@include responsive(XL){
+			}
+		}
+		
+		&--title {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+ 
+		}
+		&--content {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		
+		
+		
+	}
+}

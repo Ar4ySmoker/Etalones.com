@@ -1,0 +1,110 @@
+/*******************fonts***********************/
+
+
+@include font-face("Ubuntu", "../fonts/Ubuntu-Light", 100, normal);
+@include font-face("Ubuntu", "../fonts/Ubuntu-Light", 300, normal);
+@include font-face("Ubuntu", "../fonts/Ubuntu-Regular", 400, normal);
+@include font-face("Ubuntu", "../fonts/Ubuntu-Medium", 500, normal);
+@include font-face("Ubuntu", "../fonts/Ubuntu-Bold", 700, normal);
+@include font-face("Ubuntu", "../fonts/Ubuntu-Bold", 900, normal);
+
+
+@include font-face("Ubuntu", "../fonts/Ubuntu-LightItalic", 100, italic);
+@include font-face("Ubuntu", "../fonts/Ubuntu-LightItalic", 300, italic);
+@include font-face("Ubuntu", "../fonts/Ubuntu-Italic", 400, italic);
+@include font-face("Ubuntu", "../fonts/Ubuntu-MediumItalic", 500, italic);
+@include font-face("Ubuntu", "../fonts/Ubuntu-BoldItalic", 700, italic);
+@include font-face("Ubuntu", "../fonts/Ubuntu-BoldItalic", 900, italic);
+
+
+
+
+
+
+@include font-face("Lato", "../fonts/Lato-Thin", 100, normal);
+@include font-face("Lato", "../fonts/Lato-Light", 300, normal);
+@include font-face("Lato", "../fonts/Lato-Regular", 400, normal);
+@include font-face("Lato", "../fonts/Lato-Bold", 500, normal);
+@include font-face("Lato", "../fonts/Lato-Bold", 700, normal);
+@include font-face("Lato", "../fonts/Lato-Black", 900, normal);
+
+
+
+@include font-face("Lato", "../fonts/Lato-ThinItalic", 100, italic);
+@include font-face("Lato", "../fonts/Lato-LightItalic", 300, italic);
+@include font-face("Lato", "../fonts/Lato-Italic", 400, italic);
+@include font-face("Lato", "../fonts/Lato-Bold", 500, italic);
+@include font-face("Lato", "../fonts/Lato-BoldItalic", 700, italic);
+@include font-face("Lato", "../fonts/Lato-BlackItalic", 900, italic);
+
+
+@include font-face("Work Sans", "../fonts/WorkSans-Thin", 100, normal);
+@include font-face("Work Sans", "../fonts/WorkSans-ExtraLight", 200, normal);
+@include font-face("Work Sans", "../fonts/WorkSans-Light", 300, normal);
+@include font-face("Work Sans", "../fonts/WorkSans-Regular", 400, normal);
+@include font-face("Work Sans", "../fonts/WorkSans-Medium", 500, normal);
+@include font-face("Work Sans", "../fonts/WorkSans-SemiBold", 600, normal);
+@include font-face("Work Sans", "../fonts/WorkSans-Bold", 700, normal);
+@include font-face("Work Sans", "../fonts/WorkSans-ExtraBold", 800, normal);
+@include font-face("Work Sans", "../fonts/WorkSans-Black", 900, normal);
+
+
+
+@include font-face("Work Sans", "../fonts/WorkSans-ThinItalic", 100, italic);
+@include font-face("Work Sans", "../fonts/WorkSans-ExtraLightItalic", 200, italic);
+@include font-face("Work Sans", "../fonts/WorkSans-LightItalic", 300, italic);
+@include font-face("Work Sans", "../fonts/WorkSans-RegularItalic", 400, italic);
+@include font-face("Work Sans", "../fonts/WorkSans-MediumItalic", 500, italic);
+@include font-face("Work Sans", "../fonts/WorkSans-SemiBoldItalic", 600, italic);
+@include font-face("Work Sans", "../fonts/WorkSans-BoldItalic", 700, italic);
+@include font-face("Work Sans", "../fonts/WorkSans-ExtraBoldItalic", 800, italic);
+@include font-face("Work Sans", "../fonts/WorkSans-BlackItalic", 900, italic);
+
+
+
+
+@include font-face("Rubik", "../fonts/Rubik-Regular", 400, normal);
+@include font-face("Rubik", "../fonts/Rubik-Italic", 400, italic);
+
+@include font-face("Rubik", "../fonts/Rubik-Medium", 500, normal);
+@include font-face("Rubik", "../fonts/Rubik-MediumItalic", 500, italic);
+
+@include font-face("Rubik", "../fonts/Rubik-Light", 300, normal);
+@include font-face("Rubik", "../fonts/Rubik-LightItalic", 300, italic);
+
+@include font-face("Rubik", "../fonts/Rubik-Bold", 700, normal);
+@include font-face("Rubik", "../fonts/Rubik-BoldItalic", 700, italic);
+
+@include font-face("Rubik", "../fonts/Rubik-Black", 900, normal);
+@include font-face("Rubik", "../fonts/Rubik-BlackItalic", 900, italic);
+
+
+
+
+@include font-face("Material Icons", "../fonts/MaterialIcons-Regular", 400, normal);
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2rem;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
