@@ -45,7 +45,7 @@
             <!-- Start Logo -->
             <div class="nav__15percent">
               <div class="nav__logo-box">
-                <a href="index.html" class="nav__logo-link">
+                <a href="#Home" class="nav__logo-link goLinkClass">
                   <img src="images/accessories/logo.svg" alt="Logo" />
                 </a>
               </div>
@@ -330,25 +330,24 @@
           <!-- Start Feature -->
           <div class="col-sm-4">
             <div class="feature-round wow move-up animate">
-              <a href="#" class="feature-round__icon">
+              <a href="#Work" class="feature-round__icon goLinkClass">
                 <i class="material-icons material-icons-outlined"
                   >trending_up</i
                 >
               </a>
               <a
-                href="services_001.html"
-                class="feature-round__name heading-6th--dark-hi-hover"
+                href="#Work"
+                class="feature-round__name heading-6th--dark-hi-hover goLinkClass"
                 >Вакансии</a
               >
               <div class="feature-round__line"></div>
               <p class="feature-round__paragraph paragraph-2th--dark-md">
-                Открыты вакансии: мы приглашаем профессионалов для работы в
-                нашей успешной компании
+                У нас открыты вакансии для профессионалов в успешной компании.
               </p>
               <a
-                href="services_001.html"
-                class="feature-round__btn btn btn--secondary"
-                >Узнать подробнее</a
+                href="#Work"
+                class="feature-round__btn btn btn--secondary goLinkClass"
+                >Подробнее</a
               >
             </div>
           </div>
@@ -357,26 +356,23 @@
           <!-- Start Feature -->
           <div class="col-sm-4">
             <div class="feature-round wow move-up animate">
-              <a href="#" class="feature-round__icon">
+              <a href="tel:+380441234567" class="feature-round__icon">
                 <i class="material-icons material-icons-outlined"
                   >headset_mic</i
                 >
               </a>
               <a
-                href="services_001.html"
+                href="tel:+380441234567"
                 class="feature-round__name heading-6th--dark-hi-hover"
                 >Быстрая онлайн поддержка</a
               >
               <div class="feature-round__line"></div>
               <p class="feature-round__paragraph paragraph-2th--dark-md">
-                Наши опытные консультанты с удовольствием помогут вам с любыми
-                вопросами, касающимися страны, вакансий и необходимых
-                документов.
+                Наши консультанты помогут с вопросами о стране, вакансиях и документах.
               </p>
               <a
-                href="services_001.html"
-                class="feature-round__btn btn btn--secondary"
-                >Узнать подробнее</a
+                href="tel:+380441234567"
+                class="feature-round__btn btn btn--secondary">Позвонить</a
               >
             </div>
           </div>
@@ -395,13 +391,12 @@
               >
               <div class="feature-round__line"></div>
               <p class="feature-round__paragraph paragraph-2th--dark-md">
-                Полный комплекс услуг: подбор вакансий, легальные документы,
-                официальное трудоустройство с гарантией.
+             Мы поможем с подбором вакансий, документами и официальным трудоустройством.
               </p>
               <a
                 href="services_001.html"
                 class="feature-round__btn btn btn--secondary"
-                >Узнать подробнее</a
+                >Подробнее</a
               >
             </div>
           </div>
@@ -517,7 +512,7 @@
                 шагом на пути к успеху в поиске работы, которая вам
                 действительно подходит.
               </p>
-              <a href="#" id="btn-popup_anketa" class="show-case-v6__btn btn btn--primary"
+              <a href="#" class="show-case-v6__btn btn btn--primary "
                 >Заполнить Анкету</a
               >
             </div>
@@ -601,7 +596,7 @@
             class="col-md-6 d-sm-flex justify-content-sm-start align-items-sm-center"
           >
             <div class="show-case-v7__side wow move-up animate">
-              <h2 class="show-case-v7__title heading-3th--dark-hi">
+              <h2 class="show-case-v7__title heading-3th--dark-hi" id="btn-popup_anketa">
                 Заказать обратный звонок
               </h2>
               <div class="show-case-v7__line"></div>
@@ -1518,19 +1513,22 @@
         </div>
       </div>
       <!-- End Info Box 2 -->
-      <div class="popup">
+      <div class="popup ">
         <div class="popup-wrapper">
+          <img  src="./images/my/close.svg" width="24px" height="24px" id="btn-close">
           <div class="header-form">
-            <img src="./images/my/close.svg" width="24px" height="24px" id="btn-close">
             <h2 >Заказать звонок</h2>
             <form class="grid-form" name = "feedback" action="" method="post">
-	          	<lable>Укажите ваше имя:</lable>
+	          	<lable>Имя:</lable>
 	          	<input type="text" name="from" value="" placeholder="Иван" required>
-	          	<lable>Укажите ваш номер телефона:</lable>
+	          	<lable>Номер телефона:</lable>
 	          	<input type="tel" name="to" value="" placeholder="+4 (851) 123-45-67" minlength="11" required>
-	          	<lable>Напишите вашу професию:</lable>
+	          	<lable>Професия:</lable>
 	          	<input type="text" name="subject" value="" placeholder="Сантехник" required>	
-	          	<input type="submit" name="send" value="Отправить">
+	          	 <div class="grid-form-buttons" >
+                 <input id="send" class="grid-form-button" type="submit" name="send" value="Отправить"> 
+                  <input  id="cancel" class="grid-form-button"type="submit" name="send" value="Отмена">
+                </div>
 	          </form>
           
           </div>
@@ -1541,13 +1539,13 @@
         <div class="popup-wrapper_anketa">
           <div class="header-form_anketa">
             <img src="./images/my/close.svg" width="24px" height="24px" id="btn-close_anketa">
-            <h2 >Заказать звонок</h2>
+            <h2 >+++++++++</h2>
             <form class="grid-form_anketa" name = "feedback" action="" method="post">
-	          	<lable>Укажите ваше имя:</lable>
+	          	<lable>У++++++++</lable>
 	          	<input type="text" name="from" value="" placeholder="Иван" required>
-	          	<lable>Укажите ваш номер телефона:</lable>
+	          	<lable>Укаж++++++++++++++++:</lable>
 	          	<input type="tel" name="to" value="" placeholder="+4 (851) 123-45-67" minlength="11" required>
-	          	<lable>Напишите вашу професию:</lable>
+	          	<lable>Нап+++++++++++++++ю:</lable>
 	          	<input type="text" name="subject" value="" placeholder="Сантехник" required>	
 	          	<input type="submit" name="send" value="Отправить">
 	          </form>
